@@ -2,11 +2,11 @@
 	baseUrl: '../js',
 	mainConfigFile: '../js/main.js',
 	name: 'main',
-	out: '../js/conc-modules.js',
-	optimize: 'none',
+	out: '../js/min/scripts.min.js',
+	//optimize: 'none',
 	preserveLicenseComments: false,
 	paths: {
-		requireLib: 'libs/require'
+		requireLib: 'require/require'
 	},
 	include: 'requireLib'
 })

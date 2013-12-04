@@ -2,18 +2,20 @@
 /* end */
 /* browncoat/base/_reset.scss */
 body {
-  background: #404040; }
-body.coffee {
-  background: white; }
+  background: #e6e6e6;
+}
 
 /* app/globals/_header.scss */
 .site-header {
-  background: #fff; }
+  background: #d9d9d9;
+}
 
 /* app/globals/_footer.scss */
 .site-footer {
-  background: #000; }
+  background: #000;
+}
 
 /* app/globals/_navs.scss */
 .site-nav {
-  background: #ddd; }
+  background: #ddd;
+}
