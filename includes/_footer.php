@@ -1,5 +1,5 @@
 	<footer class="site-footer container">
-		footer
+		<p>footer <a href="#">Link</a></p>
 	</footer>
 	<script src="../assets/js/require/require.js" data-main="/assets/js/main"></script>
 	<!-- <script src="../assets/js/require/require.js" data-main="/assets/js/conc-modules"></script> -->

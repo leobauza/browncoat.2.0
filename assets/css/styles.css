@@ -1,21 +1,155 @@
 /* browncoat/base/_colours.scss (does not output css)*/
 /* end */
-/* browncoat/base/_reset.scss */
+/* browncoat/base/_text.scss (does not output css)*/
+/* browncoat/base/_helpers.scss (does not output css)*/
+/* end */
+/* browncoat/partials/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+:focus {
+  outline: none;
+  border: none;
+}
+
+a:focus {
+  outline: none;
+  border: none;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
 body {
-  background: #e6e6e6;
+  font-size: 63.7%;
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  word-wrap: break-word;
 }
 
+hr {
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid white;
+  border-top: 1px solid #bfbfbf;
+  clear: both;
+  overflow: 0;
+}
+
+a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #404040;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  color: gray;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 .45em;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  line-height: 1.2em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4.8em;
+}
+
+h2 {
+  font-size: 3.6em;
+}
+
+h3 {
+  font-size: 2.8em;
+}
+
+h4 {
+  font-size: 2.2em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.4em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.reverse h1,
+.reverse h2,
+.reverse h3,
+.reverse h4,
+.reverse h5,
+.reverse h6,
+.reverse p,
+.reverse li,
+.reverse a {
+  color: white;
+}
+
+/* browncoat/partials/_structure.scss */
 /* app/globals/_header.scss */
-.site-header {
-  background: #d9d9d9;
-}
-
 /* app/globals/_footer.scss */
-.site-footer {
-  background: #000;
-}
-
 /* app/globals/_navs.scss */
-.site-nav {
-  background: #ddd;
-}
