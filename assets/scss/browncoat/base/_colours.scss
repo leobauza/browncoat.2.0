@@ -1,0 +1,9 @@
+/* browncoat/base/_colours.scss (does not output css)*/
+$brand: #265dd0;
+
+@function greyscale($perc){
+	@return darken(#fff, $perc)
+}
+
+
+/* end */

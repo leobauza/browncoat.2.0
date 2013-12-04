@@ -1,0 +1,19 @@
+/* browncoat/base/_colours.scss (does not output css)*/
+/* end */
+/* browncoat/base/_reset.scss */
+body {
+  background: #404040; }
+body.coffee {
+  background: white; }
+
+/* app/globals/_header.scss */
+.site-header {
+  background: #fff; }
+
+/* app/globals/_footer.scss */
+.site-footer {
+  background: #000; }
+
+/* app/globals/_navs.scss */
+.site-nav {
+  background: #ddd; }

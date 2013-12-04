@@ -1,0 +1,7 @@
+/* browncoat/base/_reset.scss */
+body {
+	background:greyscale(75%);
+	&.coffee {
+		background:greyscale(0%);
+	}
+}
