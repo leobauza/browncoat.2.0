@@ -1,4 +1,8 @@
 //base libraries
-@import 'browncoat/base/colours.scss';
+@import 'browncoat/base/colours';
+@import 'browncoat/base/text';
+@import 'browncoat/base/helpers';
+
 //partials libraries
-@import 'browncoat/partials/reset.scss';
+@import 'browncoat/partials/reset';
+@import 'browncoat/partials/structure';
