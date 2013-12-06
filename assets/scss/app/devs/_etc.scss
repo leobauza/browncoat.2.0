@@ -10,6 +10,7 @@
 	}
 }
 .box2 {
+	@include borderRadius(20px);
 	padding: 20px;
 	margin: 20px;
 	background: Background(-20);
