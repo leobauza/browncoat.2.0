@@ -4,7 +4,13 @@
 @import 'app/libs/modal';
 @import 'app/libs/callout';
 
-//dev
-@import 'app/dev/header';
-@import 'app/dev/footer';
-@import 'app/dev/etc';
+//devs
+@import 'app/devs/header';
+@import 'app/devs/footer';
+@import 'app/devs/etc';
+
+//vendors
+/*@import 'app/vendors/';*/
+
+//clients
+/*@import 'app/clients/';*/

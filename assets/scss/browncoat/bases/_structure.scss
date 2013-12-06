@@ -1,3 +1,40 @@
 /* browncoat/base/structure (does not output css) */
+//grid
+$columns: 12;
+$columnWidth: 6.33333333%;
+$columnGutter: 2%;
 
+
+//build box
+@mixin square($w,$h) {
+	width: $w;
+	height: $h;
+}
+@mixin marpad($m:0px,$p:0px) {
+	margin:$m;
+	padding:$p;
+}
+
+
+//layout
+@mixin overflower {
+	width: auto;
+	float: none;
+	overflow: hidden;
+}
+
+
+//clearfix
+@mixin group {
+	zoom: 1;
+	&:before {
+		display: table;
+		content: "";
+	}
+	&:after {
+		display: table;
+		content: "";
+		clear: both;
+	}
+}
 /* end */

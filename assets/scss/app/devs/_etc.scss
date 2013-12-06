@@ -1,0 +1,36 @@
+/* app/devs/etc (disposable testing area) */
+.box {
+	padding: 20px;
+	margin: 20px;
+	background: Background();
+	border: 5px solid Border();
+	p {
+		color: Text();
+		margin:0;
+	}
+}
+.box2 {
+	padding: 20px;
+	margin: 20px;
+	background: Background(-20);
+	border: 5px solid Border(-20);
+	p {
+		color: Text();
+		margin:0;
+	}
+}
+.group-test {
+	background:Background();
+	padding:20px;
+	div {
+		background:Background(-20);
+		p {
+			float:left;
+			width:49%;
+		}
+	}
+}
+.background-image {
+	padding:40px;
+	background:url( $imgPath + 'lastiscss3.gif') 50% 50% no-repeat;
+}

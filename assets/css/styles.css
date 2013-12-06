@@ -105,16 +105,147 @@ pre {
 .reverse h1, .reverse h2, .reverse h3, .reverse h4, .reverse h5, .reverse h6, .reverse p, .reverse li, .reverse a {
   color: white; }
 
+header, footer, .row-fluid, .row-fluid-alt, .group, .form-group, .input-group, [class*="-group"] {
+  zoom: 1; }
+header:before, footer:before, .row-fluid:before, .row-fluid-alt:before, .group:before, .form-group:before, .input-group:before, [class*="-group"]:before {
+  display: table;
+  content: ""; }
+header:after, footer:after, .row-fluid:after, .row-fluid-alt:after, .group:after, .form-group:after, .input-group:after, [class*="-group"]:after {
+  display: table;
+  content: "";
+  clear: both; }
+
 /* browncoat/normalizers/layout */
+.container {
+  padding: 20px 2%; }
+
+/*
+ * fluid row using overflow hidden
+ */
+.row-fluid {
+  width: 100%; }
+
+.row-fluid > [class*="span"] {
+  float: left;
+  margin-right: 2%; }
+.row-fluid > [class*="span"].l {
+  margin-right: 0;
+  width: auto;
+  float: none;
+  overflow: hidden; }
+.row-fluid > [class*="span"]:last-child {
+  margin-right: 0;
+  width: auto;
+  float: none;
+  overflow: hidden; }
+
+.row-fluid .span1 {
+  width: 6.51515%; }
+
+.row-fluid .span2 {
+  width: 15.0%; }
+
+.row-fluid .span3 {
+  width: 23.5%; }
+
+.row-fluid .span4 {
+  width: 32.0%; }
+
+.row-fluid .span5 {
+  width: 39.66667%; }
+
+.row-fluid .span6 {
+  width: 49.0%; }
+
+.row-fluid .span7 {
+  width: 56.33333%; }
+
+.row-fluid .span8 {
+  width: 64.66667%; }
+
+.row-fluid .span9 {
+  width: 73.0%; }
+
+.row-fluid .span10 {
+  width: 81.33333%; }
+
+.row-fluid .span11 {
+  width: 89.66667%; }
+
+.row-fluid .span12 {
+  width: 98.0%; }
+
+/*
+ * fluid row using percentages
+ */
+.row-fluid-alt {
+  width: 100%; }
+
+.row-fluid-alt > [class*="span"] {
+  float: left;
+  margin-right: 2%; }
+.row-fluid-alt > [class*="span"].l {
+  margin-right: 0; }
+.row-fluid-alt > [class*="span"]:last-child {
+  margin-right: 0; }
+
+.row-fluid-alt .span1 {
+  width: 6.50404%; }
+
+.row-fluid-alt .span2 {
+  width: 14.98889%; }
+
+.row-fluid-alt .span3 {
+  width: 23.48889%; }
+
+.row-fluid-alt .span4 {
+  width: 31.98889%; }
+
+.row-fluid-alt .span5 {
+  width: 39.65556%; }
+
+.row-fluid-alt .span6 {
+  width: 48.98889%; }
+
+.row-fluid-alt .span7 {
+  width: 56.32222%; }
+
+.row-fluid-alt .span8 {
+  width: 64.65556%; }
+
+.row-fluid-alt .span9 {
+  width: 72.98889%; }
+
+.row-fluid-alt .span10 {
+  width: 81.32222%; }
+
+.row-fluid-alt .span11 {
+  width: 89.65556%; }
+
+.row-fluid-alt .span12 {
+  width: 97.98889%; }
+
+/*
+ * static sidebar
+ */
+.static-sidebar .sidebar {
+  width: 360px;
+  float: left; }
+.static-sidebar .main {
+  padding: 20px;
+  width: auto;
+  float: none;
+  overflow: hidden; }
+
 /* browncoat/normalizers/list */
 /* browncoat/normalizers/form */
 /* app/base/nav */
 /* app/base/btn */
 /* app/base/modal */
 /* app/base/callout */
-/* app/libs/header */
-/* app/libs/footer */
-/* app/libs/etc (disposable testing area) */
+/* app/devs/header */
+/* app/devs/footer */
+/* app/devs/etc (disposable testing area) */
 .box {
   padding: 20px;
   margin: 20px;
@@ -132,3 +263,19 @@ pre {
 .box2 p {
   color: white;
   margin: 0; }
+
+.group-test {
+  background: #265dd0;
+  padding: 20px; }
+.group-test div {
+  background: #769ae6; }
+.group-test div p {
+  float: left;
+  width: 49%; }
+
+.background-image {
+  padding: 40px;
+  background: url("../img/lastiscss3.gif") 50% 50% no-repeat; }
+
+/*@import 'app/vendors/';*/
+/*@import 'app/clients/';*/

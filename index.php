@@ -1,5 +1,15 @@
 <?php include('./includes/_header.php'); ?>
 
+<?php include('./views/_forms.php'); ?>
+
+
+<hr>
+
+<?php include('./views/_lists.php'); ?>
+
+<hr>
+
+
 <section class="container">
 	<p>A paragraph. <a href="#">A Link</a></p>
 	<form data-radios="true">
@@ -23,10 +33,10 @@
 <section class="container">
 	<div class="row-fluid">
 		<article class="span6">
-			<p>welcome to browncoat 2.0</p>
+			<p>Row Fluid</p>
 		</article>
 		<article class="span6">
-			<p>welcome to browncoat 2.0</p>
+			<p>Using Overflow Hidden</p>
 		</article>
 	</div>
 </section>
@@ -34,14 +44,25 @@
 <hr>
 
 <section class="container">
-	<div class="row-fluid">
+	<div class="row-fluid-alt">
 		<article class="span6">
-			<p>welcome to browncoat 2.0</p>
+			<p>Row Fluid</p>
 		</article>
 		<article class="span6">
-			<p>welcome to browncoat 2.0</p>
+			<p>Using Percentages</p>
 		</article>
 	</div>
+</section>
+
+<hr>
+
+<section class="static-sidebar">
+	<aside class="sidebar">
+		<p>This is my sidebar</p>
+	</aside>
+	<article class="main">
+		<p>this is my main!</p>
+	</article>
 </section>
 
 <hr>
@@ -54,5 +75,15 @@
 		<p>MY BOX2! <strong>[Background(-20), Border(-20), Text()]</strong></p>
 	</div>
 </section>
+
+<hr>
+
+<section class="container group-test">
+	<div class="group">
+		<p>clearfix!</p>
+		<p>test!</p>
+	</div>
+</section>
+<section class="background-image"></section>
 
 <?php include('./includes/_footer.php'); ?>

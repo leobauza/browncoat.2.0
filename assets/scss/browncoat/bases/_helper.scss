@@ -1,8 +1,4 @@
 /* browncoat/base/helper (does not output css) */
-
-@mixin marpad($m:0px,$p:0px) {
-	margin:$m;
-	padding:$p;
-}
+$imgPath: '../img/';
 
 /* end */
