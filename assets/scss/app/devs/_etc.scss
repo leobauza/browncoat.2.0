@@ -72,3 +72,14 @@
 	padding:40px;
 	background:url( $imgPath + 'lastiscss3.gif') 50% 50% no-repeat;
 }
+
+
+.inner-sample {
+	.inner {
+		background:Background(-50);
+		border:3px solid Border(-25);
+	}
+}
+
+
+

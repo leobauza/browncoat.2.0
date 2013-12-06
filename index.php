@@ -37,6 +37,9 @@ $app -> get('/layouts/:id(/)', function($id) {
 
 
 
+$app -> get('/test(/)', function() {
+	include './views/etc/_layoutTest.php';
+});
 
 
 

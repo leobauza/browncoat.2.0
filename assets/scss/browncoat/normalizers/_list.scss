@@ -6,11 +6,13 @@ ol ol,
 ol ul {
 	margin-bottom:0;
 }
-
+ul, ol {
+	margin:0 0 20px; //under consideration
+	color:Greyscale();
+}
 ul {
 	font-size: $listsFontSize;
 	padding:0 0 0 20px;
-	margin:0;
 	list-style:disc;
 	li {
 		line-height: $listsLineHeight;
@@ -48,7 +50,6 @@ ul {
 ol {
 	font-size: $listsFontSize;
 	padding:0 0 0 20px;
-	margin:0;
 	list-style:decimal;
 	li {
 		line-height: $listsLineHeight;

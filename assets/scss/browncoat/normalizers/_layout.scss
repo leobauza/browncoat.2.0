@@ -1,7 +1,8 @@
 /* browncoat/normalizers/layout */
 
 .container {
-	padding:0px $columnGutter;
+	//padding:0px $columnGutter;
+	padding:0px 20px;
 }
 
 /*
@@ -29,6 +30,7 @@
 }
 .row-fluid .span1 {
 	width: $columnWidth + $columnGutter/11;
+	/*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/
 }
 .row-fluid .span2 {
 	width: $columnWidth * 2 + $columnGutter + $columnGutter/6;
