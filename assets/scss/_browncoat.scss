@@ -1,8 +1,11 @@
 //base libraries
-@import 'browncoat/base/colours';
-@import 'browncoat/base/text';
-@import 'browncoat/base/helpers';
+@import 'browncoat/bases/colour';
+@import 'browncoat/bases/text';
+@import 'browncoat/bases/helper';
+@import 'browncoat/bases/structure';
 
 //partials libraries
 @import 'browncoat/partials/reset';
-@import 'browncoat/partials/structure';
+@import 'browncoat/partials/layout';
+@import 'browncoat/partials/list';
+@import 'browncoat/partials/form';

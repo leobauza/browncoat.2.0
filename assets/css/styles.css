@@ -1,9 +1,12 @@
-/* browncoat/base/_colours.scss (does not output css)*/
+/* browncoat/base/colour (does not output css) */
 /* end */
-/* browncoat/base/_text.scss (does not output css)*/
-/* browncoat/base/_helpers.scss (does not output css)*/
+/* browncoat/base/text (does not output css) */
 /* end */
-/* browncoat/partials/_reset.scss */
+/* browncoat/base/helper (does not output css) */
+/* end */
+/* browncoat/base/structure (does not output css) */
+/* end */
+/* browncoat/partials/reset */
 article,
 aside,
 details,
@@ -55,6 +58,7 @@ a:hover, a:active {
 }
 
 body {
+  background: white;
   font-size: 63.7%;
   margin: 0px;
   padding: 0px;
@@ -64,6 +68,8 @@ body {
 
 hr {
   height: 1px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
   border: 0;
   border-bottom: 1px solid white;
   border-top: 1px solid #bfbfbf;
@@ -149,7 +155,34 @@ pre {
   color: white;
 }
 
-/* browncoat/partials/_structure.scss */
-/* app/globals/_header.scss */
-/* app/globals/_footer.scss */
-/* app/globals/_navs.scss */
+/* browncoat/partials/layout */
+/* browncoat/partials/list */
+/* browncoat/partials/form */
+/* app/base/nav */
+/* app/base/btn */
+/* app/base/modal */
+/* app/base/callout */
+/* app/libs/header */
+/* app/libs/footer */
+/* app/libs/etc (disposable testing area) */
+.box {
+  padding: 20px;
+  margin: 20px;
+  background: #265dd0;
+  border: 5px solid #1e4aa5;
+}
+.box p {
+  color: white;
+  margin: 0;
+}
+
+.box2 {
+  padding: 20px;
+  margin: 20px;
+  background: #769ae6;
+  border: 5px solid #4b7bde;
+}
+.box2 p {
+  color: white;
+  margin: 0;
+}

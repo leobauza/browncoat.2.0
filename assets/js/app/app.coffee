@@ -1,17 +1,21 @@
 define (require) ->
 	$ = require('jquery')
 	migrate = require('jqueryM')
-	helpers = require('cs!app/helpers')
 	markers = require('cs!app/markers')
-	appui = require('cs!app/ui')
+	helpers = require('cs!app/helpers')
+	ui = require('cs!app/ui')
+	plugins = require('cs!app/plugins')
 	
 	helpers.init()
-	appui.init()
+	ui.init()
+	
+	#log
 	console.log "markers: ", markers
 	console.log "helpers: ", helpers
-	console.log "ui: ", appui
+	console.log "ui: ", ui
+	console.log "plugins: ", plugins
 	
 	$(window).resize ->
 		markers.win = $(window).width()
-		appui.resize()
+		ui.resize()
 		

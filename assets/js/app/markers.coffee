@@ -1,5 +1,4 @@
 define (require) ->
-	$ = require('jquery')
 	helpers = require('cs!app/helpers')
 	
 	markers =

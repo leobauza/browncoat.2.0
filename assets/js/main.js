@@ -1,13 +1,18 @@
 require.config({
 	paths: {
 		'jquery': './libs/jquery/jquery',
-		'jqueryM': './libs/jquery/jquery-migrate'
+		'jqueryM': './libs/jquery/jquery-migrate',
+		'jForm' : './vendor/jform'
 	},
 	//Shim for non amd ready stuff and for jquery dependencies
 	shim: {
 		'jqueryM': {
 			deps: ['jquery'],
 			exports: 'migrate'
+		},
+		'jForm': {
+			deps: ['jquery'],
+			exports: 'jform'
 		}
 	}
 });

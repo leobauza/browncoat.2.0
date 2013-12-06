@@ -1,0 +1,21 @@
+/* app/libs/etc (disposable testing area) */
+.box {
+	padding: 20px;
+	margin: 20px;
+	background: Background();
+	border: 5px solid Border();
+	p {
+		color: Text();
+		margin:0;
+	}
+}
+.box2 {
+	padding: 20px;
+	margin: 20px;
+	background: Background(-20);
+	border: 5px solid Border(-20);
+	p {
+		color: Text();
+		margin:0;
+	}
+}

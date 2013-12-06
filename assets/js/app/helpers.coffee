@@ -7,7 +7,7 @@ define (require) ->
 	
 		fixConsole: ->
 			that = window
-			if console is "undefined" then that.console = log: ->
+			if typeof console is "undefined" then that.console = log: ->
 	
 		getIeVer: ->
 			rv = -1;

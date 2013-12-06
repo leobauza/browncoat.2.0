@@ -1,5 +1,4 @@
 define (require) ->
-	$ = require('jquery')
 	markers = require('cs!app/markers')
 	
 	ui = 
@@ -17,8 +16,6 @@ define (require) ->
 				$that.closest('.btn-dropdown').find('ul').toggle()
 	
 		navigation: ->
-			console.log "nav code!"
-			console.log "markers win: ", markers.win
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
 			if not $('.site-nav .btn-dropdown').length
 				$('.site-nav .menu > li.dropdown > a').after '<i class="btn-dropdown">v</i>'

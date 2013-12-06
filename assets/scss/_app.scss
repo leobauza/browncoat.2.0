@@ -1,4 +1,10 @@
-//globals
-@import 'app/globals/header';
-@import 'app/globals/footer';
-@import 'app/globals/navs';
+//libs
+@import 'app/libs/nav';
+@import 'app/libs/btn';
+@import 'app/libs/modal';
+@import 'app/libs/callout';
+
+//dev
+@import 'app/dev/header';
+@import 'app/dev/footer';
+@import 'app/dev/etc';

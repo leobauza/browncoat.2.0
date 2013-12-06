@@ -1,0 +1,45 @@
+/* browncoat/base/colour (does not output css) */
+//greyscale
+$white: #fff;
+$black: #000;
+
+//gen
+$brand: #265dd0;
+$brandAlt: darken($brand, 10%);
+$bodyBg: $white;
+
+//links
+$linkColour: #bfbfbf;
+$linkHoverColour: darken($linkColour, 50%);
+
+
+//factory
+@function ColourConstructor ($perc, $colour) {
+	@if $perc > 0 {
+		@return darken($colour, $perc * 1%)
+	}
+	@if $perc < 0 {
+		@return lighten($colour, $perc * -1%)
+	}
+	@if $perc == 0 {
+		@return $colour
+	}	
+}
+
+
+//functions
+@function Greyscale ($perc: 50%) {
+	@return darken(#fff, $perc)
+}
+
+@function Background ($perc: 0, $colour: $brand) {
+	@return ColourConstructor($perc, $colour)
+}
+@function Border ($perc: 0, $colour: $brandAlt) {
+	@return ColourConstructor($perc, $colour)
+}
+@function Text ($perc: 0, $colour: $white) {
+	@return ColourConstructor($perc, $colour)
+}
+
+/* end */
