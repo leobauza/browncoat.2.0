@@ -29,7 +29,7 @@
 		<input type="checkbox" value="">
 		checkbox
 	</label>
-	
+
 	<label>
 		<input type="radio" name="a" value="1" checked>
 		radio
