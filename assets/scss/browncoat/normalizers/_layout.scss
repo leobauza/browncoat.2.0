@@ -1,7 +1,7 @@
 /* browncoat/normalizers/layout */
 
 .container {
-	padding:20px $columnGutter;
+	padding:0px $columnGutter;
 }
 
 /*
@@ -121,6 +121,16 @@
 }
 
 /*
+ * both row fluid styles
+ */
+
+[class*="row-fluid"] > [class*="span"] {
+	.inner {
+		padding:20px;
+	}
+}
+
+/*
  * static sidebar
  */
 
@@ -128,8 +138,17 @@
 	.sidebar {
 		width:360px;
 		float:left;
+		.inner {
+			padding:20px;
+		}
 	}
 	.main {
 		@include overflower;
+		.inner {
+			padding:20px;
+		}
 	}
 }
+
+
+

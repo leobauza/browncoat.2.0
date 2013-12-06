@@ -12,6 +12,8 @@ $bodyBg: $white;
 $linkColour: #bfbfbf;
 $linkHoverColour: darken($linkColour, 50);
 
+//focus
+$focusBorder: rgba(82, 168, 236, 0.8);
 
 //factory
 @function ColourConstructor ($perc, $colour) {

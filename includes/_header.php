@@ -22,10 +22,13 @@
 <body>
 	<header class="site-header container">
 		<h1><a href="/">Browncoat 2.0</a></h1>
+		<nav class="site-nav">
+			<!-- <li><a href="/css/forms">forms</a></li>
+			<li><a href="/css/lists">lists</a></li> -->
+			<li><a href="/css">css</a></li>
+			<li><a href="/libraries">libraries</a></li>
+			<li><a href="/layouts">layouts</a></li>
+		</nav>
 	</header>
-	<nav class="site-nav">
-		<!-- <li><a href="/css/forms">forms</a></li>
-		<li><a href="/css/lists">lists</a></li> -->
-		<li><a href="/css">css</a></li>
-		<li><a href="/libraries">libraries</a></li>
-	</nav>
+	
+	<hr>
