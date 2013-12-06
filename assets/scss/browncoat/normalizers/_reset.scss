@@ -67,8 +67,8 @@ a:hover {
 	text-decoration: underline;
 }
 p {
-	font-size: 1.4em;
-	line-height: 1.6em;
+	font-size: $textSize;
+	line-height: $textLineHeight;
 	color: Greyscale(50%);
 	margin: 0 0 20px;
 	padding: 0;

@@ -37,8 +37,8 @@
 	@include marpad(20px, 20px);
 	@include boxShadow($insetShadow);
 	@include transition(opacity 2s, padding 1s);
-	background: $white;
-	border: 1px solid Greyscale(50%);
+	background: Background(-50);
+	border: 1px solid Greyscale(50);
 	p {
 		color: $black;
 	}

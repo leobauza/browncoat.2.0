@@ -88,7 +88,7 @@ a:hover {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.6em;
   line-height: 1.6em;
   color: gray;
   margin: 0 0 20px;
@@ -340,13 +340,93 @@ footer:after,
   float: left;
 }
 .static-sidebar .main {
-  padding: 20px;
   width: auto;
   float: none;
   overflow: hidden;
 }
 
 /* browncoat/normalizers/list */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+ul {
+  font-size: 1.6em;
+  padding: 0 0 0 20px;
+  margin: 0;
+  list-style: disc;
+}
+ul li {
+  line-height: 1.6em;
+  margin: 0 0 10px;
+  /*all nested*/
+  /*expert*/
+}
+ul li ul {
+  padding-top: 10px;
+  font-size: 100%;
+}
+ul li > ul > li {
+  /*madness*/
+}
+ul li > ul > li > ul > li {
+  /*inception*/
+}
+ul li > ul > li > ul > li > ul {
+  background: #e8e8e8;
+  padding: 20px 50px 10px;
+  margin-top: 10px;
+}
+
+ol {
+  font-size: 1.6em;
+  padding: 0 0 0 20px;
+  margin: 0;
+  list-style: decimal;
+}
+ol li {
+  line-height: 1.6em;
+  margin: 0 0 10px;
+  /*all nested*/
+  /*expert*/
+}
+ol li ol {
+  padding-top: 10px;
+  font-size: 100%;
+}
+ol li > ol {
+  list-style: lower-latin;
+}
+ol li > ol > li {
+  /*madness*/
+}
+ol li > ol > li > ol {
+  list-style: lower-alpha;
+}
+ol li > ol > li > ol > li {
+  /*inception*/
+}
+ol li > ol > li > ol > li > ol {
+  list-style: katakana;
+  background: #e8e8e8;
+  padding: 20px 50px 10px;
+  margin-top: 10px;
+}
+
+/*mixed*/
+ul ol {
+  padding-top: 10px;
+  font-size: 100%;
+}
+
+ol ul {
+  padding-top: 10px;
+  font-size: 100%;
+}
+
 /* browncoat/normalizers/form */
 /* app/base/nav */
 /* app/base/btn */
@@ -409,7 +489,7 @@ footer:after,
   -moz-transition: opacity 2s, padding 1s;
   -webkit-transition: opacity 2s, padding 1s;
   -o-transition: opacity 2s, padding 1s;
-  background: white;
+  background: #f7f9fe;
   border: 1px solid gray;
 }
 .box4 p {
