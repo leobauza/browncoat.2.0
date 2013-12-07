@@ -9,8 +9,8 @@ $brandAlt: darken($brand, 10);
 $bodyBg: $white;
 
 //links
-$linkColour: #bfbfbf;
-$linkHoverColour: darken($linkColour, 50);
+$linkColour: #428bca;
+$linkHoverColour: lighten($linkColour, 20);
 
 //focus
 $focusBorder: rgba(82, 168, 236, 0.8);

@@ -138,7 +138,7 @@
 
 .static-sidebar {
 	.sidebar {
-		width:360px;
+		width:250px;
 		float:left;
 		.inner {
 			padding:20px;
@@ -151,6 +151,21 @@
 		}
 	}
 }
+
+/*
+ * Alignment
+ */
+
+.al-c {
+	text-align:center;
+}
+.al-r {
+	text-align:center;
+}
+.al-l {
+	text-align:center;
+}
+
 
 
 

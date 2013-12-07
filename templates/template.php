@@ -41,7 +41,7 @@
 	
 	
 	<footer class="site-footer container">
-		<p>footer <a href="#">Link</a></p>
+		<p>created by <a href="http://www.leobauza.com" target="_blank">The Fine People of Fairfax</a></p>
 	</footer>
 	<script src="/assets/js/require/require.js" data-main="/assets/js/main"></script>
 	<!-- <script src="../assets/js/require/require.js" data-main="/assets/js/conc-modules"></script> -->

@@ -39,6 +39,12 @@ $app -> get('/layouts(/)', function() {
 		'title' => 'layouts'
 	));
 });
+$app -> get('/removingthings(/)', function() {
+	echo render_template("template", array(
+		'body' => './views/_removingthings.php',
+		'title' => 'Removing Things'
+	));
+});
 
 
 //Layout subpages
