@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Site Name</title>
+	<title><?php if(isset($title)) echo $title; else echo "title"; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="a website description">
 	<meta name="author" content="the author">
@@ -23,12 +23,28 @@
 	<header class="site-header container">
 		<h1><a href="/">Browncoat 2.0</a></h1>
 		<nav class="site-nav">
-			<!-- <li><a href="/css/forms">forms</a></li>
-			<li><a href="/css/lists">lists</a></li> -->
-			<li><a href="/css">css</a></li>
-			<li><a href="/libraries">libraries</a></li>
-			<li><a href="/layouts">layouts</a></li>
+			<ul>
+				<li><a href="/css">css</a></li>
+				<li><a href="/libraries">libraries</a></li>
+				<li><a href="/layouts">layouts</a></li>
+			</ul>
 		</nav>
 	</header>
 	
 	<hr>
+	
+	<?php
+		//print_r($variables);
+		include $body;
+		if(isset($link)) echo $link;
+	?>
+	
+	
+	<footer class="site-footer container">
+		<p>footer <a href="#">Link</a></p>
+	</footer>
+	<script src="/assets/js/require/require.js" data-main="/assets/js/main"></script>
+	<!-- <script src="../assets/js/require/require.js" data-main="/assets/js/conc-modules"></script> -->
+	<!-- <script src="../assets/js/min/scripts.min.js"></script> -->
+</body>
+</html>
