@@ -1,9 +1,10 @@
 <?php
+
 function ih() {
 	include './includes/_header.php';
 }
 
-require 'Slim/Slim.php';
+require_once 'Slim/Slim.php';
 
 $app = new Slim();
 
