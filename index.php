@@ -1,28 +1,30 @@
-<?php include('./includes/_header.php'); ?>
-
 <?php
+function ih() {
+	include './includes/_header.php';
+}
 
 require 'Slim/Slim.php';
 
 $app = new Slim();
 
+
 //Landing pages
-$app -> get('/', function() {
+$app -> get('/', 'ih', function() {
 	include './views/_home.php' ;
 });
-$app -> get('/libraries(/)', function() {
+$app -> get('/libraries(/)', 'ih', function() {
 	include './views/_libraries.php' ;
 });
-$app -> get('/css(/)', function() {
+$app -> get('/css(/)', 'ih', function() {
 	include './views/_css.php';
 });
-$app -> get('/layouts(/)', function() {
+$app -> get('/layouts(/)', 'ih', function() {
 	include './views/_layouts.php';
 });
 
 
 //Layout subpages
-$app -> get('/layouts/:id(/)', function($id) {
+$app -> get('/layouts/:id(/)', 'ih', function($id) {
 
 	if($id == 'fluidrows') {
 		include './views/layouts/_fluidRows.php';
@@ -37,14 +39,13 @@ $app -> get('/layouts/:id(/)', function($id) {
 
 
 
-$app -> get('/test(/)', function() {
+$app -> get('/test(/)', 'ih', function() {
 	include './views/etc/_layoutTest.php';
 });
 
 
 
-$app -> get('/css/:id(/)', function($id) {
-
+$app -> get('/css/:id(/)', 'ih', function($id) {
 
 	if($id == 'lists') {
 		include './views/_lists.php';
@@ -59,6 +60,8 @@ $app -> get('/css/:id(/)', function($id) {
 
 $app->run();
 
+include './includes/_footer.php';
+
 ?>
 
-<?php include('./includes/_footer.php'); ?>
+
