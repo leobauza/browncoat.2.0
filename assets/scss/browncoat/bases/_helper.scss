@@ -29,7 +29,7 @@ $insetShadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 
 
 //gradients
-@mixin gradient($top, $bottom){
+@mixin gradient ($top, $bottom){
 	background: $bottom;
 	background:-moz-linear-gradient(top,  $top 0%, $bottom 100%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom));
@@ -39,6 +39,15 @@ $insetShadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 	background:linear-gradient(to bottom,  $top 0%,$bottom 100%);
   *filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$top}, endColorstr=#{$bottom});
 }
+
+//resets
+@mixin resetList ($margin: 0 0 20px, $padding: 0) {
+	margin: $margin;
+	padding: $padding;
+	list-style:none;
+	font-size:100%;
+}
+
 
 
 /* end */

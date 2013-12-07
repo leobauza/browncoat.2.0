@@ -415,6 +415,35 @@ form button:focus, form input[type="submit"]:focus {
 /* app/base/modal */
 /* app/base/callout */
 /* app/base/listgroup */
+ul.list-group {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 100%; }
+
+.list-group {
+  margin: 0 0 20px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none; }
+.list-group li {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 10px; }
+.list-group a {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 10px;
+  display: block; }
+.list-group a:hover, .list-group a.active {
+  background: #428bca;
+  border-bottom: 1px solid #6aa3d5;
+  color: white;
+  text-decoration: none; }
+
 /* app/devs/header */
 /* app/devs/footer */
 /* app/devs/etc (disposable testing area) */

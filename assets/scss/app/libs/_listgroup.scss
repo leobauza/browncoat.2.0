@@ -1,1 +1,32 @@
 /* app/base/listgroup */
+$listGroupBorder: Greyscale(10);
+@mixin listGroupItem () {
+	font-size: $textSize;
+	line-height:$textLineHeight;
+	border-bottom: 1px solid $listGroupBorder;	
+	margin:0;
+	padding:10px;
+}
+
+ul.list-group {
+	@include resetList();
+}
+.list-group {
+	margin: 0 0 20px;
+	border: 1px solid $listGroupBorder;
+	border-bottom: none;
+	li {
+		@include listGroupItem();
+	}
+	a {
+		@include listGroupItem();
+		display: block;
+		
+		&:hover, &.active {
+			background: $linkColour;
+			border-bottom: 1px solid lighten($linkColour, 10);
+			color: $white;
+			text-decoration:none;
+		}
+	}
+}

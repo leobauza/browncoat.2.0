@@ -1,11 +1,19 @@
 <section class="static-sidebar">
 	<aside class="sidebar">
 		<nav class="inner">
+			<h4>See More:</h4>
+			<div class="list-group">
+				<a href="/" class="active">Here</a>
+				<a href="/css">CSS</a>
+				<a href="/libraries">Libraries</a>
+				<a href="/layouts">Layouts</a>
+			</div>
 			<ul class="list-group">
-				<li><a href="#">Menu Item One</a></li>
-				<li><a href="#">Menu Item Two</a></li>
-				<li><a href="#">Menu Item Three</a></li>
+				<li>No link list group item</li>
+				<li>Second Item</li>
+				<li>Third Item</li>
 			</ul>
+			<p><em>note:</em> sample list-group library items above</p>
 		</nav>
 	</aside>
 	<section class="main">
