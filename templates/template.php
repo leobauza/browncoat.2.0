@@ -28,7 +28,7 @@
 
 <?php if(!isset($page)) :?>
 <body>
-	<!-- <header class="site-header">
+	<header class="site-header">
 		<nav class="nav-bar">
 			<ul>
 				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
@@ -37,7 +37,7 @@
 				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
 			</ul>
 		</nav>
-	</header> -->
+	</header>
 
 	<section class="container">	
 		<nav class="nav-btns">

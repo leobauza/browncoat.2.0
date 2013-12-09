@@ -14,21 +14,12 @@ require_once 'Slim/Slim.php';
 
 $app = new Slim();
 
-
 //Landing pages
 $app -> get('/', 'homepage');
-
-
 $app -> get('/libraries(/)', 'libraries');
-
 $app -> get('/css(/)', 'css');
-
-
 $app -> get('/layouts(/)', 'layouts');
-
-
 $app -> get('/removingthings(/)', 'removingthings');
-
 
 //Layout subpages
 $app -> get('/layouts/:id(/)', 'layout');
@@ -38,7 +29,6 @@ $app -> get('/test(/)', 'test');
 
 //Pages
 $app -> get('/pages/:id(/)', 'page');
-
 
 //functions
 function homepage() {

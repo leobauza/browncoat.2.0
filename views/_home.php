@@ -24,7 +24,7 @@
 			<div class="row-fluid">
 				<div class="span4">
 					<h4>Starting Point</h4>
-					<p><strong>browncoat</strong> is a small front end framework designed to give you a good <strong>starting point.</strong> It comes packaged in a way that allows you to start writing you webpage or app immediately.</p>
+					<p><strong>browncoat</strong> is a small front end framework designed to give you a good <strong>starting point.</strong> It comes packaged in a way that allows you to start writing your webpage or app immediately.</p>
 				</div>
 				<div class="span4">
 					<h4>Customizable</h4>
