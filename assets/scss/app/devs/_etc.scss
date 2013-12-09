@@ -1,85 +1,44 @@
 /* app/devs/etc (disposable testing area) */
-.box {
-	padding: 20px;
-	margin: 20px;
-	background: Background();
-	border: 5px solid Border();
-	p {
-		color: Text();
-		margin:0;
-	}
-}
-.box2 {
-	@include borderRadius(20px);
-	@include boxShadow($singleShadow);
-	padding: 20px;
-	margin: 20px;
-	background: Background(-20);
-	border: 5px solid Border(-20);
-	p {
-		color: Text();
-		margin:0;
-	}
-}
 
-.box3 {
-	@include marpad(20px, 20px);
-	@include borderRadius();
-	@include boxShadow($doubleShadow);
-	background: $white;
-	border: 1px solid Greyscale(50%);
-	p {
-		color: $black;
-	}
-}
-
-.box4 {
-	@include marpad(20px, 20px);
-	@include boxShadow($insetShadow);
-	@include transition(opacity 2s, padding 1s);
-	background: Background(-50);
-	border: 1px solid Greyscale(50);
-	p {
-		color: $black;
-	}
-	&:hover {
-		opacity:0;
-		padding:10px;
-	}
-}
-
-.box5 {
-	@include marpad(20px, 20px);
-	@include gradient($brand, lighten($brand, 20%));
-	border: 1px solid $brand;
-	p {
-		color: $white;
-	}
-}
-
-.group-test {
-	background:Background();
-	padding:20px;
-	div {
-		background:Background(-20);
+.hero {
+	margin-bottom: 40px;
+	@include magicBox();
+	background: Greyscale(5);
+	.hero-text {
+		position: absolute;
+		width: 90%;
+		left: 0;
+		bottom: 10%;
+		padding: 0 5%;
+		h1 {
+			margin: 0 0 10px;
+		}
 		p {
-			float:left;
-			width:49%;
+			font-size: 2.5em;
+			&.brief {
+				width: 50%;
+				margin:0 auto 20px;
+			}
 		}
 	}
 }
-.background-image {
-	padding:40px;
-	background:url( $imgPath + 'lastiscss3.gif') 50% 50% no-repeat;
+
+.narrow-box {
+	width:500px;
+	margin:0 auto 40px;
 }
 
-
-.inner-sample {
-	.inner {
-		background:Background(-50);
-		border:3px solid Border(-25);
+.basic-hero-text {
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom: 10%;
+	h1 {
+		margin: 0 0 10px;
+	}
+	p {
+		font-size: 2.5em;
+		width:90%;
+		margin:0 auto 20px;
 	}
 }
-
-
-

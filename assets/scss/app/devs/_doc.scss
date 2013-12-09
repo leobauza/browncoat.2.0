@@ -1,6 +1,14 @@
 /* app/devs/doc (documentation css) */
 p, li {
 	em {
-		color:Greyscale(90);
+		color:Greyscale(50);
 	}
+}
+.short {
+	width:35%;
+}
+.boxy {
+	border:1px solid Border();
+	background: Background(-100);
+	color: Text();
 }

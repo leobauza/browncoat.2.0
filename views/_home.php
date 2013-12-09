@@ -3,7 +3,7 @@
 		<nav class="inner">
 			<h4>See More:</h4>
 			<div class="list-group">
-				<a href="/" class="active">Here</a>
+				<a href="/" class="active">browncoat 2.0</a>
 				<a href="/css">CSS</a>
 				<a href="/libraries">Libraries</a>
 				<a href="/layouts">Layouts</a>

@@ -1,1 +1,69 @@
-/* app/base/nav */
+/* app/libs/nav */
+.nav-btns {
+	padding:20px 0 0 0;
+	ul {
+		@include group();
+		@include resetList();
+		li {
+			float: left;
+			margin: 0 5px 0 0;
+			a {
+				@include borderRadius(5px);
+				display: block;
+				padding: 10px 15px;
+				background: $linkColour;
+				color: $white;
+				font-size: $textSize;
+				&:hover, &.active {
+					background: $linkHoverColour;
+					text-decoration: none;
+				}
+			}
+		}
+		.brand {
+			a {
+				background: $brand;
+				&:hover, &.active {
+					background: darken($brand, 20);
+				}
+			}
+		}
+	}
+}
+
+//hero nav
+.hero-nav-center {
+	ul {
+		@include resetList();
+		width:100%;
+		//height:20px;
+		text-align:center;
+	}
+	li {
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		margin-right:10px;
+		a {
+			@include borderRadius(5px);
+			display: block;
+			padding: 10px 20px;
+			background: $linkColour;
+			color: $white;
+			font-size: $textSize;
+			line-height: $textLineHeight;
+			&:hover, &.active {
+				background: $linkHoverColour;
+				text-decoration: none;
+			}
+		}
+	}
+	.brand {
+		a {
+			background: $brand;
+			&:hover, &.active {
+				background: darken($brand, 20);
+			}
+		}
+	}
+}

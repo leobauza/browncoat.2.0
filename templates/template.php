@@ -18,31 +18,54 @@
 	<!-- fav and touch icons -->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+<?php
+	if (isset($activeNav)):
+		$nav = $activeNav;
+	else:
+		$nav = '';
+	endif;
+?>
 
+<?php if(!isset($page)) :?>
 <body>
-	<header class="site-header container">
-		<h1><a href="/">Browncoat 2.0</a></h1>
-		<nav class="site-nav">
+	<header class="site-header">
+		<nav class="nav-bar">
 			<ul>
-				<li><a href="/css">css</a></li>
-				<li><a href="/libraries">libraries</a></li>
-				<li><a href="/layouts">layouts</a></li>
+				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
+				<li><a <?php if ($nav == "css") echo "class='active'"; ?> href="/css">css</a></li>
+				<li><a <?php if ($nav == "libraries") echo "class='active'"; ?> href="/libraries">libraries</a></li>
+				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
 			</ul>
 		</nav>
 	</header>
-	
-	<hr>
-	
+
+	<section class="container">	
+		<nav class="nav-btns">
+			<ul>
+				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
+				<li><a <?php if ($nav == "css") echo "class='active'"; ?> href="/css">css</a></li>
+				<li><a <?php if ($nav == "libraries") echo "class='active'"; ?> href="/libraries">libraries</a></li>
+				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
+			</ul>
+		</nav>
+	</section>	
+<?php endif; ?>
+
 	<?php
 		//print_r($variables);
 		include $body;
-		if(isset($link)) echo $link;
 	?>
+	<section class="container">
+		<?php if(isset($link)) echo $link; ?>
+	</section>
+
+
 	
-	
+<?php if(!isset($page)) :?>	
 	<footer class="site-footer container">
 		<p>created by <a href="http://www.leobauza.com" target="_blank">The Fine People of Fairfax</a></p>
 	</footer>
+<?php endif; ?>
 	<script src="/assets/js/require/require.js" data-main="/assets/js/main"></script>
 	<!-- <script src="../assets/js/require/require.js" data-main="/assets/js/conc-modules"></script> -->
 	<!-- <script src="../assets/js/min/scripts.min.js"></script> -->

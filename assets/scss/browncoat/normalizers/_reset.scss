@@ -47,6 +47,7 @@ body {
 	font-size: $baseSize;
 	@include marpad(0px, 0px);
 	font-family: $serif;
+	//font-family: $sansSerif;
 	word-wrap: break-word;
 }
 hr {
@@ -69,9 +70,22 @@ a:hover {
 p {
 	font-size: $textSize;
 	line-height: $textLineHeight;
-	color: Greyscale(55);
+	color: Text();
 	margin: 0 0 20px;
 	padding: 0;
+	&.intro {
+		font-size: 2em;
+		margin: 0 0 40px;
+	}
+	&.soft-intro {
+		font-size: 2em;
+	}
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
 }
 h1,
 h2,
@@ -80,13 +94,15 @@ h4,
 h5,
 h6 {
 	margin: 0 0 .45em;
-	font-weight: 700;
+	font-weight: 500;
 	text-rendering: optimizelegibility;
 	line-height: 1.2em;
+	color: Text();
 	a {
+		color: Text();
 		font-weight: normal;
 		&:hover {
-			
+			text-decoration:none;
 		}
 	}
 }
@@ -113,6 +129,7 @@ pre {
 }
 
 .reverse {
+	background: Greyscale(85);
 	h1,
 	h2,
 	h3,
@@ -120,9 +137,14 @@ pre {
 	h5,
 	h6,
 	p,
-	li,
-	a {
+	li {
 		color: $white;
+	}
+	a {
+		color: lighten($linkColour, 10);
+		&:hover {
+			color: lighten($linkColour, 20);
+		}
 	}
 }
 

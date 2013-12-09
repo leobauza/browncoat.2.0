@@ -15,8 +15,14 @@ $columnGutter: $cgutter * 1%;
 	height: $h;
 }
 @mixin marpad($m:0px,$p:0px) {
-	margin:$m;
-	padding:$p;
+	margin: $m;
+	padding: $p;
+}
+@mixin inlineBlock($h) {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	_height: $h;
 }
 
 
@@ -26,6 +32,13 @@ $columnGutter: $cgutter * 1%;
 	float: none;
 	overflow: hidden;
 }
+
+@mixin magicBox($perc:35) {
+	position: relative;
+	padding-bottom: $perc * 1%;
+	height: 0;
+}
+
 
 
 //clearfix

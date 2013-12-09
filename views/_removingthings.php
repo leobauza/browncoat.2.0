@@ -7,8 +7,8 @@
 		</article>
 		<article class="span4">
 			<h4>I only want to keep some of this css</h4>
-			<p>Sweet, the core of <em>browncoat</em> is just the <em>scss/app/browncoat/</em> directory. That gives you the most plain usable version of <em>browncoat's</em> scss.</p>
-			<p>In the <em>scss/app/app/</em> directory <em>devs/</em>, <em>clients/</em>, <em>vendors/</em> are totally optional and you could delete them. The libs are also optional but there's some good stuff in there. <a href="#css">more</a></p>
+			<p>Sweet, the core of <em>browncoat</em> is just the <em>scss/browncoat/</em> directory. That gives you the most plain usable version of <em>browncoat's</em> scss.</p>
+			<p>In the <em>scss/app/</em> directory <em>devs/</em>, <em>clients/</em>, and <em>vendors/</em> are totally optional and you could delete them. The libs are also optional but there's some good stuff in there. <a href="#css">more</a></p>
 			<p></p>
 		</article>
 		<article class="span4">

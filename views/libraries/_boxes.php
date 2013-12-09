@@ -1,19 +1,72 @@
-<section class="container">
-	<h5>Here are a bunch of random tests: (from assets/app/devs/_etc.scss)</h5>
-	<div class="box">
-		<p>MY BOX! <strong>[Background(), Border(), Text()]</strong></p>
-	</div>
-	<div class="box2">
-		<p>MY BOX2! <strong>[Background(-20), Border(-20), Text()], borderRadius(20px), boxShadow($singleShadow)</strong></p>
-	</div>
-	<div class="box3">
-		<p>MY BOX3! <strong>borderRadius(), boxShadow($doubleShadow)</strong></p>
-	</div>
-	<div class="box4">
-		<p>MY BOX4! <strong>boxShadow($insetShadow), transition(opacity 2s, padding 1s)</strong></p>
-	</div>
-	<div class="box5">
-		<p>MY BOX5! <strong>gradient($brand, lighten($brand, 20%))</strong></p>
-	</div>
+<section class="container spacer">
+	<h2>Boxes</h2>
+	<article class="box">
+		<div class="box-body">
+			Standard box. Box body.
+		</div>
+	</article>
 
+	<div class="row-fluid">
+		<div class="span6">
+
+			<article class="box">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+			<article class="box-main">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+			<article class="box-info">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+		</div>
+		<div class="span6">
+
+			<article class="box-success">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+			<article class="box-warning">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+			<article class="box-error">
+				<header class="box-header">
+					<h5>Box Header</h5>
+				</header>
+				<div class="box-body">
+					Standard box. Box body.
+				</div>
+			</article>
+
+		</div>
+	</div>
 </section>
+

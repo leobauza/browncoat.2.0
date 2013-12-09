@@ -4,16 +4,19 @@ $white: #fff;
 $black: #000;
 
 //gen
-$brand: #265dd0;
+$brand: #8790A5;
 $brandAlt: darken($brand, 10);
 $bodyBg: $white;
 
+
 //links
 $linkColour: #428bca;
-$linkHoverColour: lighten($linkColour, 20);
+$linkHoverColour: darken($linkColour, 20);
+
 
 //focus
 $focusBorder: rgba(82, 168, 236, 0.8);
+
 
 //factory
 @function ColourConstructor ($perc, $colour) {
@@ -33,6 +36,10 @@ $focusBorder: rgba(82, 168, 236, 0.8);
 @function Greyscale ($perc: 50) {
 	@return darken(#fff, $perc)
 }
+@function Text ($perc: 80, $colour: $white) {
+	@return ColourConstructor($perc, $colour)
+}
+
 
 //box parts
 @function Background ($perc: 0, $colour: $brand) {
@@ -41,8 +48,13 @@ $focusBorder: rgba(82, 168, 236, 0.8);
 @function Border ($perc: 0, $colour: $brandAlt) {
 	@return ColourConstructor($perc, $colour)
 }
-@function Text ($perc: 0, $colour: $white) {
-	@return ColourConstructor($perc, $colour)
-}
+
+
+//alets
+$default: Greyscale(25);
+$info: $linkColour;
+$success: #5cb85c;
+$warning: #f0ad4e;
+$error: #d9534f;
 
 /* end */

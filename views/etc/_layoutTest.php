@@ -1,3 +1,4 @@
+<!-- tryptich -->
 <section class="container">
 	<h2>Triptych</h2>
 	<section class="row-fluid">
@@ -59,6 +60,7 @@
 
 </section>
 
+<!-- article and sidebar -->
 <section class="container">
 	<h2>Article and Sidebar</h2>
 	<div class="row-fluid">
@@ -74,10 +76,11 @@
 	</div>
 </section>
 
+<!-- using inners -->
 <div class="container">
 	<h2>Using Inners with row-fluid (alt or regular have same effect)</h2>
 </div>
-<section class="row-fluid inner-sample">
+<section class="row-fluid spacer">
 	<aside class="span3">
 		<div class="inner">
 			<h5>Heading 5</h5>
@@ -95,4 +98,28 @@
 			</ol>
 		</div>
 	</article>
+</section>
+
+<!-- boxy...to become panels -->
+<section class="container spacer">
+	<div class="row-fluid">
+		<article class="span4">
+			<div class="inner boxy">
+				<h5>Box</h5>
+				<p>This is a box!</p>
+			</div>
+		</article>
+		<article class="span4">
+			<div class="inner boxy">
+				<h5>Box</h5>
+				<p>This is a box!</p>
+			</div>
+		</article>
+		<article class="span4">
+			<div class="inner boxy">
+				<h5>Box</h5>
+				<p>This is a box!</p>
+			</div>
+		</article>
+	</div>
 </section>
