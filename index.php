@@ -96,7 +96,7 @@ function test() {
 function page($id) {
 	echo render_template("template", array(
 		'body' => './views/pages/_' . $id . '.php'
-		,'link' => '<p><a href="/layouts">Back to layouts</a></p>'
+		//,'link' => '<p><a href="/layouts">Back to layouts</a></p>'
 		,'title' => $id
 		,'page' => true
 	));
