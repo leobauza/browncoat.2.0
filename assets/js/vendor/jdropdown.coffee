@@ -18,7 +18,11 @@ define (require) ->
 				$parent.toggleClass('open')
 			else
 				closeDropdowns()
-	
+		
+		useOutside: (word) ->
+			console.log word
+		
+
 	closeDropdowns = (e ,that) ->
 		$(toggle).each (e) ->
 			$parent = $(@).closest('[data-plugin=dropdown]')
@@ -28,8 +32,8 @@ define (require) ->
 			$(@).trigger 'close.bc.dropdown'
 	
 		
-	$(document).on('click.bc.dropdown', closeDropdowns)
-	dropdown = new Dropdown(toggle)
-	
+	$(document).on('click.bc.dropdown', closeDropdowns)	
 	$(toggle).on('open.bc.dropdown', -> console.log "dropdown open")
 	$(toggle).on('close.bc.dropdown', -> console.log "dropdown close")
+	
+	dropdown = new Dropdown(toggle)

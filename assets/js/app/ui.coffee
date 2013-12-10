@@ -11,7 +11,8 @@ define (require) ->
 			@navigation()
 	
 		btnDropdown: ->
-			#jdrop
+			console.log jdrop
+			jdrop.useOutside("my word")
 		
 		navigation: ->
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
