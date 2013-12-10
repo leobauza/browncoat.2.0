@@ -1,5 +1,6 @@
 define (require) ->
 	markers = require('cs!app/markers')
+	jdrop = require('cs!vendor/jdropdown')
 	
 	ui = 
 		init: ->
@@ -10,10 +11,7 @@ define (require) ->
 			@navigation()
 	
 		btnDropdown: ->
-			$('[data-plugin=dropdown] [data-role=toggle]').click (e) ->
-				e.preventDefault()
-				if $('.dropdown-group.open').not($(@).closest('[data-plugin=dropdown]')).length then $('.dropdown-group.open').removeClass('open')
-				$(@).closest('[data-plugin=dropdown]').toggleClass('open')
+			jdrop()
 		
 		navigation: ->
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
