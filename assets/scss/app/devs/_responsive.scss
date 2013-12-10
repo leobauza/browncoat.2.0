@@ -1,0 +1,28 @@
+/* app/devs/responsive */
+
+@media (max-width: 959px) {
+	
+	.static-sidebar {
+		.sidebar {
+			width: auto;
+			float: none;
+		}
+		.main {
+			overflow: visible;
+		}
+	}
+	
+	/*margin right instead of margin left to do overflow hidden*/
+	[class*="row-fluid"] > [class*="span"] {
+		float: none;
+		width:auto;
+		margin-right: 0;
+	}
+
+	/*Use this to set exact percentages and have the last box be ok*/
+	[class*="row-fluid"] > [class*="span"]:last-child {
+		overflow:auto;
+	}
+	
+	
+}

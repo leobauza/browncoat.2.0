@@ -16,13 +16,13 @@
 		</nav>
 	</aside>
 	<section class="main">
-		<article id="buttons">
+		<article id="buttons" class="division">
 			<?php include './views/libraries/_btns.php'; ?>
 		</article>
-		<article id="listgroups">
+		<article id="listgroups" class="division">
 			<?php include './views/libraries/_listgroups.php'; ?>
 		</article>
-		<article id="callouts">
+		<article id="callouts" class="division">
 			<?php include './views/libraries/_callouts.php'; ?>
 		</article>
 		<article id="boxes">
