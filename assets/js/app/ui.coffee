@@ -11,7 +11,7 @@ define (require) ->
 			@navigation()
 	
 		btnDropdown: ->
-			jdrop()
+			#jdrop
 		
 		navigation: ->
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
