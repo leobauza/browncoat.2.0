@@ -1,4 +1,13 @@
 /* app/devs/doc (documentation css) */
+.site-header {
+	padding-top: 36px;
+	margin:0 0 20px;
+	.nav-bar {
+		position:fixed;
+		top:0;
+		left:0;
+	}
+}
 p, li {
 	em {
 		color:Greyscale(50);

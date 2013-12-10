@@ -30,25 +30,18 @@
 <body>
 	<header class="site-header">
 		<nav class="nav-bar">
-			<ul>
+			<ul class="menu-left">
 				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
 				<li><a <?php if ($nav == "css") echo "class='active'"; ?> href="/css">css</a></li>
 				<li><a <?php if ($nav == "libraries") echo "class='active'"; ?> href="/libraries">libraries</a></li>
 				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
+			</ul>
+			<ul class="menu-right">
+				<li><a href="#">right side</a></li>
+				<li><a href="#">navigation</a></li>
 			</ul>
 		</nav>
 	</header>
-
-	<section class="container">	
-		<nav class="nav-btns">
-			<ul>
-				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
-				<li><a <?php if ($nav == "css") echo "class='active'"; ?> href="/css">css</a></li>
-				<li><a <?php if ($nav == "libraries") echo "class='active'"; ?> href="/libraries">libraries</a></li>
-				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
-			</ul>
-		</nav>
-	</section>	
 <?php endif; ?>
 
 	<?php
@@ -59,6 +52,17 @@
 		<?php if(isset($link)) echo $link; ?>
 	</section>
 
+
+	<section class="divider">	
+		<nav class="nav-btns inline-nav">
+			<ul>
+				<li class="brand"><a <?php if ($nav == "") echo "class='active'"; ?> href="/">browncoat 2.0</a></li>
+				<li><a <?php if ($nav == "css") echo "class='active'"; ?> href="/css">css</a></li>
+				<li><a <?php if ($nav == "libraries") echo "class='active'"; ?> href="/libraries">libraries</a></li>
+				<li><a <?php if ($nav == "layouts") echo "class='active'"; ?> href="/layouts">layouts</a></li>
+			</ul>
+		</nav>
+	</section>	
 
 	
 <?php if(!isset($page)) :?>	

@@ -1,4 +1,4 @@
-<nav class="hero-nav-center">
+<nav class="nav-btns inline-nav">
 	<ul>
 		<li><a href="/pages/homepage">Homepage</a></li>
 		<li><a href="/pages/listing">Listings Page</a></li>

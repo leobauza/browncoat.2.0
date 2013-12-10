@@ -15,43 +15,61 @@ require_once 'Slim/Slim.php';
 $app = new Slim();
 
 //Landing pages
-$app -> get('/', function() {
+$app -> get('/', 'homepage');
+$app -> get('/libraries(/)', 'libraries');
+$app -> get('/css(/)', 'css');
+$app -> get('/layouts(/)', 'layouts');
+$app -> get('/removingthings(/)', 'removingthings');
+
+//Layout subpages
+$app -> get('/layouts/:id(/)', 'layout');
+
+//Tests
+$app -> get('/test(/)', 'test');
+
+//Pages
+$app -> get('/pages/:id(/)', 'page');
+
+//functions
+function homepage() {
 	echo render_template("template", array(
 		'body' => './views/_home.php',
 		'title' => 'home'
 	));
-});
-$app -> get('/libraries(/)', function() {
+}
+
+function libraries() {
 	echo render_template("template", array(
 		'body' => './views/_libraries.php'
 		,'title' => 'libraries'
 		,'activeNav' => 'libraries'
 	));
-});
-$app -> get('/css(/)', function() {
+}
+
+function css() {
 	echo render_template("template", array(
 		'body' => './views/_css.php'
 		,'title' => 'css'
 		,'activeNav' => 'css'
 	));
-});
-$app -> get('/layouts(/)', function() {
+}
+
+function layouts() {
 	echo render_template("template", array(
 		'body' => './views/_layouts.php'
 		,'title' => 'layouts'
 		,'activeNav' => 'layouts'
 	));
-});
-$app -> get('/removingthings(/)', function() {
+}
+
+function removingthings() {
 	echo render_template("template", array(
 		'body' => './views/_removingthings.php',
 		'title' => 'Removing Things'
 	));
-});
+}
 
-
-//Layout subpages
-$app -> get('/layouts/:id(/)', function($id) {
+function layout($id) {
 	if($id == 'fluidrows') {
 		echo render_template("template", array(
 			'body' => './views/layouts/_fluidRows.php'
@@ -68,30 +86,21 @@ $app -> get('/layouts/:id(/)', function($id) {
 			,'activeNav' => 'layouts'
 		));
 	}
-});
-
-//Tests
-$app -> get('/test(/)', function() {
+}
+function test() {
 	echo render_template("template", array(
 		'body' => './views/etc/_layoutTest.php',
 		'title' => 'test'
 	));
-});
-
-
-//Pages
-$app -> get('/pages/:id(/)', function($id) {
-	
+}
+function page($id) {
 	echo render_template("template", array(
 		'body' => './views/pages/_' . $id . '.php'
-		,'link' => '<p><a href="/layouts">Back to layouts</a></p>'
+		//,'link' => '<p><a href="/layouts">Back to layouts</a></p>'
 		,'title' => $id
 		,'page' => true
 	));
-	
-	
-});
-
+}
 
 $app->run();
 
