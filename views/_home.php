@@ -48,6 +48,7 @@
 		</article>
 		<article class="inner">
 			<h3>Libraries</h3>
+			<div class="callout-warning"><strong>Libraries</strong> are still incomplete, <strong>browncoat</strong> is still in early development</div>
 			<p>The Libraries section contains example of non standard html elements. This is anything defined with a css class or set of css classes. These however do not include JS functionality. They are just examples of the styles. Examples include:</p>
 			<ol>
 				<li>Buttons</li>
@@ -70,6 +71,7 @@
 		</article>
 		<aritcle class="inner">
 			<h3>So, Removing Things</h3>
+			<div class="callout-warning"><strong>browncoat</strong> is still in early development so this documentation is incomplete for now.</div>
 			<p>As a developer I want to take what I like and ditch everything else. There is a <a href="/removingthings">whole page</a> dedicated to how to <strong>"ditch everything else"</strong> but here are the basics:</p>
 			<ol>
 				<li>
