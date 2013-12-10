@@ -514,70 +514,84 @@ form input[type="submit"] {
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
 
 /* app/libs/nav */
-.nav-btns {
-  padding: 20px 0 0 0; }
-  .nav-btns ul {
+.nav-bar {
+  zoom: 1;
+  background: #8790a5;
+  width: 100%; }
+  .nav-bar:before {
+    display: table;
+    content: ""; }
+  .nav-bar:after {
+    display: table;
+    content: "";
+    clear: both; }
+  .nav-bar .menu, .nav-bar .menu-left, .nav-bar .menu-right {
     zoom: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%; }
+    .nav-bar .menu:before, .nav-bar .menu-left:before, .nav-bar .menu-right:before {
+      display: table;
+      content: ""; }
+    .nav-bar .menu:after, .nav-bar .menu-left:after, .nav-bar .menu-right:after {
+      display: table;
+      content: "";
+      clear: both; }
+
+.menu, .menu-left, .menu-right {
+  /*first level*/
+  /*second level*/
+  /*first + last*/ }
+  .menu > li, .menu-left > li, .menu-right > li {
+    float: left;
+    margin: 0; }
+    .menu > li > a, .menu-left > li > a, .menu-right > li > a {
+      display: block;
+      padding: 10px;
+      color: white;
+      font-size: 1.6em; }
+      .menu > li > a:hover, .menu-left > li > a:hover, .menu-right > li > a:hover, .menu > li > a.active, .menu-left > li > a.active, .menu-right > li > a.active {
+        background: #6b758e;
+        text-decoration: none; }
+
+.menu-left {
+  float: left; }
+
+.menu-right {
+  float: right; }
+
+.nav-btns {
+  padding: 0; }
+  .nav-btns ul {
     margin: 0 0 20px;
     padding: 0;
     list-style: none;
     font-size: 100%; }
-    .nav-btns ul:before {
-      display: table;
-      content: ""; }
-    .nav-btns ul:after {
-      display: table;
-      content: "";
-      clear: both; }
-    .nav-btns ul li {
-      float: left;
-      margin: 0 5px 0 0; }
-      .nav-btns ul li a {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        display: block;
-        padding: 10px 15px;
-        background: #428bca;
-        color: white;
-        font-size: 1.6em; }
-        .nav-btns ul li a:hover, .nav-btns ul li a.active {
-          background: #245682;
-          text-decoration: none; }
+    .nav-btns ul li a {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      display: block;
+      padding: 10px 15px;
+      background: #428bca;
+      color: white;
+      font-size: 1.6em; }
+      .nav-btns ul li a:hover, .nav-btns ul li a.active {
+        background: #245682;
+        text-decoration: none; }
     .nav-btns ul .brand a {
       background: #8790a5; }
       .nav-btns ul .brand a:hover, .nav-btns ul .brand a.active {
         background: #555d71; }
 
-.hero-nav-center ul {
-  margin: 0 0 20px;
-  padding: 0;
-  list-style: none;
-  font-size: 100%;
-  width: 100%;
-  text-align: center; }
-.hero-nav-center li {
+.inline-nav ul {
+  width: 100%; }
+.inline-nav li {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin-right: 10px; }
-  .hero-nav-center li a {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    display: block;
-    padding: 10px 20px;
-    background: #428bca;
-    color: white;
-    font-size: 1.6em;
-    line-height: 1.6em; }
-    .hero-nav-center li a:hover, .hero-nav-center li a.active {
-      background: #245682;
-      text-decoration: none; }
-.hero-nav-center .brand a {
-  background: #8790a5; }
-  .hero-nav-center .brand a:hover, .hero-nav-center .brand a.active {
-    background: #555d71; }
+  margin: 0 5px 5px 0px; }
 
 /* app/libs/btn */
 .btn, .btn-main, .btn-info, .btn-success, .btn-warning, .btn-error {
@@ -878,6 +892,14 @@ ul.list-group {
     margin: 0 auto 20px; }
 
 /* app/devs/doc (documentation css) */
+.site-header {
+  padding-top: 36px;
+  margin: 0 0 20px; }
+  .site-header .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0; }
+
 p em, li em {
   color: gray; }
 
