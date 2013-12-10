@@ -1,4 +1,4 @@
-<section class="container">
+<section class="divider division">
 	<h3>Forms</h3>
 	<div class="callout-warning"><strong>browncoat</strong> is still in early development, forms are very unfinished.</div>
 	<form>
@@ -14,7 +14,7 @@
 		<input type="file">
 
 		<label>textarea</label>
-		<textarea></textarea>
+		<textarea rows="6"></textarea>
 
 		<label>select</label>
 		<select>

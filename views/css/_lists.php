@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container division">
 	<h2>Lists Standard</h2>
 	<section class="row-fluid">
 		<!-- unordered lists -->
