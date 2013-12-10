@@ -517,7 +517,7 @@ form input[type="submit"] {
 /* app/libs/nav */
 .nav-bar {
   zoom: 1;
-  background: #8790a5;
+  background: rgba(135, 144, 165, 0.8);
   width: 100%; }
   .nav-bar:before {
     display: table;
