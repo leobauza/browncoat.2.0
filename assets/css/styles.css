@@ -956,6 +956,41 @@ ul.list-group {
   z-index: 5;
   background: white; }
 
+/* app/libs/dropdown */
+.dropdown-group {
+  position: relative;
+  margin: 0 0 20px; }
+  .dropdown-group .btn, .dropdown-group .btn-default, .dropdown-group .btn-main, .dropdown-group .btn-info, .dropdown-group .btn-success, .dropdown-group .btn-warning, .dropdown-group .btn-error {
+    margin-bottom: 0; }
+  .dropdown-group .dropdown-menu {
+    display: none; }
+  .dropdown-group.open .dropdown-menu {
+    display: block; }
+
+.dropdown-menu {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 2px 0 0 0;
+  background: white;
+  border: 1px solid #e6e6e6;
+  z-index: 100; }
+  .dropdown-menu li {
+    margin: 0; }
+    .dropdown-menu li a {
+      display: block;
+      padding: 5px 15px;
+      font-size: 1.6em;
+      line-height: 1.6em;
+      color: #333333; }
+      .dropdown-menu li a:hover {
+        text-decoration: none;
+        background: #e6e6e6; }
+
 /* app/devs/header */
 /* app/devs/footer */
 /* app/devs/etc (disposable testing area) */
@@ -970,7 +1005,8 @@ ul.list-group {
   .site-header .nav-bar {
     position: fixed;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: 100; }
 
 p em, li em {
   color: gray; }

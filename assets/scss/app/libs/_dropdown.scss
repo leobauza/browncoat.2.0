@@ -1,0 +1,41 @@
+/* app/libs/dropdown */
+
+.dropdown-group {
+	position:relative;
+	margin:0 0 20px;
+	.btn {
+		margin-bottom:0;
+	}
+	.dropdown-menu {
+		display: none;
+	}
+	&.open {
+		.dropdown-menu {
+			display:block;
+		}
+	}
+}
+.dropdown-menu {
+	@include resetList();
+	position: absolute;
+	top: 100%;
+	left:0;
+	margin: 2px 0 0 0;
+	background: $white;
+	border: 1px solid Greyscale(10);
+	z-index: 100;
+	li {
+		margin: 0;
+		a {
+			display:block;
+			padding: 5px 15px;
+			font-size: $textSize;
+			line-height: $textLineHeight;
+			color: Text();
+			&:hover {
+				text-decoration: none;
+				background: Greyscale(10);
+			}
+		}
+	}
+}

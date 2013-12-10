@@ -26,10 +26,26 @@
 	</div>
 </section>
 <section class="container spacer">
-	<a href="#" class="btn-info">dropdown <span class="caret"></span></a>	
-	<div class="btn-group">
-		<a href="#" class="btn-info">dropdown</a>
-		<a href="#" class="btn-info"><span class="caret"></span></a>	
+	<div class="dropdown-group" data-plugin="dropdown">
+		<a href="#" class="btn-info" data-role="toggle">dropdown <span class="caret"></span></a>	
+		<ul class="dropdown-menu">
+			<li><a href="#">dropdown item</a></li>
+			<li><a href="#">dropdown item 2</a></li>
+			<li><a href="#">dropdown item 3</a></li>
+			<li><a href="#">dropdown item 4</a></li>
+		</ul>
+	</div>
+	<div class="dropdown-group" data-plugin="dropdown">
+		<div class="btn-group">
+			<a href="#" class="btn-info">dropdown</a>
+			<a href="#" class="btn-info" data-role="toggle"><span class="caret"></span></a>	
+		</div>
+		<ul class="dropdown-menu">
+			<li><a href="#">dropdown item</a></li>
+			<li><a href="#">dropdown item 2</a></li>
+			<li><a href="#">dropdown item 3</a></li>
+			<li><a href="#">dropdown item 4</a></li>
+		</ul>
 	</div>
 	<div class="btn-group">
 		<a href="#" class="btn-info active">button</a>

@@ -10,10 +10,10 @@ define (require) ->
 	ui.init()
 	
 	#log
-	console.log "markers: ", markers
-	console.log "helpers: ", helpers
-	console.log "ui: ", ui
-	console.log "plugins: ", plugins
+	# console.log "markers: ", markers
+	# console.log "helpers: ", helpers
+	# console.log "ui: ", ui
+	# console.log "plugins: ", plugins
 	
 	$(window).resize ->
 		markers.win = $(window).width()

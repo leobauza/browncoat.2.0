@@ -10,11 +10,11 @@ define (require) ->
 			@navigation()
 	
 		btnDropdown: ->
-			$('.btn-dropdown .btn-drop').click (e) ->
+			$('[data-plugin=dropdown] [data-role=toggle]').click (e) ->
 				e.preventDefault()
-				$that = $(@)
-				$that.closest('.btn-dropdown').find('ul').toggle()
-	
+				if $('.dropdown-group.open').not($(@).closest('[data-plugin=dropdown]')).length then $('.dropdown-group.open').removeClass('open')
+				$(@).closest('[data-plugin=dropdown]').toggleClass('open')
+		
 		navigation: ->
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
 			if not $('.site-nav .btn-dropdown').length
