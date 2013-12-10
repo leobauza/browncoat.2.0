@@ -47,6 +47,33 @@
 			<li><a href="#">dropdown item 4</a></li>
 		</ul>
 	</div>
+
+	<div class="dropdown-group" data-plugin="dropdown">
+		<div class="btn-group">
+			<a href="#" class="btn-warning">dropdown</a>
+			<a href="#" class="btn-warning" data-role="toggle"><span class="caret"></span></a>	
+		</div>
+		<ul class="dropdown-menu">
+			<li><a href="#">dropdown item</a></li>
+			<li><a href="#">dropdown item 2</a></li>
+			<li><a href="#">dropdown item 3</a></li>
+			<li><a href="#">dropdown item 4</a></li>
+		</ul>
+	</div>
+
+	<div class="dropdown-group" data-plugin="dropdown">
+		<div class="btn-group">
+			<a href="#" class="btn-error">dropdown</a>
+			<a href="#" class="btn-error" data-role="toggle"><span class="caret"></span></a>	
+		</div>
+		<ul class="dropdown-menu">
+			<li><a href="#">dropdown item</a></li>
+			<li><a href="#">dropdown item 2</a></li>
+			<li><a href="#">dropdown item 3</a></li>
+			<li><a href="#">dropdown item 4</a></li>
+		</ul>
+	</div>
+
 	<div class="btn-group">
 		<a href="#" class="btn-info active">button</a>
 		<a href="#" class="btn-info">group</a>
