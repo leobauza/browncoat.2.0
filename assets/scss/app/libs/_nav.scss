@@ -65,6 +65,7 @@ $navBarColour: $brand;
 				display: block;
 				padding: 10px 15px;
 				background: $linkColour;
+				border: 1px solid darken($linkColour, 10);
 				color: $white;
 				font-size: $textSize;
 				&:hover, &.active {

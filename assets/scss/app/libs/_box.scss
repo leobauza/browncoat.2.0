@@ -2,6 +2,7 @@
 .box {
 	@include marpad(0 0 10px, 0px);
 	@include borderRadius(5px);	
+	background: $white;
 	border: 1px solid lighten($default, 10);
 	.box-header {
 		@include borderRadius(5px 5px 0px 0px);
@@ -90,6 +91,7 @@
 //tie ins
 .box {
 	.list-group {
+		@include borderRadius(0 0 5px 5px);
 		border-left:none;
 		border-right:none;
 		border-bottom:none;

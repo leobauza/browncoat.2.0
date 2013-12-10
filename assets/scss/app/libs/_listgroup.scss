@@ -15,6 +15,7 @@ ul.list-group {
 .list-group {
 	@include borderRadius(5px);	
 	margin: 0 0 20px;
+	background: $white;
 	border: 1px solid $listGroupBorder;
 	border-top: none;
 	li {
