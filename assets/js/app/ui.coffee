@@ -11,8 +11,8 @@ define (require) ->
 			@navigation()
 	
 		btnDropdown: ->
-			console.log jdrop
-			jdrop.useOutside("my word")
+			#console.log jdrop
+			#jdrop.useOutside("my word")
 		
 		navigation: ->
 			#go mobile or desktop...also pass the width so we can get more specific in mobile
@@ -21,14 +21,14 @@ define (require) ->
 			if markers.win > 1024 then @desktopNav(markers.win) else @mobileNav(markers.win)
 	
 		desktopNav: (w) ->
-			console.log "desktop nav: ", w
+			#console.log "desktop nav: ", w
 			$('.site-nav .menu > li.dropdown').unbind('click mouseenter mouseleave').mouseenter ->
 					$(@).find('.dropdown-menu').show()
 			.mouseleave ->
 					$(@).find('.dropdown-menu').hide()
 	
 		mobileNav: (w) ->
-			console.log "mobile nav: ", w
+			#console.log "mobile nav: ", w
 			$('.site-nav .menu > li.dropdown').unbind 'mouseenter mouseleave'
 			$('.site-nav .menu > li.dropdown > .btn-dropdown').unbind('click').click (e) ->
 				e.preventDefault()

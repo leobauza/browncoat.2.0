@@ -5,6 +5,9 @@ define (require) ->
 	helpers = require('cs!app/helpers')
 	ui = require('cs!app/ui')
 	plugins = require('cs!app/plugins')
+	#sandbox = require('cs!vendor/sandbox')
+	sandboxjs = require('vendor/sandboxjs')
+	
 	
 	helpers.init()
 	ui.init()

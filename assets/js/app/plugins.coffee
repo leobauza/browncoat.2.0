@@ -3,7 +3,7 @@ define (require) ->
 	jform = require('jForm')	
 	
 	if markers.ieVer == -1
-		console.log "iever: ", markers.ieVer
+		#console.log "iever: ", markers.ieVer
 		$('form').jform()
 
 	"jQuery Plugins Being Called"
