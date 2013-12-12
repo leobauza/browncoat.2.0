@@ -33,7 +33,8 @@ define (require) ->
 	
 		
 	$(document).on('click.bc.dropdown', closeDropdowns)	
-	$(toggle).on('open.bc.dropdown', -> console.log "dropdown open")
-	$(toggle).on('close.bc.dropdown', -> console.log "dropdown close")
+	$(toggle)
+		.on('open.bc.dropdown', -> console.log "dropdown open")
+		.on('close.bc.dropdown', -> console.log "dropdown close")
 	
 	dropdown = new Dropdown(toggle)
