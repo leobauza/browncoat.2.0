@@ -11,6 +11,7 @@
 	# Define the plugin class
 	class MyPlugin
 
+		# REPLACED these with $.fn.myPlugin.defaults
 		# defaults:
 		# 	paramA: 'foo'
 		# 	paramB: 'bar'
