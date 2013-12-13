@@ -26,8 +26,8 @@
 	endif;
 ?>
 
-<?php if(!isset($page)) :?>
 <body>
+<?php if(!isset($page)) :?>
 	<header class="site-header">
 		<nav class="nav-bar">
 			<ul class="menu-left">
