@@ -75,6 +75,8 @@ $.fn.extend
 
 
 $("body").pluginName
+	option1: "tomato"
+	option2: "poop"
 	debug: true
 
 ###
