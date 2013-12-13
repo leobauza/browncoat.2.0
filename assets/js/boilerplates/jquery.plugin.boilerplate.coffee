@@ -1,91 +1,105 @@
-# ;(function ( $, window, document, undefined ) {
-# 
-# 	var 
-# 		pluginName = 'myplugin'
-# 	;
-# 
-# 	function Plugin( element, options ) {
-# 		//the modal
-# 		this.element = element;
-# 		//used to set defaults and have the option of data from markup
-# 		var
-# 			$plugin = $(this.element),
-# 			data = $plugin.data()
-# 		;
-# 		//default settings :: data comes in plugin overlay event and id
-# 		this.options = $.extend( {
-# 			'myoption' : (data.myoption) ? data.myoption : 'my default',
-# 			'myoption2' : (data.myoptions2) ? data.myoption2 : 'my default 2'
-# 		}, options) ;
-# 		this._name = pluginName;
-# 		this.init(stuff);
-# 	}
-# 	
-# 	Plugin.prototype = {
-# 		init : function (stuff) {
-# 			//my init code
-# 			
-# 			//call my methods from init
-# 			this.myMethod(stuff);
-# 		}
-# 		, myMethod : function(stuff) {
-# 			//my event
-# 		}
-# 	}
-# 
-# 	// A really lightweight plugin wrapper around the constructor, 
-# 	// preventing against multiple instantiations
-# 	$.fn[pluginName] = function ( options ) {
-# 		return this.each(function () {
-# 			if (!$.data(this, 'plugin_' + pluginName)) {
-# 				$.data(this, 'plugin_' + pluginName, 
-# 				new Plugin( this, options ));
-# 			}
-# 		});
-# 	}
-# 
-# })( jQuery, window, document );
+# A class-based template for jQuery plugins in Coffeescript
+#
+#			$('.target').myPlugin({ paramA: 'not-foo' });
+#			$('.target').myPlugin('myMethod', 'Hello, world');
+#
+# Check out Alan Hogan's original jQuery plugin template:
+# https://github.com/alanhogan/Coffeescript-jQuery-Plugin-Template
+#
+(($, window) ->
+ 
+	# Define the plugin class
+	class MyPlugin
 
-# Reference jQuery
-$ = jQuery
+		# defaults:
+		# 	paramA: 'foo'
+		# 	paramB: 'bar'
 
-# Adds plugin object to jQuery
-$.fn.extend
-	# Change pluginName to your plugin's name.
-	pluginName: (options) ->
-		# Default settings
-		settings =
-			option1: true
-			option2: false
-			debug: false
+		constructor: (el, options) ->
+			#console.log @defaults
+			#@options = $.extend({}, @defaults, options)
+			@options = $.extend({}, $.fn.myPlugin.defaults, options)
+			@$el = $(el)
 
-		# Merge default settings with options.
-		settings = $.extend settings, options
+		# Additional plugin methods go here
+		myMethod: (echo) ->
+			console.log @options
+			@$el.html(@options.paramA + ': ' + echo)
 
-		# Simple logger.
-		log = (msg) ->
-			console?.log msg if settings.debug
+	# Define the plugin
+	$.fn.extend myPlugin: (option, args...) ->
+		@each ->
+			$this = $(this)
+			data = $this.data('myPlugin')
+			if !data
+				$this.data 'myPlugin', (data = new MyPlugin(this, option))
+			if typeof option == 'string'
+				data[option].apply(data, args)
 		
-		# _Insert magic here._
-		return @each ()->
-			log "Preparing magic show."
-			# You can use your settings in here now.
-			log "Option 1 value: #{settings.option1}"
+	# Allow to be set from the outside
+	$.fn.myPlugin.defaults =
+		paramA: "foo"
+		paramB: "bar" 
 
 
 
-$("body").pluginName
-	option1: "tomato"
-	option2: "poop"
-	debug: true
+) window.jQuery, window
 
-###
 
-OPTIONS DEFAULTS:
-'myoption' : (data.myoption) ? data.myoption : 'my default', 
-'myoption2' : (data.myoption2) ? data.myoption2 : 'my default 2'	
+console.log $.fn.myPlugin.defaults
 
-###
+$.fn.myPlugin.defaults.paramA = "something"
 
-#data api built into plugin
-#$('[data-plugin=plugin]').myplugin();
+console.log $.fn.myPlugin.defaults
+
+
+$('h1').myPlugin({
+	paramA: 'something elsier'
+})
+$('h1').myPlugin('myMethod', 'poop')
+
+
+# (($, window, document) ->
+#		Plugin =
+#			init: () ->
+#				this.prop = 'value'
+#			
+# 
+#		#define plugin
+#		$.fn.myPlugin = () ->
+#			@each ->
+#				plugin = Object.create( Plugin )
+#				plugin.init()
+#				console.log(Plugin)
+#				console.log(plugin)
+#		
+#		#able to set options outside of plugin
+#		$.fn.myPlugin.options =
+#			something: "something"
+# 
+#	 
+# ) jQuery, window, document
+# 
+# $('h1').myPlugin()
+
+# (($, window, document) ->
+#		class Plugin
+#			constructor: () ->
+#				return "my constructor"
+#			
+#			init: () ->
+#				"stuff"
+#			
+# 
+#		#define plugin
+#		$.fn.myPlugin = () ->
+#			@each ->
+#				console.log(Plugin())
+#				plugin = new Plugin
+#				console.log(plugin)
+#		
+#		#able to set options outside of plugin
+#		$.fn.myPlugin.options =
+#			something: "something"
+#
+# ) jQuery, window, document
