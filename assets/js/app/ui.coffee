@@ -1,11 +1,9 @@
 define (require) ->
 	markers = require('cs!app/markers')
 	jdrop = require('cs!vendor/jdropdown')
-	require('cs!boilerplates/amd.jquery.plugin.boilerplate')
 	
 	ui = 
 		init: ->
-			@boilerplate()
 			@navigation()
 	
 		resize: ->
@@ -32,13 +30,4 @@ define (require) ->
 				$(@).toggleClass 'is-active'
 				$(@).parent().find('.dropdown-menu').toggle()
 	
-		boilerplate: ->
-			console.log "boilerplate"
-			$('h1').myPlugin {
-				paramA: "not-foo"
-			}
-			$('h1').myPlugin('myMethod', 'stuff')
-
-			#console.log jdrop
-			#jdrop.useOutside("my word")
 

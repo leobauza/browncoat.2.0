@@ -5,12 +5,14 @@ define (require) ->
 	helpers = require('cs!app/helpers')
 	ui = require('cs!app/ui')
 	plugins = require('cs!app/plugins')
-	#sandbox = require('cs!vendor/sandbox')
-	sandboxjs = require('vendor/sandboxjs')
-	
+	sandbox = require('cs!app/sandbox')
 	
 	helpers.init()
 	ui.init()
+	
+	#play around with stuff on the sandbox
+	sandbox.init()
+	
 	
 	#log
 	# console.log "markers: ", markers
