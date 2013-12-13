@@ -1,40 +1,78 @@
-#write a dropdown plugin here
-define (require) ->
+((root, factory) ->
+	if typeof define is 'function' and define.amd
+		define(['jquery'], factory)
+	else
+		factory(root.jQuery, window)
 
-	toggle = '[data-plugin=dropdown] [data-role=toggle]'
-	class Dropdown
-		constructor: (el) ->
-			$(el).on('click.bc.dropdown', @.toggle)
+)(this, ($, window) ->
+
+	# set plugin defaults
+	defaults = 
+		parent: '[data-plugin=dropdown]'
+		toggle: '[data-role=toggle]'
+
+	#toggle = '[data-plugin=dropdown] [data-role=toggle]'
+
+	# Define the plugin class
+	class Plugin
+
+		constructor: (el, options) ->
+			self = @
+			@options = $.extend({}, defaults, options)
+			@$el = $(el)
+			@$el.on 'click.bc.dropdown', (e) -> self.toggle(e, @)
+			#console.log "options: ", @options.parent
 		
-		toggle: (e) ->
+		# Additional plugin methods go here
+		toggle: (e, that) ->
+			# console.log "toggle"
+			# console.log @
+			# console.log that
+			
 			e.preventDefault()
 			e.stopPropagation()
-			$parent = $(@).closest('[data-plugin=dropdown]')
+			$parent = $(that).closest( @options.parent )
 			isActive = $parent.hasClass('open')
 			
-			if !isActive 
-				$(@).trigger 'open.bc.dropdown'
-				closeDropdowns(e, @)
+			if !isActive
+				$(that).trigger 'open.bc.dropdown'
+				closeDropdowns(e, that)
 				$parent.toggleClass('open')
 			else
 				closeDropdowns()
 		
 		useOutside: (word) ->
-			console.log word
+			console.log "public function: ", "#{word} = what you passed into the useOutside method"
 		
-
-	closeDropdowns = (e ,that) ->
-		$(toggle).each (e) ->
-			$parent = $(@).closest('[data-plugin=dropdown]')
-			if !$parent.hasClass('open') then return
-			#console.log @
-			$parent.not($(that).closest('[data-plugin=dropdown]')).removeClass('open')		
-			$(@).trigger 'close.bc.dropdown'
 	
-		
+	closeDropdowns = (e, that) ->
+		$("#{defaults.parent} #{defaults.toggle}").each (e) ->
+			$parent = $(@).closest( defaults.parent )
+			if !$parent.hasClass('open') then return
+			$parent.not($(that).closest( defaults.parent )).removeClass('open')
+			$(@).trigger 'close.bc.dropdown'
+
+	# Define the plugin
+	$.fn.extend jdropdown: (option, args...) ->
+		@each ->
+			$this = $(this)
+			data = $this.data('jdropdown')
+			if !data
+				$this.data 'jdropdown', (data = new Plugin(this, option))
+			if typeof option is 'string'
+				data[option].apply(data, args)
+	
+
+
 	$(document).on('click.bc.dropdown', closeDropdowns)	
-	$(toggle)
+	$("#{defaults.parent} #{defaults.toggle}")
 		.on('open.bc.dropdown', -> console.log "dropdown open")
 		.on('close.bc.dropdown', -> console.log "dropdown close")
 	
-	dropdown = new Dropdown(toggle)
+	# Allow to be set from the outside
+	$.fn.jdropdown.defaults = defaults
+	$.fn.jdropdown.Plugin = Plugin
+
+)
+
+

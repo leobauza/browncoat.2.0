@@ -1,5 +1,5 @@
 define (require) ->
-	sandbox = require('cs!vendor/sandbox')
+	#sandbox = require('cs!vendor/sandbox')
 	#sandboxjs = require('vendor/sandboxjs')
 	boilerplate = require('cs!boilerplates/amd.jquery.plugin.boilerplate')
 	
@@ -9,10 +9,12 @@ define (require) ->
 			@boilerplate()
 		
 		boilerplate: ->
-			console.log "boilerplate returns this: ", boilerplate
-			console.warn "boilerplate use example in sandbox"
+			#console.warn "boilerplate use example in sandbox"
+			# console.log $.fn.myPlugin.defaults
+			# console.log $.fn.myPlugin.Plugin.prototype
+			# console.log "shortcut to proto: ", boilerplate.prototype
 			$('h1').myPlugin {
-				paramA: "Param A"
+				#paramA: "Param A"
 			}
 			$('h1').myPlugin('myMethod', 'This is in my h1')
 
