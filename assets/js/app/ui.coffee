@@ -33,9 +33,11 @@ define (require) ->
 	
 		
 		dropdowns: () ->
-			console.log "jdrop defaults: ", $.fn.jdropdown.defaults
-			console.log "jdrop proto: ", jdrop.prototype
+			# console.log "jdrop defaults: ", $.fn.jdropdown.defaults
+			# console.log "jdrop proto: ", jdrop.prototype
 			$('[data-plugin=dropdown] [data-role=toggle]').jdropdown()
-			$('[data-plugin=dropdown] [data-role=toggle]').jdropdown("useOutside", "my word")
+			# $('[data-plugin=dropdown] [data-role=toggle]').jdropdown("useOutside", "my word")
+			#$('.btn-error[data-role=toggle]').jdropdown("toggle", null, '.btn-error[data-role=toggle]')
+			
 
 			#console.log "add dropdown"

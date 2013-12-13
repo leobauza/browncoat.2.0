@@ -11,9 +11,7 @@
 		parent: '[data-plugin=dropdown]'
 		toggle: '[data-role=toggle]'
 
-	#toggle = '[data-plugin=dropdown] [data-role=toggle]'
-
-	# Define the plugin class
+	# plugin class
 	class Plugin
 
 		constructor: (el, options) ->
@@ -23,14 +21,15 @@
 			@$el.on 'click.bc.dropdown', (e) -> self.toggle(e, @)
 			#console.log "options: ", @options.parent
 		
-		# Additional plugin methods go here
+		# toggle open and closed
 		toggle: (e, that) ->
-			# console.log "toggle"
+			#console.log "toggle"
 			# console.log @
+			# console.log e
 			# console.log that
-			
-			e.preventDefault()
-			e.stopPropagation()
+			if e?
+				e.preventDefault()
+				e.stopPropagation()
 			$parent = $(that).closest( @options.parent )
 			isActive = $parent.hasClass('open')
 			
@@ -51,8 +50,8 @@
 			if !$parent.hasClass('open') then return
 			$parent.not($(that).closest( defaults.parent )).removeClass('open')
 			$(@).trigger 'close.bc.dropdown'
-
-	# Define the plugin
+	
+	# Define plugin
 	$.fn.extend jdropdown: (option, args...) ->
 		@each ->
 			$this = $(this)
@@ -68,7 +67,7 @@
 	$("#{defaults.parent} #{defaults.toggle}")
 		.on('open.bc.dropdown', -> console.log "dropdown open")
 		.on('close.bc.dropdown', -> console.log "dropdown close")
-	
+
 	# Allow to be set from the outside
 	$.fn.jdropdown.defaults = defaults
 	$.fn.jdropdown.Plugin = Plugin
