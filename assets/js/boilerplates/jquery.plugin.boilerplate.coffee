@@ -17,14 +17,12 @@
 		# 	paramB: 'bar'
 
 		constructor: (el, options) ->
-			#console.log @defaults
 			#@options = $.extend({}, @defaults, options)
 			@options = $.extend({}, $.fn.myPlugin.defaults, options)
 			@$el = $(el)
 
 		# Additional plugin methods go here
 		myMethod: (echo) ->
-			console.log @options
 			@$el.html(@options.paramA + ': ' + echo)
 
 	# Define the plugin
