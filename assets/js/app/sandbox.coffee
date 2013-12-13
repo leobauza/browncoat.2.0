@@ -21,4 +21,11 @@ define (require) ->
 			#console.log jdrop
 			#jdrop.useOutside("my word")
 		
+		closeCallout: () ->
+			
+		
+		modals: () ->
+			
+		
+	#end
 	
