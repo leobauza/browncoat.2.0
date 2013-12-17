@@ -516,6 +516,7 @@ form input[type="submit"] {
 /* app/libs/nav */
 .nav-bar {
   zoom: 1;
+  background: #8790a5;
   background: rgba(135, 144, 165, 0.8);
   width: 100%; }
   .nav-bar:before {
@@ -722,21 +723,24 @@ form input[type="submit"] {
   padding: 5px 10px;
   font-size: 1.2em; }
 
-.btn-group .btn, .btn-group .btn-default, .btn-group .btn-main, .btn-group .btn-info, .btn-group .btn-success, .btn-group .btn-warning, .btn-group .btn-error {
-  position: relative;
-  float: left;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin-left: -1px; }
-  .btn-group .btn:first-child, .btn-group .btn-default:first-child, .btn-group .btn-main:first-child, .btn-group .btn-info:first-child, .btn-group .btn-success:first-child, .btn-group .btn-warning:first-child, .btn-group .btn-error:first-child {
-    -webkit-border-radius: 5px 0px 0px 5px;
-    -moz-border-radius: 5px 0px 0px 5px;
-    border-radius: 5px 0px 0px 5px; }
-  .btn-group .btn:last-child, .btn-group .btn-default:last-child, .btn-group .btn-main:last-child, .btn-group .btn-info:last-child, .btn-group .btn-success:last-child, .btn-group .btn-warning:last-child, .btn-group .btn-error:last-child {
-    -webkit-border-radius: 0px 5px 5px 0px;
-    -moz-border-radius: 0px 5px 5px 0px;
-    border-radius: 0px 5px 5px 0px; }
+.btn-group {
+  margin: 0 0 20px; }
+  .btn-group .btn, .btn-group .btn-default, .btn-group .btn-main, .btn-group .btn-info, .btn-group .btn-success, .btn-group .btn-warning, .btn-group .btn-error {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    margin-left: -1px; }
+    .btn-group .btn:first-child, .btn-group .btn-default:first-child, .btn-group .btn-main:first-child, .btn-group .btn-info:first-child, .btn-group .btn-success:first-child, .btn-group .btn-warning:first-child, .btn-group .btn-error:first-child {
+      -webkit-border-radius: 5px 0px 0px 5px;
+      -moz-border-radius: 5px 0px 0px 5px;
+      border-radius: 5px 0px 0px 5px; }
+    .btn-group .btn:last-child, .btn-group .btn-default:last-child, .btn-group .btn-main:last-child, .btn-group .btn-info:last-child, .btn-group .btn-success:last-child, .btn-group .btn-warning:last-child, .btn-group .btn-error:last-child {
+      -webkit-border-radius: 0px 5px 5px 0px;
+      -moz-border-radius: 0px 5px 5px 0px;
+      border-radius: 0px 5px 5px 0px; }
 
 /*
 .btn-group {
@@ -985,8 +989,12 @@ ul.list-group {
     margin-bottom: 0; }
   .dropdown-group .dropdown-menu {
     display: none; }
-  .dropdown-group.open .dropdown-menu {
-    display: block; }
+  .dropdown-group.open {
+    z-index: 100; }
+    .dropdown-group.open .dropdown-menu {
+      display: block; }
+  .dropdown-group .btn-group {
+    margin: 0; }
 
 .dropdown-menu {
   margin: 0 0 20px;

@@ -10,9 +10,13 @@
 		display: none;
 	}
 	&.open {
+		z-index: 100; //fix ie 7
 		.dropdown-menu {
 			display:block;
 		}
+	}
+	.btn-group {
+		margin: 0;
 	}
 }
 .dropdown-menu {
