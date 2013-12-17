@@ -1,5 +1,5 @@
-<section class="static-sidebar">
-	<aside class="sidebar">
+<section class="row-static">
+	<aside class="span-sidebar">
 		<nav class="inner">
 			<h4>See More:</h4>
 			<div class="list-group">
@@ -16,7 +16,7 @@
 			<p><strong>note:</strong> sample list-group library items above</p>
 		</nav>
 	</aside>
-	<section class="main">
+	<section class="span-main">
 		<article class="inner al-c">
 			<h2>About the project and docs</h2>
 		</article>

@@ -31,6 +31,80 @@ define(function(require){
 	};
 	console.log("puzzlers: ", applyAndEmpty(start, puzzlers));
 
+	
+	//closures
+	//Returning a function from a function,
+	//complete with variables from an
+	//external scope, is called a closure.
+	function closure( transport ) {
+		return function ( name ) {
+			console.log('closure sample: ', 'transportation is ' + transport + ' and name is ' + name);
+		}
+	}
+	//the function being returned from closure() is a closure
+	//because it encapsulates everything from its external scope
+	//used to create function factories
+	
+	var submarine = closure("submarine");
+	var other = closure("other");
+	
+	submarine("mario");
+	other("wario");
+	
+	function warningMaker( obstacle ){
+	  var count = 0;
+	  var zones = [];
+	  return function ( number, location ) {
+	    count++;
+	    zones.push( [location, number] );
+	    var list = "";
+	    for(var i = 0; i<zones.length; i++){        
+	        list = list + "\n" + zones[i][0] + " (" + zones[i][1] + ")";  
+	    }
+	    alert("Beware! There have been " +
+	          obstacle +
+	          " sightings in the Cove today!\n" +
+	          number +
+	          " " +
+	          obstacle +
+	          "(s) spotted at the " +
+	          location +
+	          "!\n" +
+	          "This is Alert #" +
+	          count +
+	          " today for " +
+	          obstacle +
+	          " danger.\n" +
+	          "Current danger zones are: " +
+	          list
+	         );
+	  };
+	}
+	
+	var warningone = warningMaker("rocks");
+	var warningtwo = warningMaker("poop");
+	
+	// warningone(3, "somewhere");
+	// warningtwo(5, "there");
+	// warningtwo(10, "here");
+	// warningtwo(2, "everywhere");
+	
+	
+	function makeTargetAssigner( sharks, targets ){
+	  return function(shark) {
+			for(var i = 0; i < sharks.length; i++) {
+				if(sharks[i] == shark) {
+					console.log(shark + "! target is: " + targets[i]);
+				}
+			}
+		};
+	}
+	
+	var sharksArr = ["jonny", "poppy", "foxy"];
+	var targetsArr = ["one", "two", "three"];
+	var targetFor = makeTargetAssigner(sharksArr, targetsArr);
+	targetFor("foxy");
 
+	//console.warn("sdasda")
 
 });

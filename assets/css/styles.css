@@ -305,10 +305,10 @@ footer,
 /*
  * static sidebar
  */
-.static-sidebar .sidebar {
+.row-static .span-sidebar {
   width: 250px;
   float: left; }
-.static-sidebar .main {
+.row-static .span-main {
   width: auto;
   float: none;
   overflow: hidden; }
@@ -317,8 +317,7 @@ footer,
  * spacing
  */
 [class*="row-fluid"] > [class*="span"] .inner,
-.static-sidebar .inner,
-.main .inner {
+.row-static > [class*="span"] .inner {
   padding: 20px; }
 
 .padder {

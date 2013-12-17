@@ -3,8 +3,8 @@
 	<p class="short">This section contains example of non standard html elements. This is anything defined with a css class or set of css classes. These however do not include JS functionality. They are just examples of the styles.</p>
 </section>
 
-<section class="static-sidebar">
-	<aside class="sidebar">
+<section class="row-static">
+	<aside class="span-sidebar">
 		<nav class="inner">
 			<h4>Browse Libs:</h4>
 			<div class="list-group">
@@ -15,7 +15,7 @@
 			</div>
 		</nav>
 	</aside>
-	<section class="main">
+	<section class="span-main">
 		<article id="buttons" class="division">
 			<?php include './views/libraries/_btns.php'; ?>
 		</article>

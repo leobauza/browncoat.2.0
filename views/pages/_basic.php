@@ -6,8 +6,8 @@
 	</article>
 </header>
 
-<section class="static-sidebar">
-	<aside class="sidebar">
+<section class="row-static">
+	<aside class="span-sidebar">
 		<div class="inner">
 			<div class="list-group">
 				<a href="#">First Link</a>
@@ -19,7 +19,7 @@
 			</div>
 		</div>
 	</aside>
-	<section class="main">
+	<section class="span-main">
 		<div class="inner">
 			<h3>Main Body</h3>
 			<p class="soft-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
