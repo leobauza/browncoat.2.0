@@ -161,6 +161,7 @@ header,
 footer,
 .row-fluid,
 .row-fluid-alt,
+.row-fluid-flush,
 .group,
 .form-group,
 .input-group,
@@ -170,6 +171,7 @@ footer,
   footer:before,
   .row-fluid:before,
   .row-fluid-alt:before,
+  .row-fluid-flush:before,
   .group:before,
   .form-group:before,
   .input-group:before,
@@ -180,6 +182,7 @@ footer,
   footer:after,
   .row-fluid:after,
   .row-fluid-alt:after,
+  .row-fluid-flush:after,
   .group:after,
   .form-group:after,
   .input-group:after,
@@ -301,6 +304,56 @@ footer,
 
 .row-fluid-alt .span12 {
   width: 96.98889%; }
+
+/*
+ * fluid row no gutter
+ */
+.row-fluid-flush {
+  width: 100%; }
+
+.row-fluid-flush > [class*="span"] {
+  float: left;
+  margin-right: 0; }
+  .row-fluid-flush > [class*="span"].l {
+    margin-right: 0; }
+  .row-fluid-flush > [class*="span"]:last-child {
+    margin-right: 0; }
+
+.row-fluid-flush .span1 {
+  width: 8.33333%; }
+
+.row-fluid-flush .span2 {
+  width: 16.65556%; }
+
+.row-fluid-flush .span3 {
+  width: 24.98889%; }
+
+.row-fluid-flush .span4 {
+  width: 33.32222%; }
+
+.row-fluid-flush .span5 {
+  width: 41.65556%; }
+
+.row-fluid-flush .span6 {
+  width: 49.98889%; }
+
+.row-fluid-flush .span7 {
+  width: 58.32222%; }
+
+.row-fluid-flush .span8 {
+  width: 66.65556%; }
+
+.row-fluid-flush .span9 {
+  width: 74.98889%; }
+
+.row-fluid-flush .span10 {
+  width: 83.32222%; }
+
+.row-fluid-flush .span11 {
+  width: 91.65556%; }
+
+.row-fluid-flush .span12 {
+  width: 99.98889%; }
 
 /*
  * static sidebar
@@ -1026,6 +1079,10 @@ ul.list-group {
 .narrow-box {
   width: 500px;
   margin: 0 auto 40px; }
+
+.paint .inner {
+  background: #8790a5;
+  border-bottom: 1px solid black; }
 
 /* app/devs/doc (documentation css) */
 .site-header {

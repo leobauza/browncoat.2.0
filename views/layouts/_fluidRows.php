@@ -34,3 +34,35 @@
 		</div>
 	</article>
 </div>
+
+<hr>
+
+<div class="row-fluid-flush paint">
+	<article class="span6">
+		<div class="inner">
+			<p>Row Fluid Flush (with inner)</p>
+		</div>
+	</article>
+	<article class="span6">
+		<div class="inner">
+			<p>Using Percentages</p>
+		</div>
+	</article>
+</div>
+<div class="row-fluid-flush paint">
+	<article class="span4">
+		<div class="inner">
+			<p>Row Fluid Flush (with inner)</p>
+		</div>
+	</article>
+	<article class="span4">
+		<div class="inner">
+			<p>Using Percentages</p>
+		</div>
+	</article>
+	<article class="span4">
+		<div class="inner">
+			<p>Using Percentages</p>
+		</div>
+	</article>
+</div>
