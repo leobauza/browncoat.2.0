@@ -1,6 +1,6 @@
 define (require) ->
-	#sandbox = require('cs!vendor/sandbox')
-	sandboxjs = require('vendor/sandboxjs')
+	sandbox = require('cs!vendor/sandbox')
+	#sandboxjs = require('vendor/sandboxjs')
 	#boilerplate = require('cs!boilerplates/amd.jquery.plugin.boilerplate')
 	
 	sandbox =

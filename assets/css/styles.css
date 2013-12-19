@@ -663,7 +663,8 @@ form input[type="submit"] {
   color: white;
   border: 1px solid #a6a6a6;
   font-size: 1.6em;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .btn:hover, .btn-default:hover, .btn-main:hover, .btn-info:hover, .btn-success:hover, .btn-warning:hover, .btn-error:hover, .btn.active, .active.btn-default, .active.btn-main, .active.btn-info, .active.btn-success, .active.btn-warning, .active.btn-error {
     background: #a6a6a6;
     color: white;
@@ -1076,6 +1077,53 @@ ul.list-group {
 .active .caret {
   border-top: none;
   border-bottom: 5px solid white; }
+
+/* app/libs/extraBtns */
+.open-and-close {
+  width: 40px;
+  height: 40px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer; }
+  .open-and-close:focus {
+    border: 1px solid black; }
+
+.open-and-close {
+  position: relative; }
+  .open-and-close span {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    position: absolute;
+    left: 5px;
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: black; }
+  .open-and-close .one {
+    top: 7px; }
+  .open-and-close .two {
+    top: 17px; }
+  .open-and-close .three {
+    top: 27px; }
+
+.open-and-close.together .one, .open-and-close.together .two, .open-and-close.together .three {
+  top: 17px; }
+.open-and-close.together .two {
+  visibility: hidden; }
+
+.open-and-close.exed .one {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+.open-and-close.exed .three {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
 
 /* app/devs/header */
 /* app/devs/footer */

@@ -1,0 +1,67 @@
+/* app/libs/extraBtns */
+.open-and-close {
+	@include square(40px, 40px);
+	display: block;
+	padding: 0;
+	margin: 0;
+	background: $white;
+	border: 1px solid $black;
+	cursor: pointer;
+	&:hover, &.active {
+
+	}
+	&:focus {
+		border: 1px solid $black;
+	}
+	&:active {
+		
+	}
+}
+
+
+.open-and-close {
+	position: relative;
+	span {
+		@include transition(all .5s);
+		position: absolute;
+		left: 5px;
+		display: block;
+		width: 28px;
+		height: 4px;
+		background: $black;
+	}
+	.one {
+		top: 7px;
+	}
+	.two {
+		top: 17px;
+	}
+	.three {
+		top: 27px;
+	}
+}
+
+.open-and-close.together {
+	.one, .two, .three {
+		top: 17px;
+	}
+	.two {
+		visibility: hidden;
+	}
+}
+
+.open-and-close.exed {
+	.one {
+		@include rotate(45deg);
+	}
+	.two {
+
+	}
+	.three {
+		@include rotate(-45deg);
+	}
+}
+
+
+
+

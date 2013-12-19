@@ -8,6 +8,7 @@
 		<nav class="inner">
 			<h4>Browse Libs:</h4>
 			<div class="list-group">
+				<a href="#extrabuttons">Extra Buttons</a>
 				<a href="#buttons">Buttons</a>
 				<a href="#listgroups">List Groups</a>
 				<a href="#callouts">Callouts</a>
@@ -16,6 +17,9 @@
 		</nav>
 	</aside>
 	<section class="span-main">
+		<article id="extrabuttons" class="division">
+			<?php include './views/libraries/_extraBtns.php'; ?>
+		</article>
 		<article id="buttons" class="division">
 			<?php include './views/libraries/_btns.php'; ?>
 		</article>

@@ -23,3 +23,18 @@ define (require) ->
 		a + 10
 	
 	console.log func(5)
+	
+	addMyClass = (that) -> 
+		$(that).toggleClass 'exed'
+	
+	removeMyClass = (that) -> 
+		$(that).toggleClass 'together'
+
+	$('.open-and-close').click ->
+		isOn = $(@).hasClass 'together'
+		if !isOn
+			$(@).addClass "together"
+			setTimeout addMyClass, 500, [@]
+		else
+			$(@).removeClass "exed"
+			setTimeout removeMyClass, 500, [@]

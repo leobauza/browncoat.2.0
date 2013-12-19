@@ -6,6 +6,15 @@
 	<a href="#" class="btn-success">success</a>
 	<a href="#" class="btn-warning">warning</a>
 	<a href="#" class="btn-error">error</a>
+
+	<h3>using button tag</h3>
+	<button class="btn-default">default</button>	
+	<button class="btn-main">main</button>
+	<button class="btn-info">info</button>
+	<button class="btn-success">success</button>
+	<button class="btn-warning">warning</button>
+	<button class="btn-error">error</button>
+
 </section>
 <section class="container spacer">
 	<div>
