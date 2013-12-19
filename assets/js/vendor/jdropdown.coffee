@@ -36,7 +36,8 @@
 			if !isActive
 				$(that).trigger 'open.bc.dropdown'
 				closeDropdowns(e, that)
-				$parent.toggleClass('open')
+				$parent.toggleClass 'open'
+				$(that).addClass 'active'
 			else
 				closeDropdowns()
 		
@@ -48,7 +49,8 @@
 		$("#{defaults.parent} #{defaults.toggle}").each (e) ->
 			$parent = $(@).closest( defaults.parent )
 			if !$parent.hasClass('open') then return
-			$parent.not($(that).closest( defaults.parent )).removeClass('open')
+			$parent.not($(that).closest( defaults.parent )).removeClass 'open'
+			$(@).not($(that)).removeClass 'active'
 			$(@).trigger 'close.bc.dropdown'
 	
 	# Define plugin

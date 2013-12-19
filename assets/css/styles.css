@@ -671,18 +671,6 @@ form input[type="submit"] {
   .btn:focus, .btn-default:focus, .btn-main:focus, .btn-info:focus, .btn-success:focus, .btn-warning:focus, .btn-error:focus {
     border: 1px solid #a6a6a6; }
 
-.caret {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  _height: 5px;
-  vertical-align: middle;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid white; }
-
 .btn-default {
   background: none;
   color: #333333; }
@@ -1072,6 +1060,22 @@ ul.list-group {
       .dropdown-menu li a:hover {
         text-decoration: none;
         background: #e6e6e6; }
+
+.caret {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  _height: 5px;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white; }
+
+.active .caret {
+  border-top: none;
+  border-bottom: 5px solid white; }
 
 /* app/devs/header */
 /* app/devs/footer */
