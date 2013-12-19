@@ -30,9 +30,10 @@ define (require) ->
 		modals: () ->
 			
 		btnfx: () ->
+			console.log "change"
 			# console.log jbtnfx.prototype
 			# console.log $.fn.jbtnfx.defaults
-			$('.open-and-close').jbtnfx({
+			$('[data-plugin=btnfx]').jbtnfx({
 				tcss: 200
 				tdiff: 0
 			})#.jbtnfx('toEndState')

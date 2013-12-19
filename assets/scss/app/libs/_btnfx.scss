@@ -1,8 +1,8 @@
 /* app/libs/extraBtns */
 $transTime: .2s;
 
-.open-and-close {
-	@include square(40px, 40px);
+.collapse-btn {
+	@include square(50px, 50px);
 	display: block;
 	padding: 0;
 	margin: 0;
@@ -10,7 +10,7 @@ $transTime: .2s;
 	border: 1px solid $black;
 	cursor: pointer;
 	&:hover, &.active {
-
+		background: $white
 	}
 	&:focus {
 		border: 1px solid $black;
@@ -20,50 +20,98 @@ $transTime: .2s;
 	}
 }
 
-
-.open-and-close {
+//THIN
+.collapse-thin {
 	position: relative;
 	span {
 		@include transition(all $transTime);
 		position: absolute;
 		left: 5px;
 		display: block;
-		width: 28px;
+		width: 38px;
 		height: 4px;
 		background: $black;
 	}
 	.one {
-		top: 7px;
+		top: 9px;
 	}
 	.two {
-		top: 17px;
+		top: 22px;
 	}
 	.three {
-		top: 27px;
+		top: 35px;
 	}
 }
 
-.open-and-close.stg-one {
-	.one, .two, .three {
-		top: 17px;
+.collapse-thin {
+	/*stage one*/
+	&.stg-one {
+		.one, .two, .three {
+			top: 22px;
+		}
+		.two {
+			visibility: hidden;
+		}
 	}
-	.two {
-		visibility: hidden;
+	/*stage two*/
+	&.stg-two {
+		span {
+			background: $error;
+		}
+		.one {
+			@include rotate(45deg);
+		}
+		.three {
+			@include rotate(-45deg);
+		}
 	}
 }
 
-.open-and-close.stg-two {
+
+//THICK
+.collapse-thick {
+	position: relative;
+	span {
+		@include transition(all $transTime);
+		position: absolute;
+		left: 5px;
+		display: block;
+		width: 38px;
+		height: 6px;
+		background: $black;
+	}
 	.one {
-		@include rotate(45deg);
+		top: 8px;
 	}
 	.two {
-
+		top: 21px;
 	}
 	.three {
-		@include rotate(-45deg);
+		top: 34px;
 	}
 }
 
-
-
+.collapse-thick {
+	/*stage one*/
+	&.stg-one {
+		.one, .two, .three {
+			top: 21px;
+		}
+		.two {
+			visibility: hidden;
+		}
+	}
+	/*stage two*/
+	&.stg-two {
+		span {
+			background: $error;
+		}
+		.one {
+			@include rotate(45deg);
+		}
+		.three {
+			@include rotate(-45deg);
+		}
+	}
+}
 
