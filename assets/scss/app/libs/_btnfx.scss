@@ -1,4 +1,6 @@
 /* app/libs/extraBtns */
+$transTime: .2s;
+
 .open-and-close {
 	@include square(40px, 40px);
 	display: block;
@@ -22,7 +24,7 @@
 .open-and-close {
 	position: relative;
 	span {
-		@include transition(all .5s);
+		@include transition(all $transTime);
 		position: absolute;
 		left: 5px;
 		display: block;
@@ -41,7 +43,7 @@
 	}
 }
 
-.open-and-close.together {
+.open-and-close.stg-one {
 	.one, .two, .three {
 		top: 17px;
 	}
@@ -50,7 +52,7 @@
 	}
 }
 
-.open-and-close.exed {
+.open-and-close.stg-two {
 	.one {
 		@include rotate(45deg);
 	}

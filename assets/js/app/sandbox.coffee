@@ -1,5 +1,7 @@
 define (require) ->
+	$ = require('jquery')
 	sandbox = require('cs!vendor/sandbox')
+	jbtnfx = require('cs!vendor/jbtnfx')
 	#sandboxjs = require('vendor/sandboxjs')
 	#boilerplate = require('cs!boilerplates/amd.jquery.plugin.boilerplate')
 	
@@ -7,6 +9,7 @@ define (require) ->
 		init: ->
 			console.warn "using the sandbox"
 			@boilerplate()
+			@btnfx()
 		
 		boilerplate: ->
 			#console.warn "boilerplate use example in sandbox"
@@ -26,6 +29,15 @@ define (require) ->
 		
 		modals: () ->
 			
+		btnfx: () ->
+			# console.log jbtnfx.prototype
+			# console.log $.fn.jbtnfx.defaults
+			$('.open-and-close').jbtnfx({
+				tcss: 200
+				tdiff: 0
+			})#.jbtnfx('toEndState')
+			
+			#setTimeout (-> $('.open-and-close').jbtnfx('toStartState')), 2000
 		
 	#end
 	

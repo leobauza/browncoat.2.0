@@ -18,7 +18,7 @@
 	</aside>
 	<section class="span-main">
 		<article id="extrabuttons" class="division">
-			<?php include './views/libraries/_extraBtns.php'; ?>
+			<?php include './views/libraries/_btnfx.php'; ?>
 		</article>
 		<article id="buttons" class="division">
 			<?php include './views/libraries/_btns.php'; ?>

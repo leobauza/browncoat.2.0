@@ -1094,10 +1094,10 @@ ul.list-group {
 .open-and-close {
   position: relative; }
   .open-and-close span {
-    transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     position: absolute;
     left: 5px;
     display: block;
@@ -1111,16 +1111,16 @@ ul.list-group {
   .open-and-close .three {
     top: 27px; }
 
-.open-and-close.together .one, .open-and-close.together .two, .open-and-close.together .three {
+.open-and-close.stg-one .one, .open-and-close.stg-one .two, .open-and-close.stg-one .three {
   top: 17px; }
-.open-and-close.together .two {
+.open-and-close.stg-one .two {
   visibility: hidden; }
 
-.open-and-close.exed .one {
+.open-and-close.stg-two .one {
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
-.open-and-close.exed .three {
+.open-and-close.stg-two .three {
   transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg); }
