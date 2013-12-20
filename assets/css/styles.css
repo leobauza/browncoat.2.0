@@ -221,37 +221,26 @@ footer,
 .row-fluid .span1 {
   width: 5.60606%;
   /*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/ }
-
 .row-fluid .span2 {
   width: 14.16667%; }
-
 .row-fluid .span3 {
   width: 22.75%; }
-
 .row-fluid .span4 {
   width: 31.33333%; }
-
 .row-fluid .span5 {
   width: 38.66667%; }
-
 .row-fluid .span6 {
   width: 48.5%; }
-
 .row-fluid .span7 {
   width: 55.33333%; }
-
 .row-fluid .span8 {
   width: 63.66667%; }
-
 .row-fluid .span9 {
   width: 72%; }
-
 .row-fluid .span10 {
   width: 80.33333%; }
-
 .row-fluid .span11 {
   width: 88.66667%; }
-
 .row-fluid .span12 {
   width: 97%; }
 
@@ -271,37 +260,26 @@ footer,
 
 .row-fluid-alt .span1 {
   width: 5.59495%; }
-
 .row-fluid-alt .span2 {
   width: 14.15556%; }
-
 .row-fluid-alt .span3 {
   width: 22.73889%; }
-
 .row-fluid-alt .span4 {
   width: 31.32222%; }
-
 .row-fluid-alt .span5 {
   width: 38.65556%; }
-
 .row-fluid-alt .span6 {
   width: 48.48889%; }
-
 .row-fluid-alt .span7 {
   width: 55.32222%; }
-
 .row-fluid-alt .span8 {
   width: 63.65556%; }
-
 .row-fluid-alt .span9 {
   width: 71.98889%; }
-
 .row-fluid-alt .span10 {
   width: 80.32222%; }
-
 .row-fluid-alt .span11 {
   width: 88.65556%; }
-
 .row-fluid-alt .span12 {
   width: 96.98889%; }
 
@@ -321,37 +299,26 @@ footer,
 
 .row-fluid-flush .span1 {
   width: 8.33333%; }
-
 .row-fluid-flush .span2 {
   width: 16.65556%; }
-
 .row-fluid-flush .span3 {
   width: 24.98889%; }
-
 .row-fluid-flush .span4 {
   width: 33.32222%; }
-
 .row-fluid-flush .span5 {
   width: 41.65556%; }
-
 .row-fluid-flush .span6 {
   width: 49.98889%; }
-
 .row-fluid-flush .span7 {
   width: 58.32222%; }
-
 .row-fluid-flush .span8 {
   width: 66.65556%; }
-
 .row-fluid-flush .span9 {
   width: 74.98889%; }
-
 .row-fluid-flush .span10 {
   width: 83.32222%; }
-
 .row-fluid-flush .span11 {
   width: 91.65556%; }
-
 .row-fluid-flush .span12 {
   width: 99.98889%; }
 
@@ -399,6 +366,25 @@ footer,
 .al-l {
   text-align: center; }
 
+/*
+ * Responsive
+ */
+@media (max-width: 959px) {
+  .row-static .span-sidebar {
+    width: auto;
+    float: none; }
+  .row-static .span-main {
+    overflow: visible; }
+
+  /*margin right instead of margin left to do overflow hidden*/
+  [class*="row-fluid"] > [class*="span"] {
+    float: none;
+    width: auto;
+    margin-right: 0; }
+
+  /*Use this to set exact percentages and have the last box be ok*/
+  [class*="row-fluid"] > [class*="span"]:last-child {
+    overflow: auto; } }
 /* browncoat/normalizers/list */
 ul ul,
 ul ol,
@@ -1023,62 +1009,7 @@ ul.list-group {
   z-index: 5;
   background: white; }
 
-/* app/libs/dropdown */
-.dropdown-group {
-  position: relative;
-  margin: 0 0 20px; }
-  .dropdown-group .btn, .dropdown-group .btn-default, .dropdown-group .btn-main, .dropdown-group .btn-info, .dropdown-group .btn-success, .dropdown-group .btn-warning, .dropdown-group .btn-error {
-    margin-bottom: 0; }
-  .dropdown-group .dropdown-menu {
-    display: none; }
-  .dropdown-group.open {
-    z-index: 100; }
-    .dropdown-group.open .dropdown-menu {
-      display: block; }
-  .dropdown-group .btn-group {
-    margin: 0; }
-
-.dropdown-menu {
-  margin: 0 0 20px;
-  padding: 0;
-  list-style: none;
-  font-size: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 2px 0 0 0;
-  background: white;
-  border: 1px solid #e6e6e6;
-  z-index: 100; }
-  .dropdown-menu li {
-    margin: 0; }
-    .dropdown-menu li a {
-      display: block;
-      padding: 5px 15px;
-      font-size: 1.6em;
-      line-height: 1.6em;
-      color: #333333; }
-      .dropdown-menu li a:hover {
-        text-decoration: none;
-        background: #e6e6e6; }
-
-.caret {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  _height: 5px;
-  vertical-align: middle;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid white; }
-
-.active .caret {
-  border-top: none;
-  border-bottom: 5px solid white; }
-
-/* app/libs/extraBtns */
+/* app/vendors/extraBtns */
 .collapse-btn {
   width: 48px;
   height: 48px;
@@ -1170,6 +1101,61 @@ ul.list-group {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
 
+/* app/vendors/dropdown */
+.dropdown-group {
+  position: relative;
+  margin: 0 0 20px; }
+  .dropdown-group .btn, .dropdown-group .btn-default, .dropdown-group .btn-main, .dropdown-group .btn-info, .dropdown-group .btn-success, .dropdown-group .btn-warning, .dropdown-group .btn-error {
+    margin-bottom: 0; }
+  .dropdown-group .dropdown-menu {
+    display: none; }
+  .dropdown-group.open {
+    z-index: 100; }
+    .dropdown-group.open .dropdown-menu {
+      display: block; }
+  .dropdown-group .btn-group {
+    margin: 0; }
+
+.dropdown-menu {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 2px 0 0 0;
+  background: white;
+  border: 1px solid #e6e6e6;
+  z-index: 100; }
+  .dropdown-menu li {
+    margin: 0; }
+    .dropdown-menu li a {
+      display: block;
+      padding: 5px 15px;
+      font-size: 1.6em;
+      line-height: 1.6em;
+      color: #333333; }
+      .dropdown-menu li a:hover {
+        text-decoration: none;
+        background: #e6e6e6; }
+
+.caret {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  _height: 5px;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white; }
+
+.active .caret {
+  border-top: none;
+  border-bottom: 5px solid white; }
+
 /* app/devs/header */
 /* app/devs/footer */
 /* app/devs/etc (disposable testing area) */
@@ -1206,21 +1192,4 @@ p em, li em {
   .short {
     width: auto; } }
 /* app/devs/responsive */
-@media (max-width: 959px) {
-  .static-sidebar .sidebar {
-    width: auto;
-    float: none; }
-  .static-sidebar .main {
-    overflow: visible; }
-
-  /*margin right instead of margin left to do overflow hidden*/
-  [class*="row-fluid"] > [class*="span"] {
-    float: none;
-    width: auto;
-    margin-right: 0; }
-
-  /*Use this to set exact percentages and have the last box be ok*/
-  [class*="row-fluid"] > [class*="span"]:last-child {
-    overflow: auto; } }
-/*@import 'app/vendors/';*/
-/*@import 'app/clients/';*/
+/* app/clients/client */

@@ -31,42 +31,44 @@
 		@include overflower;
 	}
 }
-.row-fluid .span1 {
-	width: $columnWidth + $columnGutter/11;
-	/*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/
-}
-.row-fluid .span2 {
-	width: $columnWidth * 2 + $columnGutter + $columnGutter/6;
-}
-.row-fluid .span3 {
-	width: $columnWidth * 3 + $columnGutter * 2 + $columnGutter/4;
-}
-.row-fluid .span4 {
-	width: $columnWidth * 4 + $columnGutter * 3 + $columnGutter/3;
-}
-.row-fluid .span5 {
-	width: $columnWidth * 5 + $columnGutter * 4;
-}
-.row-fluid .span6 {
-	width: $columnWidth * 6 + $columnGutter * 5 + $columnGutter/2;
-}
-.row-fluid .span7 {
-	width: $columnWidth * 7 + $columnGutter * 6;
-}
-.row-fluid .span8 {
-	width: $columnWidth * 8 + $columnGutter * 7;
-}
-.row-fluid .span9 {
-	width: $columnWidth * 9 + $columnGutter * 8;
-}
-.row-fluid .span10 {
-	width: $columnWidth * 10 + $columnGutter * 9;
-}
-.row-fluid .span11 {
-	width: $columnWidth * 11 + $columnGutter * 10;
-}
-.row-fluid .span12 {
-	width: $columnWidth * 12 + $columnGutter * 11;
+.row-fluid {
+	.span1 {
+		width: $columnWidth + $columnGutter/11;
+		/*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/
+	}
+	.span2 {
+		width: $columnWidth * 2 + $columnGutter + $columnGutter/6;
+	}
+	.span3 {
+		width: $columnWidth * 3 + $columnGutter * 2 + $columnGutter/4;
+	}
+	.span4 {
+		width: $columnWidth * 4 + $columnGutter * 3 + $columnGutter/3;
+	}
+	.span5 {
+		width: $columnWidth * 5 + $columnGutter * 4;
+	}
+	.span6 {
+		width: $columnWidth * 6 + $columnGutter * 5 + $columnGutter/2;
+	}
+	.span7 {
+		width: $columnWidth * 7 + $columnGutter * 6;
+	}
+	.span8 {
+		width: $columnWidth * 8 + $columnGutter * 7;
+	}
+	.span9 {
+		width: $columnWidth * 9 + $columnGutter * 8;
+	}
+	.span10 {
+		width: $columnWidth * 10 + $columnGutter * 9;
+	}
+	.span11 {
+		width: $columnWidth * 11 + $columnGutter * 10;
+	}
+	.span12 {
+		width: $columnWidth * 12 + $columnGutter * 11;
+	}	
 }
 
 /*
@@ -88,41 +90,43 @@
 	}
 }
 
-.row-fluid-alt .span1 {
-	width:$columnWidth + $columnGutter/11 - .0111111111;
-}
-.row-fluid-alt .span2 {
-	width:$columnWidth * 2 + $columnGutter + $columnGutter/6 - .0111111111;
-}
-.row-fluid-alt .span3 {
-	width:$columnWidth * 3 + $columnGutter * 2 + $columnGutter/4 - .0111111111;
-}
-.row-fluid-alt .span4 {
-	width:$columnWidth * 4 + $columnGutter * 3 + $columnGutter/3 - .0111111111;
-}
-.row-fluid-alt .span5 {
-	width:$columnWidth * 5 + $columnGutter * 4 - .0111111111;
-}
-.row-fluid-alt .span6 {
-	width:$columnWidth * 6 + $columnGutter * 5 + $columnGutter/2 - .0111111111;
-}
-.row-fluid-alt .span7 {
-	width:$columnWidth * 7 + $columnGutter * 6 - .0111111111;
-}
-.row-fluid-alt .span8 {
-	width:$columnWidth * 8 + $columnGutter * 7 - .0111111111;
-}
-.row-fluid-alt .span9 {
-	width:$columnWidth * 9 + $columnGutter * 8 - .0111111111;
-}
-.row-fluid-alt .span10 {
-	width:$columnWidth * 10 + $columnGutter * 9 - .0111111111;
-}
-.row-fluid-alt .span11 {
-	width:$columnWidth * 11 + $columnGutter * 10 - .0111111111;
-}
-.row-fluid-alt .span12 {
-	width:$columnWidth * 12 + $columnGutter * 11 - .0111111111;
+.row-fluid-alt {
+	.span1 {
+		width:$columnWidth + $columnGutter/11 - .0111111111;
+	}
+	.span2 {
+		width:$columnWidth * 2 + $columnGutter + $columnGutter/6 - .0111111111;
+	}
+	.span3 {
+		width:$columnWidth * 3 + $columnGutter * 2 + $columnGutter/4 - .0111111111;
+	}
+	.span4 {
+		width:$columnWidth * 4 + $columnGutter * 3 + $columnGutter/3 - .0111111111;
+	}
+	.span5 {
+		width:$columnWidth * 5 + $columnGutter * 4 - .0111111111;
+	}
+	.span6 {
+		width:$columnWidth * 6 + $columnGutter * 5 + $columnGutter/2 - .0111111111;
+	}
+	.span7 {
+		width:$columnWidth * 7 + $columnGutter * 6 - .0111111111;
+	}
+	.span8 {
+		width:$columnWidth * 8 + $columnGutter * 7 - .0111111111;
+	}
+	.span9 {
+		width:$columnWidth * 9 + $columnGutter * 8 - .0111111111;
+	}
+	.span10 {
+		width:$columnWidth * 10 + $columnGutter * 9 - .0111111111;
+	}
+	.span11 {
+		width:$columnWidth * 11 + $columnGutter * 10 - .0111111111;
+	}
+	.span12 {
+		width:$columnWidth * 12 + $columnGutter * 11 - .0111111111;
+	}
 }
 
 /*
@@ -144,41 +148,43 @@
 	}
 }
 
-.row-fluid-flush .span1 {
-	width:$columnWidth + $columnGutter;
-}
-.row-fluid-flush .span2 {
-	width:$columnWidth * 2  + $columnGutter * 2 - .0111111111;
-}
-.row-fluid-flush .span3 {
-	width:$columnWidth * 3 + $columnGutter * 3 - .0111111111;
-}
-.row-fluid-flush .span4 {
-	width:$columnWidth * 4 + $columnGutter * 4 - .0111111111;
-}
-.row-fluid-flush .span5 {
-	width:$columnWidth * 5 + $columnGutter * 5 - .0111111111;
-}
-.row-fluid-flush .span6 {
-	width:$columnWidth * 6 + $columnGutter * 6 - .0111111111;
-}
-.row-fluid-flush .span7 {
-	width:$columnWidth * 7 + $columnGutter * 7 - .0111111111;
-}
-.row-fluid-flush .span8 {
-	width:$columnWidth * 8 + $columnGutter * 8 - .0111111111;
-}
-.row-fluid-flush .span9 {
-	width:$columnWidth * 9 + $columnGutter * 9 - .0111111111;
-}
-.row-fluid-flush .span10 {
-	width:$columnWidth * 10 + $columnGutter * 10 - .0111111111;
-}
-.row-fluid-flush .span11 {
-	width:$columnWidth * 11 + $columnGutter * 11 - .0111111111;
-}
-.row-fluid-flush .span12 {
-	width:$columnWidth * 12 + $columnGutter * 12 - .0111111111;
+.row-fluid-flush {
+	.span1 {
+		width:$columnWidth + $columnGutter;
+	}
+	.span2 {
+		width:$columnWidth * 2  + $columnGutter * 2 - .0111111111;
+	}
+	.span3 {
+		width:$columnWidth * 3 + $columnGutter * 3 - .0111111111;
+	}
+	.span4 {
+		width:$columnWidth * 4 + $columnGutter * 4 - .0111111111;
+	}
+	.span5 {
+		width:$columnWidth * 5 + $columnGutter * 5 - .0111111111;
+	}
+	.span6 {
+		width:$columnWidth * 6 + $columnGutter * 6 - .0111111111;
+	}
+	.span7 {
+		width:$columnWidth * 7 + $columnGutter * 7 - .0111111111;
+	}
+	.span8 {
+		width:$columnWidth * 8 + $columnGutter * 8 - .0111111111;
+	}
+	.span9 {
+		width:$columnWidth * 9 + $columnGutter * 9 - .0111111111;
+	}
+	.span10 {
+		width:$columnWidth * 10 + $columnGutter * 10 - .0111111111;
+	}
+	.span11 {
+		width:$columnWidth * 11 + $columnGutter * 11 - .0111111111;
+	}
+	.span12 {
+		width:$columnWidth * 12 + $columnGutter * 12 - .0111111111;
+	}
 }
 
 
