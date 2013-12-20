@@ -2,18 +2,19 @@
 $transTime: .2s;
 
 .collapse-btn {
-	@include square(50px, 50px);
+	@include square(48px, 48px);
 	display: block;
 	padding: 0;
 	margin: 0;
 	background: $white;
-	border: 1px solid $black;
+	border: 1px solid Greyscale(25);
 	cursor: pointer;
 	&:hover, &.active {
-		background: $white
+		background: $white;
+		text-decoration: none;
 	}
 	&:focus {
-		border: 1px solid $black;
+		border: 1px solid Greyscale(25);
 	}
 	&:active {
 		
@@ -30,7 +31,7 @@ $transTime: .2s;
 		display: block;
 		width: 38px;
 		height: 4px;
-		background: $black;
+		background: Greyscale(25);
 	}
 	.one {
 		top: 9px;
@@ -78,7 +79,7 @@ $transTime: .2s;
 		display: block;
 		width: 38px;
 		height: 6px;
-		background: $black;
+		background: Greyscale(25);
 	}
 	.one {
 		top: 8px;

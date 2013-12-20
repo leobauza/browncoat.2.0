@@ -33,6 +33,7 @@
 				if !@isAnimating then @toStartState()
 		
 		toEndState: (el) ->
+			@$el.trigger "open.bc.btnfx"
 			if !el then el = @el
 			self = @
 			@isAnimating = true
@@ -43,6 +44,7 @@
 			setTimeout (() => @.finalize()), @options.tcss * 2 - @options.tdiff
 		
 		toStartState: (el) ->
+			@$el.trigger "close.bc.btnfx"
 			if !el then el = @el
 			self = @
 			@isAnimating = true

@@ -30,13 +30,15 @@ define (require) ->
 		modals: () ->
 			
 		btnfx: () ->
-			console.log "change"
 			# console.log jbtnfx.prototype
 			# console.log $.fn.jbtnfx.defaults
 			$('[data-plugin=btnfx]').jbtnfx({
 				tcss: 200
 				tdiff: 0
-			})#.jbtnfx('toEndState')
+			}).jbtnfx('toEndState')
+			$('.collapse-sidebar').on "open.bc.btnfx", -> $('.span-sidebar .list-group').show()
+			$('.collapse-sidebar').on "close.bc.btnfx", -> $('.span-sidebar .list-group').hide()
+			
 			
 			#setTimeout (-> $('.open-and-close').jbtnfx('toStartState')), 2000
 		

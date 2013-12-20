@@ -1080,18 +1080,19 @@ ul.list-group {
 
 /* app/libs/extraBtns */
 .collapse-btn {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   display: block;
   padding: 0;
   margin: 0;
   background: white;
-  border: 1px solid black;
+  border: 1px solid #bfbfbf;
   cursor: pointer; }
   .collapse-btn:hover, .collapse-btn.active {
-    background: white; }
+    background: white;
+    text-decoration: none; }
   .collapse-btn:focus {
-    border: 1px solid black; }
+    border: 1px solid #bfbfbf; }
 
 .collapse-thin {
   position: relative; }
@@ -1105,7 +1106,7 @@ ul.list-group {
     display: block;
     width: 38px;
     height: 4px;
-    background: black; }
+    background: #bfbfbf; }
   .collapse-thin .one {
     top: 9px; }
   .collapse-thin .two {
@@ -1143,7 +1144,7 @@ ul.list-group {
     display: block;
     width: 38px;
     height: 6px;
-    background: black; }
+    background: #bfbfbf; }
   .collapse-thick .one {
     top: 8px; }
   .collapse-thick .two {
