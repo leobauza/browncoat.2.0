@@ -1101,6 +1101,9 @@ ul.list-group {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
 
+.collapse-borderless {
+  border: none; }
+
 /* app/vendors/dropdown */
 .dropdown-group {
   position: relative;
