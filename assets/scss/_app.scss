@@ -6,10 +6,10 @@
 @import 'app/libs/listgroup';
 @import 'app/libs/box';
 @import 'app/libs/hero';
-@import 'app/libs/dropdown';
-//extra libs
-@import 'app/libs/btnfx';
 
+//vendor
+@import 'app/vendor/btnfx';
+@import 'app/vendor/dropdown';
 
 //devs
 @import 'app/devs/header';
@@ -18,9 +18,5 @@
 @import 'app/devs/doc';
 @import 'app/devs/responsive';
 
-
-//vendors
-/*@import 'app/vendors/';*/
-
-//clients
-/*@import 'app/clients/';*/
+//client
+@import 'app/client/client';
