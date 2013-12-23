@@ -967,6 +967,7 @@ ul.list-group {
 .box .callout, .box-main .callout, .box-info .callout, .box-success .callout, .box-warning .callout, .box-error .callout, .box .callout-main, .box-main .callout-main, .box-info .callout-main, .box-success .callout-main, .box-warning .callout-main, .box-error .callout-main, .box .callout-info, .box-main .callout-info, .box-info .callout-info, .box-success .callout-info, .box-warning .callout-info, .box-error .callout-info, .box .callout-success, .box-main .callout-success, .box-info .callout-success, .box-success .callout-success, .box-warning .callout-success, .box-error .callout-success, .box .callout-warning, .box-main .callout-warning, .box-info .callout-warning, .box-success .callout-warning, .box-warning .callout-warning, .box-error .callout-warning, .box .callout-error, .box-main .callout-error, .box-info .callout-error, .box-success .callout-error, .box-warning .callout-error, .box-error .callout-error {
   margin: 0 10px 10px; }
 
+/* app/libs/hero */
 .hero {
   margin-bottom: 40px;
   position: relative;
