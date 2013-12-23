@@ -7,9 +7,11 @@
 @import 'app/libs/box';
 @import 'app/libs/hero';
 
+
 //vendor
-@import 'app/vendor/btnfx';
-@import 'app/vendor/dropdown';
+@import 'app/vendors/btnfx';
+@import 'app/vendors/dropdown';
+
 
 //devs
 @import 'app/devs/header';
@@ -18,5 +20,6 @@
 @import 'app/devs/doc';
 @import 'app/devs/responsive';
 
-//client
-@import 'app/client/client';
+
+//clients
+@import 'app/clients/client';

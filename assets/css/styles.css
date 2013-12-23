@@ -363,6 +363,9 @@ footer,
 .al-l {
   text-align: center; }
 
+/*
+ * Responsive
+ */
 @media (max-width: 959px) {
   .row-static .span-sidebar {
     width: auto;
@@ -1003,7 +1006,7 @@ ul.list-group {
   z-index: 5;
   background: white; }
 
-/* app/libs/extraBtns */
+/* app/vendors/extraBtns */
 .collapse-btn {
   width: 48px;
   height: 48px;
@@ -1096,45 +1099,9 @@ ul.list-group {
     -webkit-transform: rotate(-45deg); }
 
 .collapse-borderless {
-  position: relative;
   border: none; }
-  .collapse-borderless span {
-    transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    position: absolute;
-    left: 5px;
-    display: block;
-    width: 38px;
-    height: 6px;
-    background: #bfbfbf; }
-  .collapse-borderless .one {
-    top: 8px; }
-  .collapse-borderless .two {
-    top: 21px; }
-  .collapse-borderless .three {
-    top: 34px; }
 
-.collapse-borderless {
-  /*stage one*/
-  /*stage two*/ }
-  .collapse-borderless.stg-one .one, .collapse-borderless.stg-one .two, .collapse-borderless.stg-one .three {
-    top: 21px; }
-  .collapse-borderless.stg-one .two {
-    visibility: hidden; }
-  .collapse-borderless.stg-two span {
-    background: #d9534f; }
-  .collapse-borderless.stg-two .one {
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg); }
-  .collapse-borderless.stg-two .three {
-    transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg); }
-
-/* app/libs/dropdown */
+/* app/vendors/dropdown */
 .dropdown-group {
   position: relative;
   margin: 0 0 20px; }
@@ -1225,4 +1192,4 @@ p em, li em {
   .short {
     width: auto; } }
 /* app/devs/responsive */
-/* app/client/client */
+/* app/clients/client */

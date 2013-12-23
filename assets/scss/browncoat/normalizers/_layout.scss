@@ -93,7 +93,7 @@
 	}
 	.span12 {
 		width: $columnWidth * 12 + $columnGutter * 11;
-	}
+	}	
 }
 
 
@@ -152,7 +152,7 @@
 	}
 	.span12 {
 		width:$columnWidth * 12 + $columnGutter * 11 - .0111111111;
-	}	
+	}
 }
 
 
@@ -244,6 +244,9 @@
 	text-align:center;
 }
 
+/*
+ * Responsive
+ */
 
 @media (max-width: 959px) {
 	
@@ -271,5 +274,4 @@
 	
 	
 }
-
 

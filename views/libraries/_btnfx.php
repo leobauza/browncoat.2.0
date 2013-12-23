@@ -21,7 +21,7 @@
 		</article>
 		<article class="span4">
 			<div class="spacer">
-				<a class="collapse-btn collapse-borderless" data-plugin="btnfx">
+				<a class="collapse-btn collapse-thick collapse-borderless" data-plugin="btnfx">
 					<span class="one"></span>
 					<span class="two"></span>
 					<span class="three"></span>
