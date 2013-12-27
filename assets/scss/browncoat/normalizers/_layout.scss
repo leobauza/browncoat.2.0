@@ -56,7 +56,7 @@
 		@include overflower;
 	}
 }
-.row-fluid {
+.row-fluid > {
 	.span1 {
 		width: $columnWidth + $columnGutter/11;
 		/*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/
@@ -116,7 +116,7 @@
 	}
 }
 
-.row-fluid-alt {
+.row-fluid-alt > {
 	.span1 {
 		width:$columnWidth + $columnGutter/11 - .0111111111;
 	}
@@ -175,7 +175,7 @@
 	}
 }
 
-.row-fluid-flush {
+.row-fluid-flush > {
 	.span1 {
 		width:$columnWidth + $columnGutter;
 	}
@@ -219,7 +219,7 @@
  * static sidebar
  */
 
-.row-static {
+.row-static > {
 	.span-sidebar {
 		width:250px;
 		float:left;
