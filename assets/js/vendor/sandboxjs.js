@@ -105,6 +105,39 @@ define(function(require){
 	var targetFor = makeTargetAssigner(sharksArr, targetsArr);
 	targetFor("foxy");
 
-	//console.warn("sdasda")
+	console.warn("sandbox js");
+	
+	var external = ["one", "two"];
+	var object = {
+		prop: "something",
+		internal: external
+	};
+	
+	// object.internal.push("three");
+	// console.log("object internal:", object.internal)
+	// console.log("external var:", external)
+	console.log("object prop ", object.prop);
+	delete object.prop;
+	console.log("object prop ", object.prop);
+	
+	
+	var myBox = {
+		box1: {height: 6, width: 6},
+		box2: {height: 7, width: 7},
+		func: function(name, h, w) {
+			this[name] = {height: h, width: w};
+		}
+	}
+	
+	for (key in myBox) {
+		console.log("my key: ", key);
+	}
+	
+	console.log("my box: ", myBox);
+	myBox.func("box3", 8, 8);
+	console.log("my box: ", myBox)
+	
+	
+	
 
 });

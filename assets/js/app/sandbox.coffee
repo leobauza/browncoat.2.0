@@ -2,7 +2,7 @@ define (require) ->
 	$ = require('jquery')
 	sandbox = require('cs!vendor/sandbox')
 	jbtnfx = require('cs!vendor/jbtnfx')
-	#sandboxjs = require('vendor/sandboxjs')
+	sandboxjs = require('vendor/sandboxjs')
 	#boilerplate = require('cs!boilerplates/amd.jquery.plugin.boilerplate')
 	
 	sandbox =
