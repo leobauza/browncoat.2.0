@@ -236,30 +236,30 @@ footer,
     float: none;
     overflow: hidden; }
 
-.row-fluid .span1 {
+.row-fluid > .span1 {
   width: 5.60606%;
   /*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/ }
-.row-fluid .span2 {
+.row-fluid > .span2 {
   width: 14.16667%; }
-.row-fluid .span3 {
+.row-fluid > .span3 {
   width: 22.75%; }
-.row-fluid .span4 {
+.row-fluid > .span4 {
   width: 31.33333%; }
-.row-fluid .span5 {
+.row-fluid > .span5 {
   width: 38.66667%; }
-.row-fluid .span6 {
+.row-fluid > .span6 {
   width: 48.5%; }
-.row-fluid .span7 {
+.row-fluid > .span7 {
   width: 55.33333%; }
-.row-fluid .span8 {
+.row-fluid > .span8 {
   width: 63.66667%; }
-.row-fluid .span9 {
+.row-fluid > .span9 {
   width: 72%; }
-.row-fluid .span10 {
+.row-fluid > .span10 {
   width: 80.33333%; }
-.row-fluid .span11 {
+.row-fluid > .span11 {
   width: 88.66667%; }
-.row-fluid .span12 {
+.row-fluid > .span12 {
   width: 97%; }
 
 /*
@@ -276,29 +276,29 @@ footer,
   .row-fluid-alt > [class*="span"]:last-child {
     margin-right: 0; }
 
-.row-fluid-alt .span1 {
+.row-fluid-alt > .span1 {
   width: 5.59495%; }
-.row-fluid-alt .span2 {
+.row-fluid-alt > .span2 {
   width: 14.15556%; }
-.row-fluid-alt .span3 {
+.row-fluid-alt > .span3 {
   width: 22.73889%; }
-.row-fluid-alt .span4 {
+.row-fluid-alt > .span4 {
   width: 31.32222%; }
-.row-fluid-alt .span5 {
+.row-fluid-alt > .span5 {
   width: 38.65556%; }
-.row-fluid-alt .span6 {
+.row-fluid-alt > .span6 {
   width: 48.48889%; }
-.row-fluid-alt .span7 {
+.row-fluid-alt > .span7 {
   width: 55.32222%; }
-.row-fluid-alt .span8 {
+.row-fluid-alt > .span8 {
   width: 63.65556%; }
-.row-fluid-alt .span9 {
+.row-fluid-alt > .span9 {
   width: 71.98889%; }
-.row-fluid-alt .span10 {
+.row-fluid-alt > .span10 {
   width: 80.32222%; }
-.row-fluid-alt .span11 {
+.row-fluid-alt > .span11 {
   width: 88.65556%; }
-.row-fluid-alt .span12 {
+.row-fluid-alt > .span12 {
   width: 96.98889%; }
 
 /*
@@ -315,38 +315,38 @@ footer,
   .row-fluid-flush > [class*="span"]:last-child {
     margin-right: 0; }
 
-.row-fluid-flush .span1 {
+.row-fluid-flush > .span1 {
   width: 8.33333%; }
-.row-fluid-flush .span2 {
+.row-fluid-flush > .span2 {
   width: 16.65556%; }
-.row-fluid-flush .span3 {
+.row-fluid-flush > .span3 {
   width: 24.98889%; }
-.row-fluid-flush .span4 {
+.row-fluid-flush > .span4 {
   width: 33.32222%; }
-.row-fluid-flush .span5 {
+.row-fluid-flush > .span5 {
   width: 41.65556%; }
-.row-fluid-flush .span6 {
+.row-fluid-flush > .span6 {
   width: 49.98889%; }
-.row-fluid-flush .span7 {
+.row-fluid-flush > .span7 {
   width: 58.32222%; }
-.row-fluid-flush .span8 {
+.row-fluid-flush > .span8 {
   width: 66.65556%; }
-.row-fluid-flush .span9 {
+.row-fluid-flush > .span9 {
   width: 74.98889%; }
-.row-fluid-flush .span10 {
+.row-fluid-flush > .span10 {
   width: 83.32222%; }
-.row-fluid-flush .span11 {
+.row-fluid-flush > .span11 {
   width: 91.65556%; }
-.row-fluid-flush .span12 {
+.row-fluid-flush > .span12 {
   width: 99.98889%; }
 
 /*
  * static sidebar
  */
-.row-static .span-sidebar {
+.row-static > .span-sidebar {
   width: 250px;
   float: left; }
-.row-static .span-main {
+.row-static > .span-main {
   width: auto;
   float: none;
   overflow: hidden; }
