@@ -10,27 +10,27 @@
 	<article class="narrow-box">
 		<h3><a href="#">Article Title</a></h3>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<a href="#" class="btn-main">read more</a>
+		<a href="#" class="btn--main">read more</a>
 	</article>
 	<article class="narrow-box">
 		<h3><a href="#">Article Title</a></h3>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<a href="#" class="btn-main">read more</a>
+		<a href="#" class="btn--main">read more</a>
 	</article>
 	<article class="narrow-box">
 		<h3><a href="#">Article Title</a></h3>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<a href="#" class="btn-main">read more</a>
+		<a href="#" class="btn--main">read more</a>
 	</article>
 	<article class="narrow-box">
 		<h3><a href="#">Article Title</a></h3>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<a href="#" class="btn-main">read more</a>
+		<a href="#" class="btn--main">read more</a>
 	</article>
 	<article class="narrow-box">
 		<h3><a href="#">Article Title</a></h3>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<a href="#" class="btn-main">read more</a>
+		<a href="#" class="btn--main">read more</a>
 	</article>
 </section>
 

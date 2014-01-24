@@ -1,5 +1,5 @@
 /* app/libs/btn */
-%btn{
+%btn{ //placeholder selector!
 	@include inlineBlock(20);
 	@include marpad(0 0 20px, 10px 15px);
 	@include borderRadius(5px);	
@@ -22,8 +22,8 @@
 	}
 }
 
-//button types
-.btn-default {
+//button types (using BEM syntax)
+.btn--default {
 	@extend %btn;
 	background: none;
 	color: Text();
@@ -31,7 +31,7 @@
 		background: $default;
 	}
 }
-.btn-main {
+.btn--main {
 	@extend %btn;
 	@include gradient($brand, lighten($brand, 2));
 	border-color: darken($brand, 10);
@@ -42,7 +42,7 @@
 		border: 1px solid darken($brand, 10);
 	}
 }
-.btn-info {
+.btn--info {
 	@extend %btn;
 	@include gradient($info, lighten($info, 2));
 	border-color: darken($info, 10);
@@ -53,7 +53,7 @@
 		border: 1px solid darken($info, 10);
 	}
 }
-.btn-success {
+.btn--success {
 	@extend %btn;
 	@include gradient($success, lighten($success, 2));
 	border-color: darken($success, 10);
@@ -64,7 +64,7 @@
 		border: 1px solid darken($success, 10);
 	}
 }
-.btn-warning {
+.btn--warning {
 	@extend %btn;
 	@include gradient($warning, lighten($warning, 2));
 	border-color: darken($warning, 10);
@@ -75,7 +75,7 @@
 		border: 1px solid darken($warning, 10);
 	}
 }
-.btn-error {
+.btn--error {
 	@extend %btn;
 	@include gradient($error, lighten($error, 2));
 	border-color: darken($error, 10);
@@ -88,15 +88,15 @@
 }
 
 //button sizes
-.btn-large {
+.btn--large {
 	padding: 15px 25px;
 	font-size: 2em;
 }
-.btn-small {
+.btn--small {
 	padding: 10px 15px;
 	font-size: 1.4em;
 }
-.btn-xsmall {
+.btn--xsmall {
 	padding: 5px 10px;
 	font-size: 1.2em;
 }
@@ -120,23 +120,23 @@
 	}
 }
 /*
-.btn-group {
-	.btn-default:first-child , .btn:first-child {
+.btn--group {
+	.btn--default:first-child , .btn:first-child {
 		border-left: 1px solid darken($default, 10);
 	}
-	.btn-main:first-child {
+	.btn--main:first-child {
 		border-left: 1px solid darken($brand, 10);
 	}
-	.btn-info:first-child {
+	.btn--info:first-child {
 		border-left: 1px solid darken($info, 10);
 	}
-	.btn-success:first-child {
+	.btn--success:first-child {
 		border-color: 1px solid darken($success, 10);
 	}
-	.btn-warning:first-child {
+	.btn--warning:first-child {
 		border-color: 1px solid darken($warning, 10);
 	}
-	.btn-error:first-child {
+	.btn--error:first-child {
 		border-color: 1px solid darken($error, 10);
 	}	
 }
