@@ -12,35 +12,4 @@
 		<a href="/pages/basic">Basic</a>
 	</div>
 
-	<h2>test!</h2>
-	
-	<div class="row-fluid-test">
-		<div class="span6">SIX</div>
-		<div class="span6">SIX</div>
-	</div>
-
-	<div class="row-fluid-test alt">
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span1">SIX</div>
-	</div>
-
-
-	<div class="row-fluid-test">
-		<div class="span1">SIX</div>
-		<div class="span5">SIX</div>
-		<div class="span1">SIX</div>
-		<div class="span2">SIX</div>
-		<div class="span3">SIX</div>
-	</div>
-
 </section>

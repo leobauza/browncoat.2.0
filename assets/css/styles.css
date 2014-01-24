@@ -198,10 +198,6 @@ footer,
 .divider {
   padding: 20px; }
 
-[class*="row-fluid"] > [class*="span"] .inner,
-.row-static > [class*="span"] .inner {
-  padding: 20px; }
-
 .padder {
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -216,129 +212,103 @@ footer,
 .spacer {
   margin: 0 0 20px; }
 
+[class*="row-fluid"] > [class*="span"] .inner,
+.row-static > [class*="span"] .inner {
+  padding: 20px; }
+
+/*
+ * base row fluid
+ */
+.row-fluid, .row-fluid-alt, .row-fluid-flush {
+  zoom: 1;
+  width: 100%; }
+  .row-fluid:before, .row-fluid-alt:before, .row-fluid-flush:before {
+    display: table;
+    content: ""; }
+  .row-fluid:after, .row-fluid-alt:after, .row-fluid-flush:after {
+    display: table;
+    content: "";
+    clear: both; }
+  .alt.row-fluid, .alt.row-fluid-alt, .alt.row-fluid-flush {
+    background: #000; }
+  .row-fluid > [class*="span"], .row-fluid-alt > [class*="span"], .row-fluid-flush > [class*="span"] {
+    float: left;
+    margin-right: 4%; }
+    .row-fluid > [class*="span"].l, .row-fluid-alt > [class*="span"].l, .row-fluid-flush > [class*="span"].l {
+      margin-right: 0; }
+    .row-fluid > [class*="span"]:last-child, .row-fluid-alt > [class*="span"]:last-child, .row-fluid-flush > [class*="span"]:last-child {
+      margin-right: 0; }
+  .row-fluid .span1, .row-fluid-alt .span1, .row-fluid-flush .span1 {
+    width: 4.66665%; }
+  .row-fluid .span2, .row-fluid-alt .span2, .row-fluid-flush .span2 {
+    width: 13.3333%; }
+  .row-fluid .span3, .row-fluid-alt .span3, .row-fluid-flush .span3 {
+    width: 21.99995%; }
+  .row-fluid .span4, .row-fluid-alt .span4, .row-fluid-flush .span4 {
+    width: 30.6666%; }
+  .row-fluid .span5, .row-fluid-alt .span5, .row-fluid-flush .span5 {
+    width: 39.33325%; }
+  .row-fluid .span6, .row-fluid-alt .span6, .row-fluid-flush .span6 {
+    width: 47.9999%; }
+  .row-fluid .span7, .row-fluid-alt .span7, .row-fluid-flush .span7 {
+    width: 56.66655%; }
+  .row-fluid .span8, .row-fluid-alt .span8, .row-fluid-flush .span8 {
+    width: 65.3332%; }
+  .row-fluid .span9, .row-fluid-alt .span9, .row-fluid-flush .span9 {
+    width: 73.99985%; }
+  .row-fluid .span10, .row-fluid-alt .span10, .row-fluid-flush .span10 {
+    width: 82.6665%; }
+  .row-fluid .span11, .row-fluid-alt .span11, .row-fluid-flush .span11 {
+    width: 91.33315%; }
+  .row-fluid .span12, .row-fluid-alt .span12, .row-fluid-flush .span12 {
+    width: 99.9998%; }
+
 /*
  * fluid row using overflow hidden
  */
-.row-fluid {
-  width: 100%; }
-
-.row-fluid > [class*="span"] {
-  float: left;
-  margin-right: 3%; }
-  .row-fluid > [class*="span"].l {
-    margin-right: 0;
-    width: auto;
-    float: none;
-    overflow: hidden; }
-  .row-fluid > [class*="span"]:last-child {
-    margin-right: 0;
-    width: auto;
-    float: none;
-    overflow: hidden; }
-
-.row-fluid > .span1 {
-  width: 5.60606%;
-  /*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/ }
-.row-fluid > .span2 {
-  width: 14.16667%; }
-.row-fluid > .span3 {
-  width: 22.75%; }
-.row-fluid > .span4 {
-  width: 31.33333%; }
-.row-fluid > .span5 {
-  width: 38.66667%; }
-.row-fluid > .span6 {
-  width: 48.5%; }
-.row-fluid > .span7 {
-  width: 55.33333%; }
-.row-fluid > .span8 {
-  width: 63.66667%; }
-.row-fluid > .span9 {
-  width: 72%; }
-.row-fluid > .span10 {
-  width: 80.33333%; }
-.row-fluid > .span11 {
-  width: 88.66667%; }
-.row-fluid > .span12 {
-  width: 97%; }
+.row-fluid > [class*="span"].l {
+  margin-right: 0;
+  width: auto;
+  float: none;
+  overflow: hidden; }
+.row-fluid > [class*="span"]:last-child {
+  margin-right: 0;
+  width: auto;
+  float: none;
+  overflow: hidden; }
 
 /*
  * fluid row using percentages
  */
-.row-fluid-alt {
-  width: 100%; }
-
-.row-fluid-alt > [class*="span"] {
-  float: left;
-  margin-right: 3%; }
-  .row-fluid-alt > [class*="span"].l {
-    margin-right: 0; }
-  .row-fluid-alt > [class*="span"]:last-child {
-    margin-right: 0; }
-
-.row-fluid-alt > .span1 {
-  width: 5.59495%; }
-.row-fluid-alt > .span2 {
-  width: 14.15556%; }
-.row-fluid-alt > .span3 {
-  width: 22.73889%; }
-.row-fluid-alt > .span4 {
-  width: 31.32222%; }
-.row-fluid-alt > .span5 {
-  width: 38.65556%; }
-.row-fluid-alt > .span6 {
-  width: 48.48889%; }
-.row-fluid-alt > .span7 {
-  width: 55.32222%; }
-.row-fluid-alt > .span8 {
-  width: 63.65556%; }
-.row-fluid-alt > .span9 {
-  width: 71.98889%; }
-.row-fluid-alt > .span10 {
-  width: 80.32222%; }
-.row-fluid-alt > .span11 {
-  width: 88.65556%; }
-.row-fluid-alt > .span12 {
-  width: 96.98889%; }
-
 /*
  * fluid row no gutter
  */
-.row-fluid-flush {
-  width: 100%; }
-
 .row-fluid-flush > [class*="span"] {
-  float: left;
   margin-right: 0; }
-  .row-fluid-flush > [class*="span"].l {
-    margin-right: 0; }
-  .row-fluid-flush > [class*="span"]:last-child {
-    margin-right: 0; }
-
-.row-fluid-flush > .span1 {
-  width: 8.33333%; }
-.row-fluid-flush > .span2 {
-  width: 16.65556%; }
-.row-fluid-flush > .span3 {
-  width: 24.98889%; }
-.row-fluid-flush > .span4 {
-  width: 33.32222%; }
-.row-fluid-flush > .span5 {
-  width: 41.65556%; }
-.row-fluid-flush > .span6 {
-  width: 49.98889%; }
-.row-fluid-flush > .span7 {
-  width: 58.32222%; }
-.row-fluid-flush > .span8 {
-  width: 66.65556%; }
-.row-fluid-flush > .span9 {
-  width: 74.98889%; }
-.row-fluid-flush > .span10 {
-  width: 83.32222%; }
-.row-fluid-flush > .span11 {
-  width: 91.65556%; }
-.row-fluid-flush > .span12 {
-  width: 99.98889%; }
+.row-fluid-flush .span1 {
+  width: 8.33332%; }
+.row-fluid-flush .span2 {
+  width: 16.66663%; }
+.row-fluid-flush .span3 {
+  width: 24.99995%; }
+.row-fluid-flush .span4 {
+  width: 33.33327%; }
+.row-fluid-flush .span5 {
+  width: 41.66658%; }
+.row-fluid-flush .span6 {
+  width: 49.9999%; }
+.row-fluid-flush .span7 {
+  width: 58.33322%; }
+.row-fluid-flush .span8 {
+  width: 66.66653%; }
+.row-fluid-flush .span9 {
+  width: 74.99985%; }
+.row-fluid-flush .span10 {
+  width: 83.33317%; }
+.row-fluid-flush .span11 {
+  width: 91.66648%; }
+.row-fluid-flush .span12 {
+  width: 99.9998%; }
 
 /*
  * static sidebar
@@ -382,80 +352,6 @@ footer,
   /*Use this to set exact percentages and have the last box be ok*/
   [class*="row-fluid"] > [class*="span"]:last-child {
     overflow: auto; } }
-/*
- * GRID TEST
- */
-.row-fluid-test {
-  zoom: 1;
-  width: 100%;
-  margin: 0px 0px 10px; }
-  .row-fluid-test:before {
-    display: table;
-    content: ""; }
-  .row-fluid-test:after {
-    display: table;
-    content: "";
-    clear: both; }
-  .row-fluid-test.alt {
-    background: #000; }
-
-.row-fluid-test > [class*="span"] {
-  float: left;
-  margin-right: 5%; }
-  .row-fluid-test > [class*="span"].l {
-    margin-right: 0; }
-  .row-fluid-test > [class*="span"]:last-child {
-    margin-right: 0; }
-
-.row-fluid-test .span1 {
-  background: #ddd;
-  remainder: 0.41667;
-  width: 3.74998%; }
-.row-fluid-test .span2 {
-  background: #ddd;
-  remainder: 0.83333;
-  width: 12.49997%; }
-.row-fluid-test .span3 {
-  background: #ddd;
-  remainder: 1.25;
-  width: 21.24995%; }
-.row-fluid-test .span4 {
-  background: #ddd;
-  remainder: 1.66667;
-  width: 29.99993%; }
-.row-fluid-test .span5 {
-  background: #ddd;
-  remainder: 2.08333;
-  width: 38.74992%; }
-.row-fluid-test .span6 {
-  background: #ddd;
-  remainder: 2.5;
-  width: 47.4999%; }
-.row-fluid-test .span7 {
-  background: #ddd;
-  remainder: 2.91667;
-  width: 56.24988%; }
-.row-fluid-test .span8 {
-  background: #ddd;
-  remainder: 3.33333;
-  width: 64.99987%; }
-.row-fluid-test .span9 {
-  background: #ddd;
-  remainder: 3.75;
-  width: 73.74985%; }
-.row-fluid-test .span10 {
-  background: #ddd;
-  remainder: 4.16667;
-  width: 82.49983%; }
-.row-fluid-test .span11 {
-  background: #ddd;
-  remainder: 4.58333;
-  width: 91.24982%; }
-.row-fluid-test .span12 {
-  background: #ddd;
-  remainder: 5;
-  width: 99.9998%; }
-
 /* browncoat/normalizers/list */
 ul ul,
 ul ol,

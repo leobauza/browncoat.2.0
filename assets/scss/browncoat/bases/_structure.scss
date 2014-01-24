@@ -1,12 +1,7 @@
 /* browncoat/base/structure (does not output css) */
 //grid
 $columns: 12;
-$cgutter: 3;
-$cwidth: 100/$columns - $cgutter;
-
-$columnWidth: $cwidth * 1%;
-$columnGutter: $cgutter * 1%;
-
+$gutter: 4;
 
 
 //build box

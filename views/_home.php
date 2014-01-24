@@ -70,7 +70,7 @@
 				<li>When I say <strong>we</strong> I really mean <strong>I</strong>, but saying <strong>we</strong> makes it seem more official</li>
 			</ol>
 		</article>
-		<aritcle class="inner">
+		<article class="inner">
 			<h3>So, Removing Things</h3>
 			<div class="callout--warning"><strong>browncoat</strong> is still in early development so this documentation is incomplete for now.</div>
 			<p>As a developer I want to take what I like and ditch everything else. There is a <a href="/removingthings">whole page</a> dedicated to how to <strong>"ditch everything else"</strong> but here are the basics:</p>
@@ -100,6 +100,6 @@
 					</ul>
 				</li>
 			</ol>
-		</aritcle>
+		</article>
 	</section>
 </section>

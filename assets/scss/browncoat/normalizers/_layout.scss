@@ -8,13 +8,6 @@
 	padding: 20px;
 }
 
-[class*="row-fluid"] > [class*="span"],
-.row-static > [class*="span"] {
-	.inner {
-		padding:20px;
-	}
-}
-
 .padder {
 	padding-top:20px;
 	padding-bottom:20px;
@@ -33,67 +26,65 @@
 	margin: 0 0 20px;
 }
 
+[class*="row-fluid"] > [class*="span"],
+.row-static > [class*="span"] {
+	.inner {
+		padding:20px;
+	}
+}
+
+/*
+ * base row fluid
+ */
+
+
+%rows {
+	@include group();
+	width:100%;
+	//margin: 0px 0px 10px;
+	&.alt {
+		background: #000;
+	}
+
+	&> [class*="span"] {
+		float:left;
+		margin-right: $gutter * 1%;
+		&.l {
+			margin-right:0;
+		}
+		&:last-child {
+			margin-right:0;
+		}
+	}
+
+	@for $i from 1 through $columns {
+		$testColWidth: (99.9998 / $columns);
+
+		.span#{$i} {
+			$remainder: ($gutter/$columns) * $i;
+			width: ($testColWidth * $i - $gutter + $remainder) * 1%;
+		}
+	}
+}
+
+
 /*
  * fluid row using overflow hidden
  */
 
 .row-fluid {
-	width:100%;
-	//margin:@b-margin;
-}
-
-//margin right instead of margin left to do overflow hidden
-//Use this to set exact percentages and have the last box be ok
-.row-fluid > [class*="span"] {
-	float: left;
-	margin-right: $columnGutter;
-	&.l {
-		margin-right: 0;
-		@include overflower;
+	@extend %rows;
+	
+	&> [class*="span"] {
+		&.l {
+			margin-right: 0;
+			@include overflower;
+		}
+		&:last-child {
+			margin-right: 0;
+			@include overflower;
+		}
 	}
-	&:last-child {
-		margin-right: 0;
-		@include overflower;
-	}
-}
-.row-fluid > {
-	.span1 {
-		width: $columnWidth + $columnGutter/11;
-		/*width:($cwidth + $cgutter/($columns - 1)) * 1%;*/
-	}
-	.span2 {
-		width: $columnWidth * 2 + $columnGutter + $columnGutter/6;
-	}
-	.span3 {
-		width: $columnWidth * 3 + $columnGutter * 2 + $columnGutter/4;
-	}
-	.span4 {
-		width: $columnWidth * 4 + $columnGutter * 3 + $columnGutter/3;
-	}
-	.span5 {
-		width: $columnWidth * 5 + $columnGutter * 4;
-	}
-	.span6 {
-		width: $columnWidth * 6 + $columnGutter * 5 + $columnGutter/2;
-	}
-	.span7 {
-		width: $columnWidth * 7 + $columnGutter * 6;
-	}
-	.span8 {
-		width: $columnWidth * 8 + $columnGutter * 7;
-	}
-	.span9 {
-		width: $columnWidth * 9 + $columnGutter * 8;
-	}
-	.span10 {
-		width: $columnWidth * 10 + $columnGutter * 9;
-	}
-	.span11 {
-		width: $columnWidth * 11 + $columnGutter * 10;
-	}
-	.span12 {
-		width: $columnWidth * 12 + $columnGutter * 11;
-	}	
 }
 
 
@@ -102,57 +93,7 @@
  */
 
 .row-fluid-alt {
-	width:100%;
-	//margin:@b-margin;
-}
-.row-fluid-alt > [class*="span"] {
-	float:left;
-	margin-right:$columnGutter;
-	&.l {
-		margin-right:0;
-	}
-	&:last-child {
-		margin-right:0;
-	}
-}
-
-.row-fluid-alt > {
-	.span1 {
-		width:$columnWidth + $columnGutter/11 - .0111111111;
-	}
-	.span2 {
-		width:$columnWidth * 2 + $columnGutter + $columnGutter/6 - .0111111111;
-	}
-	.span3 {
-		width:$columnWidth * 3 + $columnGutter * 2 + $columnGutter/4 - .0111111111;
-	}
-	.span4 {
-		width:$columnWidth * 4 + $columnGutter * 3 + $columnGutter/3 - .0111111111;
-	}
-	.span5 {
-		width:$columnWidth * 5 + $columnGutter * 4 - .0111111111;
-	}
-	.span6 {
-		width:$columnWidth * 6 + $columnGutter * 5 + $columnGutter/2 - .0111111111;
-	}
-	.span7 {
-		width:$columnWidth * 7 + $columnGutter * 6 - .0111111111;
-	}
-	.span8 {
-		width:$columnWidth * 8 + $columnGutter * 7 - .0111111111;
-	}
-	.span9 {
-		width:$columnWidth * 9 + $columnGutter * 8 - .0111111111;
-	}
-	.span10 {
-		width:$columnWidth * 10 + $columnGutter * 9 - .0111111111;
-	}
-	.span11 {
-		width:$columnWidth * 11 + $columnGutter * 10 - .0111111111;
-	}
-	.span12 {
-		width:$columnWidth * 12 + $columnGutter * 11 - .0111111111;
-	}
+	@extend %rows;
 }
 
 
@@ -161,56 +102,17 @@
  */
 
 .row-fluid-flush {
-	width:100%;
-	//margin:@b-margin;
-}
-.row-fluid-flush > [class*="span"] {
-	float:left;
-	margin-right: 0;
-	&.l {
+	@extend %rows;
+	
+	&> [class*="span"] {
 		margin-right:0;
 	}
-	&:last-child {
-		margin-right:0;
-	}
-}
 
-.row-fluid-flush > {
-	.span1 {
-		width:$columnWidth + $columnGutter;
-	}
-	.span2 {
-		width:$columnWidth * 2  + $columnGutter * 2 - .0111111111;
-	}
-	.span3 {
-		width:$columnWidth * 3 + $columnGutter * 3 - .0111111111;
-	}
-	.span4 {
-		width:$columnWidth * 4 + $columnGutter * 4 - .0111111111;
-	}
-	.span5 {
-		width:$columnWidth * 5 + $columnGutter * 5 - .0111111111;
-	}
-	.span6 {
-		width:$columnWidth * 6 + $columnGutter * 6 - .0111111111;
-	}
-	.span7 {
-		width:$columnWidth * 7 + $columnGutter * 7 - .0111111111;
-	}
-	.span8 {
-		width:$columnWidth * 8 + $columnGutter * 8 - .0111111111;
-	}
-	.span9 {
-		width:$columnWidth * 9 + $columnGutter * 9 - .0111111111;
-	}
-	.span10 {
-		width:$columnWidth * 10 + $columnGutter * 10 - .0111111111;
-	}
-	.span11 {
-		width:$columnWidth * 11 + $columnGutter * 11 - .0111111111;
-	}
-	.span12 {
-		width:$columnWidth * 12 + $columnGutter * 12 - .0111111111;
+	@for $i from 1 through $columns {
+		$testColWidth: (99.9998 / $columns);
+		.span#{$i} {
+			width: ($testColWidth * $i) * 1%;
+		}
 	}
 }
 
@@ -274,63 +176,4 @@
 	
 	
 }
-
-
-/*
- * GRID TEST
- */
-
-$testColNum: 12;
-
-$testColGut: 5;
-
-.row-fluid-test {
-	@include group();
-	width:100%;
-	margin: 0px 0px 10px;
-	&.alt {
-		background: #000;
-	}
-}
-.row-fluid-test > [class*="span"] {
-	float:left;
-	margin-right: $testColGut * 1%;
-	&.l {
-		margin-right:0;
-	}
-	&:last-child {
-		margin-right:0;
-	}
-}
-
-.row-fluid-test {
-	@for $i from 1 through $testColNum {
-		$testColWidth: (99.9998 / $testColNum); //+ ($testColGut * ($i / $testColNum));
-
-		.span#{$i} {
-			background: #ddd;
-			$remainder: ($testColGut/$testColNum) * $i;
-			remainder: $remainder;
-			width: ($testColWidth * $i - $testColGut + $remainder) * 1%;
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
