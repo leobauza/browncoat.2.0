@@ -970,25 +970,32 @@ ul.list-group {
   margin: 0 10px 10px; }
 
 /* app/libs/hero */
-.hero {
+.hero, .hero--collapsing {
   margin-bottom: 40px;
   position: relative;
   padding-bottom: 35%;
   height: 0;
   background: #f2f2f2; }
-  .hero .hero-text {
+  .hero .hero__text, .hero--collapsing .hero__text {
     position: absolute;
     width: 90%;
     left: 0;
     bottom: 10%;
     padding: 0 5%; }
-    .hero .hero-text h1 {
+    .hero .hero__text h1, .hero--collapsing .hero__text h1 {
       margin: 0 0 10px; }
-    .hero .hero-text p {
+    .hero .hero__text p, .hero--collapsing .hero__text p {
       font-size: 2.5em; }
-      .hero .hero-text p.brief {
+      .hero .hero__text p.brief, .hero--collapsing .hero__text p.brief {
         width: 50%;
         margin: 0 auto 20px; }
+
+.hero--collapsing {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; }
 
 .hero-placeholder {
   position: relative;
@@ -996,13 +1003,6 @@ ul.list-group {
   height: 0;
   position: static;
   z-index: -5; }
-
-.collapsing-hero {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0; }
 
 .hero-over {
   position: relative;

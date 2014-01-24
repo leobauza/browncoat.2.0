@@ -1,5 +1,5 @@
 <header class="hero">
-	<article class="hero-text al-c">
+	<article class="hero__text al-c">
 		<h1>Collapsing Sidebar</h1>
 		<p>collapsing sidebar intro</p>
 		<?php include './views/pages/_nav.php'; ?>

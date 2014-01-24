@@ -1,5 +1,5 @@
 <header class="hero">
-	<article class="hero-text al-c">
+	<article class="hero__text al-c">
 		<h1>Listing Page</h1>
 		<p class="brief">Hero with magic container, this would have some image in the background or something.</p>
 		<?php include './views/pages/_nav.php'; ?>

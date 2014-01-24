@@ -1,5 +1,5 @@
-<header class="hero collapsing-hero">
-	<article class="hero-text al-c">
+<header class="hero--collapsing">
+	<article class="hero__text al-c">
 		<h1>My browncoat Site</h1>
 		<p class="brief">Hero with magic container, this would have some image in the background or something.</p>
 		<?php include './views/pages/_nav.php'; ?>
