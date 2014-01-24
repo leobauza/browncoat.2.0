@@ -5,7 +5,7 @@
 	color: darken($color, $dper);
 }
 
-.callout {
+%callout {
 	@include marpad(0 0 10px, 15px);
 	@include borderRadius(5px);	
 	@include calloutSetup($default, 20);
@@ -13,23 +13,27 @@
 }
 
 //callout types
-.callout-main {
-	@extend .callout;
+.callout--default {
+	@extend %callout;
+	@include calloutSetup($default);
+}
+.callout--main {
+	@extend %callout;
 	@include calloutSetup($brand);
 }
-.callout-info {
-	@extend .callout;
+.callout--info {
+	@extend %callout;
 	@include calloutSetup($info);
 }
-.callout-success {
-	@extend .callout;
+.callout--success {
+	@extend %callout;
 	@include calloutSetup($success);
 }
-.callout-warning {
-	@extend .callout;
+.callout--warning {
+	@extend %callout;
 	@include calloutSetup($warning);
 }
-.callout-error {
-	@extend .callout;
+.callout--error {
+	@extend %callout;
 	@include calloutSetup($error);
 }

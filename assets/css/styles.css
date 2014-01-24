@@ -791,7 +791,7 @@ form input[type="submit"] {
 */
 /* app/libs/modal */
 /* app/libs/callout */
-.callout, .callout-main, .callout-info, .callout-success, .callout-warning, .callout-error {
+.callout--default, .callout--main, .callout--info, .callout--success, .callout--warning, .callout--error {
   margin: 0 0 10px;
   padding: 15px;
   -webkit-border-radius: 5px;
@@ -802,27 +802,32 @@ form input[type="submit"] {
   color: #737373;
   font-size: 1.4em; }
 
-.callout-main {
+.callout--default {
+  background: white;
+  border: 1px solid #d9d9d9;
+  color: #737373; }
+
+.callout--main {
   background: #dee1e7;
   border: 1px solid #a4abbb;
   color: #3f4554; }
 
-.callout-info {
+.callout--info {
   background: #b9d4ec;
   border: 1px solid #6aa3d5;
   color: #193c5a; }
 
-.callout-success {
+.callout--success {
   background: #c7e6c7;
   border: 1px solid #80c780;
   color: #255625; }
 
-.callout-warning {
+.callout--warning {
   background: #fceedb;
   border: 1px solid #f4c37d;
   color: #985f0d; }
 
-.callout-error {
+.callout--error {
   background: #f4cecd;
   border: 1px solid #e27c79;
   color: #761c19; }
@@ -964,7 +969,7 @@ ul.list-group {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; }
-.box .callout, .box-main .callout, .box-info .callout, .box-success .callout, .box-warning .callout, .box-error .callout, .box .callout-main, .box-main .callout-main, .box-info .callout-main, .box-success .callout-main, .box-warning .callout-main, .box-error .callout-main, .box .callout-info, .box-main .callout-info, .box-info .callout-info, .box-success .callout-info, .box-warning .callout-info, .box-error .callout-info, .box .callout-success, .box-main .callout-success, .box-info .callout-success, .box-success .callout-success, .box-warning .callout-success, .box-error .callout-success, .box .callout-warning, .box-main .callout-warning, .box-info .callout-warning, .box-success .callout-warning, .box-warning .callout-warning, .box-error .callout-warning, .box .callout-error, .box-main .callout-error, .box-info .callout-error, .box-success .callout-error, .box-warning .callout-error, .box-error .callout-error {
+.box .callout, .box-main .callout, .box-info .callout, .box-success .callout, .box-warning .callout, .box-error .callout {
   margin: 0 10px 10px; }
 
 /* app/libs/hero */
