@@ -382,6 +382,80 @@ footer,
   /*Use this to set exact percentages and have the last box be ok*/
   [class*="row-fluid"] > [class*="span"]:last-child {
     overflow: auto; } }
+/*
+ * GRID TEST
+ */
+.row-fluid-test {
+  zoom: 1;
+  width: 100%;
+  margin: 0px 0px 10px; }
+  .row-fluid-test:before {
+    display: table;
+    content: ""; }
+  .row-fluid-test:after {
+    display: table;
+    content: "";
+    clear: both; }
+  .row-fluid-test.alt {
+    background: #000; }
+
+.row-fluid-test > [class*="span"] {
+  float: left;
+  margin-right: 5%; }
+  .row-fluid-test > [class*="span"].l {
+    margin-right: 0; }
+  .row-fluid-test > [class*="span"]:last-child {
+    margin-right: 0; }
+
+.row-fluid-test .span1 {
+  background: #ddd;
+  remainder: 0.41667;
+  width: 3.74998%; }
+.row-fluid-test .span2 {
+  background: #ddd;
+  remainder: 0.83333;
+  width: 12.49997%; }
+.row-fluid-test .span3 {
+  background: #ddd;
+  remainder: 1.25;
+  width: 21.24995%; }
+.row-fluid-test .span4 {
+  background: #ddd;
+  remainder: 1.66667;
+  width: 29.99993%; }
+.row-fluid-test .span5 {
+  background: #ddd;
+  remainder: 2.08333;
+  width: 38.74992%; }
+.row-fluid-test .span6 {
+  background: #ddd;
+  remainder: 2.5;
+  width: 47.4999%; }
+.row-fluid-test .span7 {
+  background: #ddd;
+  remainder: 2.91667;
+  width: 56.24988%; }
+.row-fluid-test .span8 {
+  background: #ddd;
+  remainder: 3.33333;
+  width: 64.99987%; }
+.row-fluid-test .span9 {
+  background: #ddd;
+  remainder: 3.75;
+  width: 73.74985%; }
+.row-fluid-test .span10 {
+  background: #ddd;
+  remainder: 4.16667;
+  width: 82.49983%; }
+.row-fluid-test .span11 {
+  background: #ddd;
+  remainder: 4.58333;
+  width: 91.24982%; }
+.row-fluid-test .span12 {
+  background: #ddd;
+  remainder: 5;
+  width: 99.9998%; }
+
 /* browncoat/normalizers/list */
 ul ul,
 ul ol,

@@ -275,3 +275,62 @@
 	
 }
 
+
+/*
+ * GRID TEST
+ */
+
+$testColNum: 12;
+
+$testColGut: 5;
+
+.row-fluid-test {
+	@include group();
+	width:100%;
+	margin: 0px 0px 10px;
+	&.alt {
+		background: #000;
+	}
+}
+.row-fluid-test > [class*="span"] {
+	float:left;
+	margin-right: $testColGut * 1%;
+	&.l {
+		margin-right:0;
+	}
+	&:last-child {
+		margin-right:0;
+	}
+}
+
+.row-fluid-test {
+	@for $i from 1 through $testColNum {
+		$testColWidth: (99.9998 / $testColNum); //+ ($testColGut * ($i / $testColNum));
+
+		.span#{$i} {
+			background: #ddd;
+			$remainder: ($testColGut/$testColNum) * $i;
+			remainder: $remainder;
+			width: ($testColWidth * $i - $testColGut + $remainder) * 1%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
