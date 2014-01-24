@@ -34,17 +34,12 @@
 }
 
 /*
- * base row fluid
+ * base rows
  */
 
-
 %rows {
-	@include group();
 	width:100%;
 	//margin: 0px 0px 10px;
-	&.alt {
-		background: #000;
-	}
 
 	&> [class*="span"] {
 		float:left;

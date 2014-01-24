@@ -217,20 +217,10 @@ footer,
   padding: 20px; }
 
 /*
- * base row fluid
+ * base rows
  */
 .row-fluid, .row-fluid-alt, .row-fluid-flush {
-  zoom: 1;
   width: 100%; }
-  .row-fluid:before, .row-fluid-alt:before, .row-fluid-flush:before {
-    display: table;
-    content: ""; }
-  .row-fluid:after, .row-fluid-alt:after, .row-fluid-flush:after {
-    display: table;
-    content: "";
-    clear: both; }
-  .alt.row-fluid, .alt.row-fluid-alt, .alt.row-fluid-flush {
-    background: #000; }
   .row-fluid > [class*="span"], .row-fluid-alt > [class*="span"], .row-fluid-flush > [class*="span"] {
     float: left;
     margin-right: 4%; }
