@@ -642,7 +642,6 @@ form input[type="submit"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #bfbfbf;
   color: white;
   border: 1px solid #a6a6a6;
   font-size: 1.6em;
@@ -797,9 +796,6 @@ form input[type="submit"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: #f2f2f2;
-  border: 1px solid #d9d9d9;
-  color: #737373;
   font-size: 1.4em; }
 
 .callout--default {
@@ -883,76 +879,82 @@ ul.list-group {
       border-radius: 5px 5px 0px 0px; }
 
 /* app/libs/box */
-.box, .box-main, .box-info, .box-success, .box-warning, .box-error {
+.box--default, .box--main, .box--info, .box--success, .box--warning, .box--error {
   margin: 0 0 10px;
   padding: 0px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: white;
-  border: 1px solid #d9d9d9; }
-  .box .box-header, .box-main .box-header, .box-info .box-header, .box-success .box-header, .box-warning .box-header, .box-error .box-header {
+  background: white; }
+  .box--default .box__header, .box--main .box__header, .box--info .box__header, .box--success .box__header, .box--warning .box__header, .box--error .box__header {
     -webkit-border-radius: 5px 5px 0px 0px;
     -moz-border-radius: 5px 5px 0px 0px;
     border-radius: 5px 5px 0px 0px;
     padding: 10px;
-    background: #f2f2f2;
-    border-bottom: 1px solid #d9d9d9; }
-    .box .box-header h1, .box-main .box-header h1, .box-info .box-header h1, .box-success .box-header h1, .box-warning .box-header h1, .box-error .box-header h1, .box .box-header h2, .box-main .box-header h2, .box-info .box-header h2, .box-success .box-header h2, .box-warning .box-header h2, .box-error .box-header h2, .box .box-header h3, .box-main .box-header h3, .box-info .box-header h3, .box-success .box-header h3, .box-warning .box-header h3, .box-error .box-header h3, .box .box-header h4, .box-main .box-header h4, .box-info .box-header h4, .box-success .box-header h4, .box-warning .box-header h4, .box-error .box-header h4, .box .box-header h5, .box-main .box-header h5, .box-info .box-header h5, .box-success .box-header h5, .box-warning .box-header h5, .box-error .box-header h5, .box .box-header h6, .box-main .box-header h6, .box-info .box-header h6, .box-success .box-header h6, .box-warning .box-header h6, .box-error .box-header h6 {
+    background: #f2f2f2; }
+    .box--default .box__header h1, .box--main .box__header h1, .box--info .box__header h1, .box--success .box__header h1, .box--warning .box__header h1, .box--error .box__header h1, .box--default .box__header h2, .box--main .box__header h2, .box--info .box__header h2, .box--success .box__header h2, .box--warning .box__header h2, .box--error .box__header h2, .box--default .box__header h3, .box--main .box__header h3, .box--info .box__header h3, .box--success .box__header h3, .box--warning .box__header h3, .box--error .box__header h3, .box--default .box__header h4, .box--main .box__header h4, .box--info .box__header h4, .box--success .box__header h4, .box--warning .box__header h4, .box--error .box__header h4, .box--default .box__header h5, .box--main .box__header h5, .box--info .box__header h5, .box--success .box__header h5, .box--warning .box__header h5, .box--error .box__header h5, .box--default .box__header h6, .box--main .box__header h6, .box--info .box__header h6, .box--success .box__header h6, .box--warning .box__header h6, .box--error .box__header h6 {
       color: #333333;
       margin: 0; }
-  .box .box-body, .box-main .box-body, .box-info .box-body, .box-success .box-body, .box-warning .box-body, .box-error .box-body {
+  .box--default .box__body, .box--main .box__body, .box--info .box__body, .box--success .box__body, .box--warning .box__body, .box--error .box__body {
     padding: 10px;
     font-size: 1.6em;
     line-height: 1.6em; }
-    .box .box-body p, .box-main .box-body p, .box-info .box-body p, .box-success .box-body p, .box-warning .box-body p, .box-error .box-body p {
+    .box--default .box__body p, .box--main .box__body p, .box--info .box__body p, .box--success .box__body p, .box--warning .box__body p, .box--error .box__body p {
       font-size: 100%; }
-  .box .box-container, .box-main .box-container, .box-info .box-container, .box-success .box-container, .box-warning .box-container, .box-error .box-container {
+  .box--default .box__container, .box--main .box__container, .box--info .box__container, .box--success .box__container, .box--warning .box__container, .box--error .box__container {
     padding: 0px 10px; }
-  .box .box-divider, .box-main .box-divider, .box-info .box-divider, .box-success .box-divider, .box-warning .box-divider, .box-error .box-divider {
+  .box--default .box__divider, .box--main .box__divider, .box--info .box__divider, .box--success .box__divider, .box--warning .box__divider, .box--error .box__divider {
     padding: 10px; }
 
-.box-main {
+.box--default {
+  border: 1px solid #f2f2f2; }
+  .box--default .box__header {
+    background: #bfbfbf;
+    border-bottom: 1px solid #f2f2f2; }
+    .box--default .box__header h1, .box--default .box__header h2, .box--default .box__header h3, .box--default .box__header h4, .box--default .box__header h5, .box--default .box__header h6 {
+      color: white; }
+
+.box--main {
   border: 1px solid #c1c6d1; }
-  .box-main .box-header {
+  .box--main .box__header {
     background: #8790a5;
     border-bottom: 1px solid #c1c6d1; }
-    .box-main .box-header h1, .box-main .box-header h2, .box-main .box-header h3, .box-main .box-header h4, .box-main .box-header h5, .box-main .box-header h6 {
+    .box--main .box__header h1, .box--main .box__header h2, .box--main .box__header h3, .box--main .box__header h4, .box--main .box__header h5, .box--main .box__header h6 {
       color: white; }
 
-.box-info {
+.box--info {
   border: 1px solid #92bce0; }
-  .box-info .box-header {
+  .box--info .box__header {
     background: #428bca;
     border-bottom: 1px solid #92bce0; }
-    .box-info .box-header h1, .box-info .box-header h2, .box-info .box-header h3, .box-info .box-header h4, .box-info .box-header h5, .box-info .box-header h6 {
+    .box--info .box__header h1, .box--info .box__header h2, .box--info .box__header h3, .box--info .box__header h4, .box--info .box__header h5, .box--info .box__header h6 {
       color: white; }
 
-.box-success {
+.box--success {
   border: 1px solid #a3d7a3; }
-  .box-success .box-header {
+  .box--success .box__header {
     background: #5cb85c;
     border-bottom: 1px solid #a3d7a3; }
-    .box-success .box-header h1, .box-success .box-header h2, .box-success .box-header h3, .box-success .box-header h4, .box-success .box-header h5, .box-success .box-header h6 {
+    .box--success .box__header h1, .box--success .box__header h2, .box--success .box__header h3, .box--success .box__header h4, .box--success .box__header h5, .box--success .box__header h6 {
       color: white; }
 
-.box-warning {
+.box--warning {
   border: 1px solid #f8d9ac; }
-  .box-warning .box-header {
+  .box--warning .box__header {
     background: #f0ad4e;
     border-bottom: 1px solid #f8d9ac; }
-    .box-warning .box-header h1, .box-warning .box-header h2, .box-warning .box-header h3, .box-warning .box-header h4, .box-warning .box-header h5, .box-warning .box-header h6 {
+    .box--warning .box__header h1, .box--warning .box__header h2, .box--warning .box__header h3, .box--warning .box__header h4, .box--warning .box__header h5, .box--warning .box__header h6 {
       color: white; }
 
-.box-error {
+.box--error {
   border: 1px solid #eba5a3; }
-  .box-error .box-header {
+  .box--error .box__header {
     background: #d9534f;
     border-bottom: 1px solid #eba5a3; }
-    .box-error .box-header h1, .box-error .box-header h2, .box-error .box-header h3, .box-error .box-header h4, .box-error .box-header h5, .box-error .box-header h6 {
+    .box--error .box__header h1, .box--error .box__header h2, .box--error .box__header h3, .box--error .box__header h4, .box--error .box__header h5, .box--error .box__header h6 {
       color: white; }
 
-.box .list-group, .box-main .list-group, .box-info .list-group, .box-success .list-group, .box-warning .list-group, .box-error .list-group {
+.box--default .list-group, .box--main .list-group, .box--info .list-group, .box--success .list-group, .box--warning .list-group, .box--error .list-group {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
@@ -960,11 +962,11 @@ ul.list-group {
   border-right: none;
   border-bottom: none;
   margin: 0; }
-  .box .list-group li:first-child, .box-main .list-group li:first-child, .box-info .list-group li:first-child, .box-success .list-group li:first-child, .box-warning .list-group li:first-child, .box-error .list-group li:first-child, .box .list-group a:first-child, .box-main .list-group a:first-child, .box-info .list-group a:first-child, .box-success .list-group a:first-child, .box-warning .list-group a:first-child, .box-error .list-group a:first-child {
+  .box--default .list-group li:first-child, .box--main .list-group li:first-child, .box--info .list-group li:first-child, .box--success .list-group li:first-child, .box--warning .list-group li:first-child, .box--error .list-group li:first-child, .box--default .list-group a:first-child, .box--main .list-group a:first-child, .box--info .list-group a:first-child, .box--success .list-group a:first-child, .box--warning .list-group a:first-child, .box--error .list-group a:first-child {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; }
-.box .callout, .box-main .callout, .box-info .callout, .box-success .callout, .box-warning .callout, .box-error .callout {
+.box--default .callout, .box--main .callout, .box--info .callout, .box--success .callout, .box--warning .callout, .box--error .callout {
   margin: 0 10px 10px; }
 
 /* app/libs/hero */
@@ -1106,7 +1108,7 @@ ul.list-group {
 .dropdown-group {
   position: relative;
   margin: 0 0 20px; }
-  .dropdown-group .btn {
+  .dropdown-group .btn--default, .dropdown-group .btn--main, .dropdown-group .btn--info, .dropdown-group .btn--success, .dropdown-group .btn--warning, .dropdown-group .btn--error {
     margin-bottom: 0; }
   .dropdown-group .dropdown-menu {
     display: none; }

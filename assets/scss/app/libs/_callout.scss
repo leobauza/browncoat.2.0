@@ -8,7 +8,6 @@
 %callout {
 	@include marpad(0 0 10px, 15px);
 	@include borderRadius(5px);	
-	@include calloutSetup($default, 20);
 	font-size: 1.4em;
 }
 

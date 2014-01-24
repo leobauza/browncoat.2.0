@@ -40,11 +40,11 @@
 		</article>
 		<aside class="span4">
 			<h3>Sidebar Right</h3>
-			<div class="box">
-				<header class="box-header">
+			<div class="box--default">
+				<header class="box__header">
 					<h5>It's a nav in a box</h5>
 				</header>
-				<div class="box-body">
+				<div class="box__body">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 				</div>
 				<div class="list-group">
