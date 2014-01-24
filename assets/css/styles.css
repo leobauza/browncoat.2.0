@@ -632,7 +632,7 @@ form input[type="submit"] {
   margin: 0 5px 5px 0px; }
 
 /* app/libs/btn */
-.btn, .btn-default, .btn-main, .btn-info, .btn-success, .btn-warning, .btn-error {
+.btn-default, .btn-main, .btn-info, .btn-success, .btn-warning, .btn-error {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -648,11 +648,11 @@ form input[type="submit"] {
   font-size: 1.6em;
   text-align: center;
   cursor: pointer; }
-  .btn:hover, .btn-default:hover, .btn-main:hover, .btn-info:hover, .btn-success:hover, .btn-warning:hover, .btn-error:hover, .btn.active, .active.btn-default, .active.btn-main, .active.btn-info, .active.btn-success, .active.btn-warning, .active.btn-error {
+  .btn-default:hover, .btn-main:hover, .btn-info:hover, .btn-success:hover, .btn-warning:hover, .btn-error:hover, .active.btn-default, .active.btn-main, .active.btn-info, .active.btn-success, .active.btn-warning, .active.btn-error {
     background: #a6a6a6;
     color: white;
     text-decoration: none; }
-  .btn:focus, .btn-default:focus, .btn-main:focus, .btn-info:focus, .btn-success:focus, .btn-warning:focus, .btn-error:focus {
+  .btn-default:focus, .btn-main:focus, .btn-info:focus, .btn-success:focus, .btn-warning:focus, .btn-error:focus {
     border: 1px solid #a6a6a6; }
 
 .btn-default {
@@ -750,7 +750,7 @@ form input[type="submit"] {
 
 .btn-group {
   margin: 0 0 20px; }
-  .btn-group .btn, .btn-group .btn-default, .btn-group .btn-main, .btn-group .btn-info, .btn-group .btn-success, .btn-group .btn-warning, .btn-group .btn-error {
+  .btn-group .btn-default, .btn-group .btn-main, .btn-group .btn-info, .btn-group .btn-success, .btn-group .btn-warning, .btn-group .btn-error {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -758,11 +758,11 @@ form input[type="submit"] {
     float: left;
     margin-bottom: 0;
     margin-left: -1px; }
-    .btn-group .btn:first-child, .btn-group .btn-default:first-child, .btn-group .btn-main:first-child, .btn-group .btn-info:first-child, .btn-group .btn-success:first-child, .btn-group .btn-warning:first-child, .btn-group .btn-error:first-child {
+    .btn-group .btn-default:first-child, .btn-group .btn-main:first-child, .btn-group .btn-info:first-child, .btn-group .btn-success:first-child, .btn-group .btn-warning:first-child, .btn-group .btn-error:first-child {
       -webkit-border-radius: 5px 0px 0px 5px;
       -moz-border-radius: 5px 0px 0px 5px;
       border-radius: 5px 0px 0px 5px; }
-    .btn-group .btn:last-child, .btn-group .btn-default:last-child, .btn-group .btn-main:last-child, .btn-group .btn-info:last-child, .btn-group .btn-success:last-child, .btn-group .btn-warning:last-child, .btn-group .btn-error:last-child {
+    .btn-group .btn-default:last-child, .btn-group .btn-main:last-child, .btn-group .btn-info:last-child, .btn-group .btn-success:last-child, .btn-group .btn-warning:last-child, .btn-group .btn-error:last-child {
       -webkit-border-radius: 0px 5px 5px 0px;
       -moz-border-radius: 0px 5px 5px 0px;
       border-radius: 0px 5px 5px 0px; }
@@ -1106,7 +1106,7 @@ ul.list-group {
 .dropdown-group {
   position: relative;
   margin: 0 0 20px; }
-  .dropdown-group .btn, .dropdown-group .btn-default, .dropdown-group .btn-main, .dropdown-group .btn-info, .dropdown-group .btn-success, .dropdown-group .btn-warning, .dropdown-group .btn-error {
+  .dropdown-group .btn {
     margin-bottom: 0; }
   .dropdown-group .dropdown-menu {
     display: none; }

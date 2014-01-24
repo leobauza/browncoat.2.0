@@ -1,5 +1,5 @@
 /* app/libs/btn */
-.btn {
+%btn{
 	@include inlineBlock(20);
 	@include marpad(0 0 20px, 10px 15px);
 	@include borderRadius(5px);	
@@ -24,7 +24,7 @@
 
 //button types
 .btn-default {
-	@extend .btn;
+	@extend %btn;
 	background: none;
 	color: Text();
 	&:hover, &.active {
@@ -32,7 +32,7 @@
 	}
 }
 .btn-main {
-	@extend .btn;
+	@extend %btn;
 	@include gradient($brand, lighten($brand, 2));
 	border-color: darken($brand, 10);
 	&:hover, &.active {
@@ -43,7 +43,7 @@
 	}
 }
 .btn-info {
-	@extend .btn;
+	@extend %btn;
 	@include gradient($info, lighten($info, 2));
 	border-color: darken($info, 10);
 	&:hover, &.active {
@@ -54,7 +54,7 @@
 	}
 }
 .btn-success {
-	@extend .btn;
+	@extend %btn;
 	@include gradient($success, lighten($success, 2));
 	border-color: darken($success, 10);
 	&:hover, &.active {
@@ -65,7 +65,7 @@
 	}
 }
 .btn-warning {
-	@extend .btn;
+	@extend %btn;
 	@include gradient($warning, lighten($warning, 2));
 	border-color: darken($warning, 10);
 	&:hover, &.active {
@@ -76,7 +76,7 @@
 	}
 }
 .btn-error {
-	@extend .btn;
+	@extend %btn;
 	@include gradient($error, lighten($error, 2));
 	border-color: darken($error, 10);
 	&:hover, &.active {
@@ -104,7 +104,7 @@
 //button groups
 .btn-group {
 	margin: 0 0 20px;
-	.btn {
+	%btn{
 		@include borderRadius(0);
 		position: relative;
 		float: left;
