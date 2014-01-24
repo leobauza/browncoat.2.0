@@ -1,6 +1,6 @@
 <section class="container">
 	<h2 class="al-c">Removing things</h2>
-	<div class="callout-warning"><strong>browncoat</strong> is still in early development so this page is incomplete for now.</div>
+	<div class="callout--warning"><strong>browncoat</strong> is still in early development so this page is incomplete for now.</div>
 	<div class="row-fluid">
 		<article class="span4">
 			<h4>I want to remove the docs and stuff</h4>

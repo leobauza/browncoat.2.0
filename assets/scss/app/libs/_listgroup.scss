@@ -1,6 +1,6 @@
 /* app/libs/listgroup */
 $listGroupBorder: Greyscale(10);
-@mixin listGroupItem () {
+%listGroupItem {
 	margin:0;
 	padding:10px;
 	border-top: 1px solid $listGroupBorder;	
@@ -19,7 +19,7 @@ ul.list-group {
 	border: 1px solid $listGroupBorder;
 	border-top: none;
 	li {
-		@include listGroupItem();
+		@extend %listGroupItem;
 		&:last-child {
 			@include borderRadius(0px 0px 5px 5px);
 		}
@@ -28,7 +28,7 @@ ul.list-group {
 		}
 	}
 	a {
-		@include listGroupItem();
+		@extend %listGroupItem;
 		display: block;
 		
 		&:hover {

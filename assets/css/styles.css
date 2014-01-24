@@ -833,6 +833,14 @@ form input[type="submit"] {
   color: #761c19; }
 
 /* app/libs/listgroup */
+.list-group li, .list-group a {
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #e6e6e6;
+  color: #333333;
+  font-size: 1.6em;
+  line-height: 1.6em; }
+
 ul.list-group {
   margin: 0 0 20px;
   padding: 0;
@@ -847,28 +855,15 @@ ul.list-group {
   background: white;
   border: 1px solid #e6e6e6;
   border-top: none; }
-  .list-group li {
-    margin: 0;
-    padding: 10px;
-    border-top: 1px solid #e6e6e6;
-    color: #333333;
-    font-size: 1.6em;
-    line-height: 1.6em; }
-    .list-group li:last-child {
-      -webkit-border-radius: 0px 0px 5px 5px;
-      -moz-border-radius: 0px 0px 5px 5px;
-      border-radius: 0px 0px 5px 5px; }
-    .list-group li:first-child {
-      -webkit-border-radius: 5px 5px 0px 0px;
-      -moz-border-radius: 5px 5px 0px 0px;
-      border-radius: 5px 5px 0px 0px; }
+  .list-group li:last-child {
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px; }
+  .list-group li:first-child {
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px; }
   .list-group a {
-    margin: 0;
-    padding: 10px;
-    border-top: 1px solid #e6e6e6;
-    color: #333333;
-    font-size: 1.6em;
-    line-height: 1.6em;
     display: block; }
     .list-group a:hover {
       background: #f2f2f2;
