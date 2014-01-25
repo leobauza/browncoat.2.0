@@ -1,4 +1,4 @@
-Welcome to browncoat 0.2.0
+Welcome to browncoat 0.2.1
 ==================
 
 
@@ -46,7 +46,7 @@ The first minor release of [browncoat](https://github.com/leobauza/browncoat) an
 
 ## get updates
 
-I am working on an easier go at installing browncoat using a combination of grunt and bower to set up a project. Until then forking the repository is all I've got for you though. 
+I am working on an easier go at installing browncoat using a combination of grunt and bower to set up a project. Until then forking the repository is all I've got for you though. Testing tags.
 
 
 
